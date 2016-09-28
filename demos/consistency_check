@@ -1,0 +1,3 @@
+consistency_check:
+ euler2 align {.}/datasets/{dataset}/input.txt --consistency -o {.}/output/{demo}/{dataset}
+

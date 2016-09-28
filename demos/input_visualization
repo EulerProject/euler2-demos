@@ -1,0 +1,3 @@
+input_viusalization:
+ euler2 show {.}/datasets/{dataset}/input.txt iv -o {.}/output/{demo}/{dataset}
+

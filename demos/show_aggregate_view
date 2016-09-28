@@ -1,0 +1,5 @@
+align:
+ euler2 align {.}/datasets/{dataset}/input.txt -o {.}/output/{demo}/{dataset}
+show_aggregate_view:
+ euler2 show -o {.}/output/{demo}/{dataset} sv
+ 

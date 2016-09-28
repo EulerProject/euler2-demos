@@ -1,0 +1,139 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import shutil
+from subprocess import call, Popen, PIPE
+import yaml
+import yaml.constructor
+from collections import OrderedDict
+
+class OrderedDictYAMLLoader(yaml.Loader):
+    """
+    A YAML loader that loads mappings into ordered dictionaries.
+    """
+
+    def __init__(self, *args, **kwargs):
+        yaml.Loader.__init__(self, *args, **kwargs)
+
+        self.add_constructor(u'tag:yaml.org,2002:map', type(self).construct_yaml_map)
+        self.add_constructor(u'tag:yaml.org,2002:omap', type(self).construct_yaml_map)
+
+    def construct_yaml_map(self, node):
+        data = OrderedDict()
+        yield data
+        value = self.construct_mapping(node)
+        data.update(value)
+
+    def construct_mapping(self, node, deep=False):
+        if isinstance(node, yaml.MappingNode):
+            self.flatten_mapping(node)
+        else:
+            raise yaml.constructor.ConstructorError(None, None,
+                'expected a mapping node, but found %s' % node.id, node.start_mark)
+
+        mapping = OrderedDict()
+        for key_node, value_node in node.value:
+            key = self.construct_object(key_node, deep=deep)
+            try:
+                hash(key)
+            except TypeError, exc:
+                raise yaml.constructor.ConstructorError('while constructing a mapping',
+                    node.start_mark, 'found unacceptable key (%s)' % exc, key_node.start_mark)
+            value = self.construct_object(value_node, deep=deep)
+            mapping[key] = value
+        return mapping
+
+def get_root():
+    return os.path.abspath(os.path.dirname(__file__))
+
+def get_dataset():
+    return sys.argv[2].lower()
+
+def get_demo():
+    return sys.argv[1].lower()
+
+def get_output():
+    return get_root() + '/output/{demo}/{dataset}'.format(demo = get_demo(), dataset = get_dataset())
+
+def get_target():
+    if len(sys.argv) == 4:
+    	return sys.argv[3].lower()
+    return 'all'
+
+def get_commands_file():
+    return get_root() + '/demos/{demo}'.format(demo = get_demo())
+
+def execute(key, value):
+    root = get_root()
+    demo = get_demo()
+    dataset = get_dataset()
+    output = get_output()
+    with open(os.path.join(output, '%s.stdout' % key), 'w+') as out:
+        with open(os.path.join(output, '%s.stderr' % key), 'w+') as err:
+            with open(os.path.join(output, '%s.returncode' % key), 'w+') as rc:
+		value = value.replace('{.}', root)
+                value = value.replace('{demo}', demo)
+                value = value.replace('{dataset}', dataset)
+                print value
+                p = Popen(value, stdout=PIPE, stderr=PIPE, shell=True)
+                stdout, stderr = p.communicate()
+                print stdout
+                print stderr
+	        out.write(stdout)
+                err.write(stderr)
+                rc.write('%s' % p.returncode)
+            
+def run_clean():
+    output = get_output()
+    for f in os.listdir(output):
+	path = output + '/' + f
+        if os.path.isfile(path):
+	    if not f.startswith('.'):
+            	os.remove(path)
+        if os.path.isdir(path):
+            shutil.rmtree(path)
+
+def run_all(doc):
+    for k, v in doc.items():
+        execute(k, v)
+
+def run_sequence(doc, start, end):
+    inside = False
+    for k, v in doc.items():
+        if inside:
+            execute(k, v)
+        if k == start:
+            execute(k, v)
+            inside = True
+        if k == end:
+            inside = False
+            
+def run_list(doc, commands):
+    for command in commands:
+        execute(command, doc[command])
+
+def run():
+    output = get_output()
+    target = get_target()
+    commands_file = get_commands_file()
+    if not os.path.exists(output):
+        os.makedirs(output)
+    with open(commands_file, 'r') as commands:
+        doc = yaml.load(commands, OrderedDictYAMLLoader)
+        if target == 'all':
+            run_all(doc)
+        elif target == 'clean':
+            run_clean()
+        elif ',' in target:
+            run_list(doc, target.split(','))
+        elif '-' in target:
+            run_sequence(doc, target.split('-')[0], target.split('-')[-1])
+
+if __name__ == '__main__':
+    if len(sys.argv) == 3 or len(sys.argv) == 4:
+        run()
+    else:
+        print 'You have to specify a demo, dataset and optionally a target'
+            
+            
