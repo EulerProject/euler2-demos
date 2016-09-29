@@ -1,12 +1,12 @@
-# euler2-demos
+# euler2-demos2
 
-Each subfolder of this repository contains a demo. 
+Demos that exercise features for the euler2 toolkit.
 
-A demo has the following structure:
-* `./run` the script that can replays the commands of the demo
-* `./commands` the commands executed in the demo, organized in yaml format
-* `./input/{any}` the input used in the demo
-* `./{anything else}` any output produced by the demo
+* `./run` Use this script to replays a scenario
+* `./run_all` Automatically exercises all scenarios contained
+* `./demos/{demo}` A demo consists of a list of labeled euler2 commands in a yaml format.
+* `./datastes/{dataset}` A dataset available for input to euler2
+* `./output/{demo}/{dataset}/{any}` Any output produced by the demo for a dataset
 
 commands example:
 
