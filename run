@@ -7,6 +7,7 @@ from subprocess import call, Popen, PIPE
 import yaml
 import yaml.constructor
 from collections import OrderedDict
+import re
 
 class OrderedDictYAMLLoader(yaml.Loader):
     """
@@ -130,9 +131,26 @@ def run():
         elif '-' in target:
             run_sequence(doc, target.split('-')[0], target.split('-')[-1])
 
+def clean_outputs():
+    root = get_root()
+    output = get_output()
+    report = root + '/report.csv'
+    lastrun_timstamp = output + '/lastrun.timestamp'
+    logs = output + '/logs'
+    if os.path.isfile(report):
+    	os.remove(report)
+    if os.path.isfile(lastrun_timstamp):
+    	os.remove(lastrun_timstamp)
+    if os.path.isdir(logs):
+    	shutil.rmtree(logs)
+    for root, dirs, files in os.walk(output):
+	for file in filter(lambda x: re.match('^.*\.pdf$', x), files):
+	     os.remove(os.path.join(root, file))
+
 if __name__ == '__main__':
     if len(sys.argv) == 3 or len(sys.argv) == 4:
         run()
+        clean_outputs()
     else:
         print 'You have to specify a demo, dataset and optionally a target'
             

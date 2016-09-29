@@ -1,0 +1,6 @@
+digraph {
+
+rankdir = RL
+
+"1995.Amauris_damocles\n\n1995.Amauris_damocles_subsp_hyalites\n\n1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles\n\n1997.Amauris_hyalites\n\n1997.Amauris_hyalites_subsp_hyalites\n\n1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis\n\n" [shape=oval style="filled,rounded" fillcolor="#00BFFF"]
+}
