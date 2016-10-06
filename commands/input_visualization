@@ -1,0 +1,3 @@
+input_viusalization:
+ euler2 show {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt iv -o {.}/output/{commands}/{example}
+

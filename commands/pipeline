@@ -1,0 +1,13 @@
+input_check:
+ euler2 check {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt
+consistency_check:
+ euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt --consistency -o {.}/output/{commands}/{example}
+input_viusalization:
+ euler2 show {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt iv -o {.}/output/{commands}/{example}
+align:
+ euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt -o {.}/output/{commands}/{example}
+show_possible_worlds:
+ euler2 show -o {.}/output/{commands}/{example} pw
+show_summary_view:
+ euler2 show -o {.}/output/{commands}/{example} sv
+ 

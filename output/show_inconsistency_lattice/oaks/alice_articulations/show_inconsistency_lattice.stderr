@@ -1,0 +1,8 @@
+query.asp: line 1: syntax error.
+Aborting due to parser errors.
+Traceback (most recent call last):
+  File "lattice.py", line 233, in <module>
+    solidGreenW = subprocess.check_output("dlv -silent -brave expWorlds_aw.asp query.asp", shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 573, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+subprocess.CalledProcessError: Command 'dlv -silent -brave expWorlds_aw.asp query.asp' returned non-zero exit status 1

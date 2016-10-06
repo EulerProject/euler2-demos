@@ -1,0 +1,6 @@
+euler2 check /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/felipe_articulations/articulations.txt
+euler2 align /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/felipe_articulations/articulations.txt --consistency -o /home/thomas/euler2-demos2/euler2-demos2/output/pipeline/oaks/felipe_articulations
+euler2 show /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/felipe_articulations/articulations.txt iv -o /home/thomas/euler2-demos2/euler2-demos2/output/pipeline/oaks/felipe_articulations
+euler2 align /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/felipe_articulations/articulations.txt -o /home/thomas/euler2-demos2/euler2-demos2/output/pipeline/oaks/felipe_articulations
+euler2 show -o /home/thomas/euler2-demos2/euler2-demos2/output/pipeline/oaks/felipe_articulations pw
+euler2 show -o /home/thomas/euler2-demos2/euler2-demos2/output/pipeline/oaks/felipe_articulations sv

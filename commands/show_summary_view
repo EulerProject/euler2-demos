@@ -1,0 +1,7 @@
+align:
+ euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt -o {.}/output/{commands}/{example}
+show_possible_worlds:
+ euler2 show -o {.}/output/{commands}/{example} pw
+show_summary_view:
+ euler2 show -o {.}/output/{commands}/{example} sv
+ 

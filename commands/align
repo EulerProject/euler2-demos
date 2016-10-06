@@ -1,0 +1,2 @@
+align:
+ euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt -o {.}/output/{commands}/{example}

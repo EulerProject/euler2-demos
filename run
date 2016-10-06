@@ -48,34 +48,41 @@ class OrderedDictYAMLLoader(yaml.Loader):
 def get_root():
     return os.path.abspath(os.path.dirname(__file__))
 
-def get_dataset():
+def get_example():
     return sys.argv[2].lower()
 
-def get_demo():
+def get_example_root():
+    return get_example().split('/')[0]
+
+def get_example_articulations():
+    return get_example().split('/')[1]
+
+def get_commands():
     return sys.argv[1].lower()
 
 def get_output():
-    return get_root() + '/output/{demo}/{dataset}'.format(demo = get_demo(), dataset = get_dataset())
+    return get_root() + '/output/{commands}/{example}'.format(commands = get_commands(), example = get_example())
 
 def get_target():
     if len(sys.argv) == 4:
     	return sys.argv[3].lower()
     return 'all'
 
-def get_commands_file():
-    return get_root() + '/demos/{demo}'.format(demo = get_demo())
+def get_commands_file_path():
+    return get_root() + '/commands/{commands}'.format(commands = get_commands())
+
+class Command:
+    def __init__(self, key, value):
+        self.key = key
+        self.value = value
+
 
 def execute(key, value):
-    root = get_root()
-    demo = get_demo()
-    dataset = get_dataset()
+    print 'run {key} effectively with: {value}'.format(key=key, value=value)
     output = get_output()
     with open(os.path.join(output, '%s.stdout' % key), 'w+') as out:
         with open(os.path.join(output, '%s.stderr' % key), 'w+') as err:
             with open(os.path.join(output, '%s.returncode' % key), 'w+') as rc:
-		value = value.replace('{.}', root)
-                value = value.replace('{demo}', demo)
-                value = value.replace('{dataset}', dataset)
                 print value
                 p = Popen(value, stdout=PIPE, stderr=PIPE, shell=True)
                 stdout, stderr = p.communicate()
@@ -95,41 +102,66 @@ def run_clean():
         if os.path.isdir(path):
             shutil.rmtree(path)
 
-def run_all(doc):
+def get_all_commands(doc):
+    result = []
     for k, v in doc.items():
-        execute(k, v)
+        result.append(Command(k, v))
+    return result
 
-def run_sequence(doc, start, end):
+def get_commands_sequence(doc, start, end):
+    result = []
     inside = False
     for k, v in doc.items():
         if inside:
-            execute(k, v)
+            result.append(Command(k, v))
         if k == start:
-            execute(k, v)
+            result.append(Command(k, v))
             inside = True
         if k == end:
             inside = False
+    return result
             
-def run_list(doc, commands):
+def get_commands_list(doc, commands):
+    result = []
     for command in commands:
-        execute(command, doc[command])
+        result.append(Command(command, doc[command]))
+    return result
 
 def run():
-    output = get_output()
     target = get_target()
-    commands_file = get_commands_file()
+    root = get_root()
+    commands = get_commands()
+    example = get_example()
+    example_root = get_example_root()
+    example_articulations = get_example_articulations()
+    output = get_output()
+    commands_file_path = get_commands_file_path()
+    print '===> Run demo {commands} {example} {target}'.format(commands = commands, example = example, target = target)
     if not os.path.exists(output):
         os.makedirs(output)
-    with open(commands_file, 'r') as commands:
-        doc = yaml.load(commands, OrderedDictYAMLLoader)
-        if target == 'all':
-            run_all(doc)
-        elif target == 'clean':
-            run_clean()
-        elif ',' in target:
-            run_list(doc, target.split(','))
-        elif '-' in target:
-            run_sequence(doc, target.split('-')[0], target.split('-')[-1])
+    with open(commands_file_path, 'r') as commands_file:
+        doc = yaml.load(commands_file, OrderedDictYAMLLoader)
+	with open(os.path.join(output, 'executed_commands'), 'w+') as cmds_file:
+   	    cmds = []
+            if target == 'all':
+                cmds = get_all_commands(doc)
+            elif target == 'clean':
+                run_clean()
+            elif ',' in target:
+                cmds = get_commands_list(doc, target.split(','))
+            elif '-' in target:
+                cmds = get_commands_sequence(doc, target.split('-')[0], target.split('-')[-1])
+            if cmds:
+	        for cmd in cmds:
+		    print 'run {key} with: {value}'.format(key=cmd.key, value=cmd.value)
+                    value = cmd.value
+                    value = value.replace('{.}', root)
+                    value = value.replace('{commands}', commands)
+                    value = value.replace('{example_root}', example_root)
+                    value = value.replace('{example_articulations}', example_articulations)
+                    value = value.replace('{example}', example)
+                    cmds_file.write(value + '\n')
+		    execute(cmd.key, value)
 
 def clean_outputs():
     root = get_root()
@@ -152,6 +184,6 @@ if __name__ == '__main__':
         run()
         clean_outputs()
     else:
-        print 'You have to specify a demo, dataset and optionally a target'
+        print 'You have to specify commands, example and optionally a target'
             
             

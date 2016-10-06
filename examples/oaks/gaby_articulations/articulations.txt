@@ -1,0 +1,3 @@
+articulation FloraChina-FloraMexico
+[FloraChina.ChineseOakSpecies1 is_included_in FloraMexico.MexicanOakSpecies1]
+[FloraChina.ChineseOakSpecies2 equals FloraMexico.MexicanOakSpecies1]

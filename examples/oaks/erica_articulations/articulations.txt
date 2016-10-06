@@ -1,0 +1,3 @@
+articulation FloraChina-FloraMexico
+[FloraChina.OakGenus includes FloraMexico.MexicanOakSpecies1]
+[FloraChina.ChineseOakSpecies1 is_included_in FloraMexico.MexicanOakSpecies1]

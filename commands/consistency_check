@@ -1,0 +1,2 @@
+consistency_check:
+ euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt --consistency -o {.}/output/{commands}/{example}
