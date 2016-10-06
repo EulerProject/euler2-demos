@@ -1,2 +1,0 @@
-align:
- euler2 align {.}/datasets/{dataset}/input.txt -o {.}/output/{demo}/{dataset}

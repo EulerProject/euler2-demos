@@ -1,2 +1,0 @@
-input_check:
- euler2 check {.}/datasets/{dataset}/input.txt

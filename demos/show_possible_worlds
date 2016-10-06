@@ -1,5 +1,0 @@
-align:
- euler2 align {.}/datasets/{dataset}/input.txt -o {.}/output/{demo}/{dataset}
-show_possible_worlds:
- euler2 show -o {.}/output/{demo}/{dataset} pw
-

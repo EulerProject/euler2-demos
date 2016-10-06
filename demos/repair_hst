@@ -1,2 +1,0 @@
-repair_hst:
- euler2 align {.}/datasets/{dataset}/input.txt -o {.}/output/{demo}/{dataset} --repair=HST
