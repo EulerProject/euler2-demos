@@ -1,4 +1,0 @@
-******* You are running example input *******
-cmd: dlv -silent -filter=rel -n=1 /home/thomas/euler2-demos/euler2-demos/output/pipeline/fossilweevils/1-ASP-input-code/input_pw.dlv /home/thomas/euler2-demos/euler2-demos/output/pipeline/fossilweevils/1-ASP-input-code/input_pwswitch.dlv
-exit status:  35072
-Input is consistent
