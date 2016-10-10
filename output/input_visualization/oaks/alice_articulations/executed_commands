@@ -1,1 +1,1 @@
-euler2 show iv /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/alice_articulations/articulations.txt -o /home/thomas/euler2-demos2/euler2-demos2/output/input_visualization/oaks/alice_articulations
+euler2 show iv ./examples/oaks/taxonomies.txt ./examples/oaks/alice_articulations/articulations.txt -o ./output/input_visualization/oaks/alice_articulations

@@ -1,1 +1,1 @@
-euler2 align /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/alice_articulations/articulations.txt --consistency -o /home/thomas/euler2-demos2/euler2-demos2/output/consistency_check/oaks/alice_articulations
+euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/alice_articulations/articulations.txt --consistency -o ./output/consistency_check/oaks/alice_articulations

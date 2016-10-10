@@ -1,1 +1,1 @@
-euler2 align /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/alice_articulations/articulations.txt -o /home/thomas/euler2-demos2/euler2-demos2/output/repair_hst/oaks/alice_articulations --repair=HST
+euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/alice_articulations/articulations.txt -o ./output/repair_hst/oaks/alice_articulations --repair=HST

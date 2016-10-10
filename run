@@ -155,12 +155,18 @@ def run():
 	        for cmd in cmds:
 		    print 'run {key} with: {value}'.format(key=cmd.key, value=cmd.value)
                     value = cmd.value
+		    show_command = cmd.value
                     value = value.replace('{.}', root)
+		    show_command = show_command.replace('{.}', '.')
                     value = value.replace('{commands}', commands)
+		    show_command = show_command.replace('{commands}', commands)
                     value = value.replace('{example_root}', example_root)
+                    show_command = show_command.replace('{example_root}', example_root)
                     value = value.replace('{example_articulations}', example_articulations)
+                    show_command = show_command.replace('{example_articulations}', example_articulations)
                     value = value.replace('{example}', example)
-                    cmds_file.write(value + '\n')
+                    show_command = show_command.replace('{example}', example)
+                    cmds_file.write(show_command + '\n')
 		    execute(cmd.key, value)
 
 def clean_outputs():

@@ -1,2 +1,2 @@
-euler2 align /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/gaby_articulations/articulations.txt -o /home/thomas/euler2-demos2/euler2-demos2/output/show_possible_worlds/oaks/gaby_articulations
-euler2 show -o /home/thomas/euler2-demos2/euler2-demos2/output/show_possible_worlds/oaks/gaby_articulations pw
+euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/gaby_articulations/articulations.txt -o ./output/show_possible_worlds/oaks/gaby_articulations
+euler2 show -o ./output/show_possible_worlds/oaks/gaby_articulations pw

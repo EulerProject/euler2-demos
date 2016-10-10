@@ -1,0 +1,10 @@
+align_alice:
+ euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/alice_articulations/articulations.txt -o {.}/output/{commands}/{example}
+align_gaby:
+ euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/gaby_articulations/articulations.txt -o {.}/output/{commands}/{example}
+align_bob:
+ euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/bob_articulations/articulations.txt -o {.}/output/{commands}/{example}
+align_carol:
+ euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/carol_articulations/articulations.txt -o {.}/output/{commands}/{example}
+align_dan:
+ euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/dan_articulations/articulations.txt -o {.}/output/{commands}/{example}
