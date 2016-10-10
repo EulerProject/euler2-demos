@@ -1,0 +1,3 @@
+euler2 align /home/thomas/euler2-demos2/euler2-demos2/examples/fossilweevils/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/fossilweevils/alice_articulations/articulations.txt -o /home/thomas/euler2-demos2/euler2-demos2/output/show_summary_view/fossilweevils/alice_articulations
+euler2 show -o /home/thomas/euler2-demos2/euler2-demos2/output/show_summary_view/fossilweevils/alice_articulations pw
+euler2 show -o /home/thomas/euler2-demos2/euler2-demos2/output/show_summary_view/fossilweevils/alice_articulations sv

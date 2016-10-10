@@ -3,7 +3,7 @@ input_check:
 consistency_check:
  euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt --consistency -o {.}/output/{commands}/{example}
 input_viusalization:
- euler2 show {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt iv -o {.}/output/{commands}/{example}
+ euler2 show iv {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt -o {.}/output/{commands}/{example}
 align:
  euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt -o {.}/output/{commands}/{example}
 show_possible_worlds:

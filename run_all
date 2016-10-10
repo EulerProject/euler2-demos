@@ -9,9 +9,10 @@ if __name__ == '__main__':
     if len(sys.argv) >= 2:
     	target = sys.argv[1]
     for r in os.listdir('./examples/'):
-        for a in os.listdir('./examples/' + r):
-	    if os.path.isdir('./examples/' + r + '/' + a):
-	        for c in os.listdir('./commands/'):
-    	            subprocess.call('./run {commands} {example} {target}'.format(commands = c, example = r + '/' + a, target = target), shell=True)
+	if r == 'oaks':
+            for a in os.listdir('./examples/' + r):
+	        if os.path.isdir('./examples/' + r + '/' + a):
+	            for c in os.listdir('./commands/'):
+    	                subprocess.call('./run {commands} {example} {target}'.format(commands = c, example = r + '/' + a, target = target), shell=True)
             
             

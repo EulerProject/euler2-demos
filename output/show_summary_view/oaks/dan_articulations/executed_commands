@@ -1,0 +1,3 @@
+euler2 align /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/oaks/dan_articulations/articulations.txt -o /home/thomas/euler2-demos2/euler2-demos2/output/show_summary_view/oaks/dan_articulations
+euler2 show -o /home/thomas/euler2-demos2/euler2-demos2/output/show_summary_view/oaks/dan_articulations pw
+euler2 show -o /home/thomas/euler2-demos2/euler2-demos2/output/show_summary_view/oaks/dan_articulations sv
