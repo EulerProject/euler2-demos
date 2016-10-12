@@ -1,15 +1,15 @@
 pw0:
   concept: pw0
   group: cluster
-  name: test17
+  name: test30
 pw1:
   concept: pw1
   group: cluster
-  name: test49
+  name: test92
 pw2:
   concept: pw2
   group: cluster
-  name: test71
+  name: test85
 pw1_pw0:
   dist: 4
   label: '4'

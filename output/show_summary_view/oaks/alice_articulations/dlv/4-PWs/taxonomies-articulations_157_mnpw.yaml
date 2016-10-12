@@ -1,15 +1,15 @@
 comb.FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies2:
   concept: FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies2
   group: comb
-  name: test57
+  name: test68
 comb.FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies1:
   concept: FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies1
   group: comb
-  name: test95
+  name: test56
 comb.FloraChina.OakGenus\nFloraMexico.OakGenus:
   concept: FloraChina.OakGenus\nFloraMexico.OakGenus
   group: comb
-  name: test38
+  name: test79
 FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies2_FloraChina.OakGenus\nFloraMexico.OakGenus:
   label: input
   s: FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies2

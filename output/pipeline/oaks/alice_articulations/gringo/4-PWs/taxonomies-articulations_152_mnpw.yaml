@@ -1,0 +1,44 @@
+FloraChina.ChineseOakSpecies2:
+  concept: ChineseOakSpecies2
+  group: FloraChina
+  name: test43
+FloraChina.OakGenus:
+  concept: OakGenus
+  group: FloraChina
+  name: test57
+FloraMexico.MexicanOakSpecies2:
+  concept: MexicanOakSpecies2
+  group: FloraMexico
+  name: test34
+FloraMexico.OakGenus:
+  concept: OakGenus
+  group: FloraMexico
+  name: test5
+comb.FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies1:
+  concept: FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies1
+  group: comb
+  name: test6
+FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies1_FloraMexico.OakGenus:
+  label: input
+  s: FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies1
+  t: FloraMexico.OakGenus
+FloraChina.ChineseOakSpecies2_FloraChina.OakGenus:
+  label: input
+  s: FloraChina.ChineseOakSpecies2
+  t: FloraChina.OakGenus
+FloraChina.ChineseOakSpecies2_FloraMexico.OakGenus:
+  label: overlaps
+  s: FloraChina.ChineseOakSpecies2
+  t: FloraMexico.OakGenus
+FloraMexico.MexicanOakSpecies2_FloraChina.ChineseOakSpecies2:
+  label: inferred
+  s: FloraMexico.MexicanOakSpecies2
+  t: FloraChina.ChineseOakSpecies2
+FloraMexico.MexicanOakSpecies2_FloraMexico.OakGenus:
+  label: input
+  s: FloraMexico.MexicanOakSpecies2
+  t: FloraMexico.OakGenus
+FloraMexico.OakGenus_FloraChina.OakGenus:
+  label: inferred
+  s: FloraMexico.OakGenus
+  t: FloraChina.OakGenus
