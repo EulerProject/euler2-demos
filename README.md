@@ -36,12 +36,13 @@ taxonomy 1995 AckeryEtAl
 run usage:
 
 ```
+Runs a demo contained in this repository
 Usage: run [OPTIONS]
 
 Options:
-  --commands TEXT       Choose from one of the available commands files
-  --example TEXT        Choose from one of the available examples
-  --articulations TEXT  Choose from one of the available example articulations
+  --commands TEXT       Choose one of the available commands files
+  --example TEXT        Choose one of the available examples
+  --articulations TEXT  Choose one of the available example articulations
   --target TEXT         Choose between 'all', a list ('align,input_visualization,...')
                         or a sequence ('align-show_possible_worlds') of command labels
                         or 'clean'. Default: all
@@ -51,16 +52,32 @@ Options:
 
 run_all usage:
 ```
+Runs all demos contained in this repository, meeting the options provided.
+E.g. 
+run_all --commands=align,pipeline --examples=oaks
+executes
+run --commands=align --example=oaks --articulations=alice_articulations --reasoner=dlv
+...
+run --commands=align --example=oaks --articulations=gaby_articulations --reasoner==dlv
+run --commands=align --example=oaks --articulations=alice_articulations --reasoner=gringo
+...
+run --commands=align --example=oaks --articulations=gaby_articulations --reasoner=gringo
+run --commands=pipeline --example=oaks --articulations=alice_articulations --reasoner=dlv
+...
+run --commands=pipeline --example=oaks --articulations=gaby_articulations --reasoner=dlv
+run --commands=pipeline --example=oaks --articulations=alice_articulations --reasoner=gringo
+...
+run --commands=pipeline --example=oaks --articulations=gaby_articulations --reasoner=gringo
+
 Usage: run_all [OPTIONS]
 
 Options:
-  --commands TEXT       Choose from one of the available commands files
-  --examples TEXT       Choose from one of the available examples
-  --articulations TEXT  Choose from one of the available example articulations
+  --commands TEXT       Optional: List of commands
+  --examples TEXT       Optional: List of examples
+  --articulations TEXT  Optional: List of articulations
   --target TEXT         Choose between 'all', a list ('align,input_visualization,...')
                         or a sequence ('align-show_possible_worlds') of command labels
                         or 'clean'. Default: all
-  --reasoners TEXT      Choose between 'dlv' and 'gringo'
+  --reasoners TEXT      Optional: List of reasoners
   --help                Show this message and exit.
 ```
-
