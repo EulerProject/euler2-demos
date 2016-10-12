@@ -1,5 +1,5 @@
 align:
- euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt -o {.}/output/{commands}/{example}
+ euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
 show_inconsistency_lattice:
- euler2 show -o {.}/output/{commands}/{example} inconLat
+ euler2 show -o {.}/output/{commands}/{example}/{articulations} inconLat
 

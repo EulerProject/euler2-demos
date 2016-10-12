@@ -8,6 +8,7 @@ import yaml
 import yaml.constructor
 from collections import OrderedDict
 import re
+import click
 
 class OrderedDictYAMLLoader(yaml.Loader):
     """
@@ -45,41 +46,29 @@ class OrderedDictYAMLLoader(yaml.Loader):
             mapping[key] = value
         return mapping
 
-def get_root():
-    return os.path.abspath(os.path.dirname(__file__))
-
-def get_example():
-    return sys.argv[2].lower()
-
-def get_example_root():
-    return get_example().split('/')[0]
-
-def get_example_articulations():
-    return get_example().split('/')[1]
-
-def get_commands():
-    return sys.argv[1].lower()
-
-def get_output():
-    return get_root() + '/output/{commands}/{example}'.format(commands = get_commands(), example = get_example())
-
-def get_target():
-    if len(sys.argv) == 4:
-    	return sys.argv[3].lower()
-    return 'all'
-
-def get_commands_file_path():
-    return get_root() + '/commands/{commands}'.format(commands = get_commands())
-
 class Command:
     def __init__(self, key, value):
         self.key = key
         self.value = value
 
+def get_root():
+    return os.path.abspath(os.path.dirname(__file__))
 
-def execute(key, value):
+def get_output(commands, example, articulations, reasoner):
+    if example is None:
+       example = ''
+    if articulations is None:
+       articulations = ''
+    if reasoner is None:
+       reasoner = ''
+    return get_root() + '/output/{commands}/{example}/{articulations}/{reasoner}'.format(commands = commands, example = example, articulations = articulations, reasoner = reasoner)
+
+def get_commands_file_path(commands):
+    return get_root() + '/commands/{commands}'.format(commands = commands)
+
+def execute(commands, example, articulations, reasoner, key, value):
     print 'run {key} effectively with: {value}'.format(key=key, value=value)
-    output = get_output()
+    output = get_output(commands, example, articulations, reasoner)
     with open(os.path.join(output, '%s.stdout' % key), 'w+') as out:
         with open(os.path.join(output, '%s.stderr' % key), 'w+') as err:
             with open(os.path.join(output, '%s.returncode' % key), 'w+') as rc:
@@ -92,8 +81,8 @@ def execute(key, value):
                 err.write(stderr)
                 rc.write('%s' % p.returncode)
             
-def run_clean():
-    output = get_output()
+def run_clean(commands, example, articulations, reasoner):
+    output = get_output(commands, example, articulations, reasoner)
     for f in os.listdir(output):
 	path = output + '/' + f
         if os.path.isfile(path):
@@ -127,16 +116,17 @@ def get_commands_list(doc, commands):
         result.append(Command(command, doc[command]))
     return result
 
-def run():
-    target = get_target()
+@click.command()
+@click.option('--commands', default='', help='Choose from one of the available commands files')
+@click.option('--example', default='', help='Choose from one of the available examples')
+@click.option('--articulations', default='', help='Choose from one of the available example articulations')
+@click.option('--target', default='all', help='Choose between \'all\', a list (\'command1,command2,...\') or a sequence (\'command1-command3\') of command labels or \'clean\'. Default: all')
+@click.option('--reasoner', default='dlv', help='Choose between \'dlv\' and \'gringo\'')
+def run(commands, example, articulations, target, reasoner):
     root = get_root()
-    commands = get_commands()
-    example = get_example()
-    example_root = get_example_root()
-    example_articulations = get_example_articulations()
-    output = get_output()
-    commands_file_path = get_commands_file_path()
-    print '===> Run demo {commands} {example} {target}'.format(commands = commands, example = example, target = target)
+    output = get_output(commands, example, articulations, reasoner)
+    commands_file_path = get_commands_file_path(commands)
+    print '===> Run demo {commands} {example} {target} {reasoner}'.format(commands = commands, example = example, target = target, reasoner = reasoner)
     if not os.path.exists(output):
         os.makedirs(output)
     with open(commands_file_path, 'r') as commands_file:
@@ -146,7 +136,7 @@ def run():
             if target == 'all':
                 cmds = get_all_commands(doc)
             elif target == 'clean':
-                run_clean()
+                run_clean(commands, example, articulations, reasoner)
             elif ',' in target:
                 cmds = get_commands_list(doc, target.split(','))
             elif '-' in target:
@@ -160,18 +150,19 @@ def run():
 		    show_command = show_command.replace('{.}', '.')
                     value = value.replace('{commands}', commands)
 		    show_command = show_command.replace('{commands}', commands)
-                    value = value.replace('{example_root}', example_root)
-                    show_command = show_command.replace('{example_root}', example_root)
-                    value = value.replace('{example_articulations}', example_articulations)
-                    show_command = show_command.replace('{example_articulations}', example_articulations)
                     value = value.replace('{example}', example)
                     show_command = show_command.replace('{example}', example)
+                    value = value.replace('{articulations}', articulations)
+                    show_command = show_command.replace('{articulations}', articulations)
+                    value = value.replace('{reasoner}', reasoner)
+                    show_command = show_command.replace('{reasoner}', reasoner)
                     cmds_file.write(show_command + '\n')
-		    execute(cmd.key, value)
+		    execute(commands, example, articulations, reasoner, cmd.key, value)
+    clean_outputs(commands, example, articulations, reasoner)
 
-def clean_outputs():
+def clean_outputs(commands, example, articulations, reasoner):
     root = get_root()
-    output = get_output()
+    output = get_output(commands, example, articulations, reasoner)
     report = root + '/report.csv'
     lastrun_timstamp = output + '/lastrun.timestamp'
     logs = output + '/logs'
@@ -181,15 +172,9 @@ def clean_outputs():
     	os.remove(lastrun_timstamp)
     if os.path.isdir(logs):
     	shutil.rmtree(logs)
-    for root, dirs, files in os.walk(output):
-	for file in filter(lambda x: re.match('^.*\.pdf$', x), files):
-	     os.remove(os.path.join(root, file))
+    #for root, dirs, files in os.walk(output):
+    #	for file in filter(lambda x: re.match('^.*\.pdf$', x), files):
+    #	     os.remove(os.path.join(root, file))
 
 if __name__ == '__main__':
-    if len(sys.argv) == 3 or len(sys.argv) == 4:
-        run()
-        clean_outputs()
-    else:
-        print 'You have to specify commands, example and optionally a target'
-            
-            
+    run()

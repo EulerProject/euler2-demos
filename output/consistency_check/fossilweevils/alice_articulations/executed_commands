@@ -1,1 +1,0 @@
-euler2 align /home/thomas/euler2-demos2/euler2-demos2/examples/fossilweevils/taxonomies.txt /home/thomas/euler2-demos2/euler2-demos2/examples/fossilweevils/alice_articulations/articulations.txt --consistency -o /home/thomas/euler2-demos2/euler2-demos2/output/consistency_check/fossilweevils/alice_articulations

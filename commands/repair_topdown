@@ -1,2 +1,2 @@
 repair_topdown:
- euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt -o {.}/output/{commands}/{example} --repair=topdown
+ euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} --repair=topdown -r {reasoner}

@@ -1,13 +1,13 @@
 input_check:
- euler2 check {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt
+ euler2 check {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt
 consistency_check:
- euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt --consistency -o {.}/output/{commands}/{example}
+ euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt --consistency -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
 input_viusalization:
- euler2 show iv {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt -o {.}/output/{commands}/{example}
+ euler2 show iv {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner}
 align:
- euler2 align {.}/examples/{example_root}/taxonomies.txt {.}/examples/{example_root}/{example_articulations}/articulations.txt -o {.}/output/{commands}/{example}
+ euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
 show_possible_worlds:
- euler2 show -o {.}/output/{commands}/{example} pw
+ euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} pw
 show_summary_view:
- euler2 show -o {.}/output/{commands}/{example} sv
+ euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} sv
  

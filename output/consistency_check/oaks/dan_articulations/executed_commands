@@ -1,1 +1,0 @@
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/dan_articulations/articulations.txt --consistency -o ./output/consistency_check/oaks/dan_articulations

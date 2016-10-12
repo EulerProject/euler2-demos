@@ -1,4 +1,0 @@
-******* You are running example taxonomies-articulations *******
-cmd: dlv -silent -filter=rel -n=1 /home/thomas/euler2-demos2/euler2-demos2/output/consistency_check/fossilweevils/alice_articulations/1-ASP-input-code/taxonomies-articulations_pw.dlv /home/thomas/euler2-demos2/euler2-demos2/output/consistency_check/fossilweevils/alice_articulations/1-ASP-input-code/taxonomies-articulations_pwswitch.dlv
-exit status:  35072
-Input is consistent

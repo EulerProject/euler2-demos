@@ -3,16 +3,84 @@
 import subprocess
 import os
 import sys
+import click
+
+all_reasoners = [ 'dlv', 'gringo' ]
+
+def run_command_reasoner_example_articulation(command, reasoner, example, articulation, target):
+   cmd = './run --commands={commands} --example={example} --articulations={articulations} --target={target} --reasoner={reasoner}'.format(
+      commands = command, example = example, articulations = articulation, target = target, reasoner = reasoner)
+   #print 'run_all: %s' % cmd
+   subprocess.call(cmd, shell=True)
+
+def run_command_reasoner_example(command, reasoner, example, articulations, target):
+   if '{articulations}' in open('./commands/' + command).read():
+      if not articulations:
+         for articulation in os.listdir('./examples/' + example):
+            if os.path.isdir('./examples/' + example + '/' + articulation):
+               run_command_reasoner_example_articulation(command, reasoner, example, articulation, target)
+      else:
+         for articulation in articulations:
+            run_command_reasoner_example_articulation(command, reasoner, example, articulation, target)
+   else:
+      run_command_reasoner_example_articulation(command, reasoner, example, None, target)
+
+def run_command_reasoner(command, reasoner, examples, articulations, target):
+   if '{example}' in open('./commands/' + command).read():
+      if not examples:
+         for example in os.listdir('./examples/'):
+            run_command_reasoner_example(command, reasoner, example, articulations, target)
+      else:
+         for example in examples:
+            run_command_reasoner_example(command, reasoner, example, articulations, target)
+   else:
+      run_command_reasoner_example(command, reasoner, None, articulations, target)
+
+def run_command(command, reasoners, examples, articulations, target):
+   if '{reasoner}' in open('./commands/' + command).read():
+      if not reasoners:
+         for reasoner in all_reasoners:
+            run_command_reasoner(command, reasoner, examples, articulations, target)
+      else:
+         for reasoner in reasoners:
+            run_command_reasoner(command, reasoner, examples, articulations, target)
+   else:
+      run_command_reasoner(command, None, examples, articulations, target)
+
+@click.command()
+@click.option('--commands', default=None, help='Choose from one of the available commands files')
+@click.option('--examples', default=None, help='Choose from one of the available examples')
+@click.option('--articulations', default=None, help='Choose from one of the available example articulations')
+@click.option('--target', default='all', help='Choose between \'all\', a list (\'command1,command2,...\') or a sequence (\'command1-command3\') of command labels or \'clean\'. Default: all')
+@click.option('--reasoners', default=','.join(all_reasoners), help='Choose between \'dlv\' and \'gringo\'')
+def run_all(commands, examples, articulations, target, reasoners):
+   if commands is None:
+      commands = []
+   else:
+      commands = commands.split(',')
+   if examples is None:
+      examples = []
+   else:
+      examples = examples.split(',')
+   if articulations is None:
+      articulations = []
+   else:
+      articulations = articulations.split(',')
+   if reasoners is None:
+      reasoners = []
+   else:
+      reasoners = reasoners.split(',')
+   #print commands
+   #print examples
+   #print articulations
+   #print target
+   #print reasoners
+   if not commands:
+      for command in os.listdir('./commands/'):
+         run_command(command, reasoners, examples, articulations, target)
+   else:
+      for command in commands:
+         run_command(command, reasoners, examples, articulations, target)
 
 if __name__ == '__main__':
-    target = 'all'
-    if len(sys.argv) >= 2:
-    	target = sys.argv[1]
-    for r in os.listdir('./examples/'):
-	if r == 'oaks':
-            for a in os.listdir('./examples/' + r):
-	        if os.path.isdir('./examples/' + r + '/' + a):
-	            for c in os.listdir('./commands/'):
-    	                subprocess.call('./run {commands} {example} {target}'.format(commands = c, example = r + '/' + a, target = target), shell=True)
-            
-            
+    run_all()

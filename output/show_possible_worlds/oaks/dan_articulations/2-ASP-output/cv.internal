@@ -1,3 +1,0 @@
-pws = [{'FloraChina.ChineseOakSpecies1,FloraMexico.MexicanOakSpecies2': 1, 'FloraChina.ChineseOakSpecies1,FloraMexico.MexicanOakSpecies1': 2, 'FloraChina.ChineseOakSpecies1,FloraMexico.OakGenus': 2, 'FloraChina.ChineseOakSpecies2,FloraMexico.MexicanOakSpecies2': 4, 'FloraChina.ChineseOakSpecies2,FloraMexico.MexicanOakSpecies1': 1, 'FloraChina.OakGenus,FloraMexico.MexicanOakSpecies1': 16, 'FloraChina.OakGenus,FloraMexico.MexicanOakSpecies2': 8, 'FloraChina.OakGenus,FloraMexico.OakGenus': 2, 'FloraChina.ChineseOakSpecies2,FloraMexico.OakGenus': 2}]
-npw = 1
-cvFlag = False
