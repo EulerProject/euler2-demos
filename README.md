@@ -24,7 +24,8 @@ show_possible_worlds:
  
 example example:
 
-```taxonomy 1997 D’Abrera
+```
+taxonomy 1997 D’Abrera
 (Amauris_damocles)
 (Amauris_hyalites Amauris_hyalites_subsp_hyalites Amauris_hyalites_subsp_makuyensis)
 
@@ -34,7 +35,8 @@ taxonomy 1995 AckeryEtAl
  
 run usage:
 
-```Usage: run [OPTIONS]
+```
+Usage: run [OPTIONS]
 
 Options:
   --commands TEXT       Choose from one of the available commands files
