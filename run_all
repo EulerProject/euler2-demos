@@ -23,7 +23,7 @@ def run_command_reasoner_example(command, reasoner, example, articulations, targ
          for articulation in articulations:
             run_command_reasoner_example_articulation(command, reasoner, example, articulation, target)
    else:
-      run_command_reasoner_example_articulation(command, reasoner, example, None, target)
+      run_command_reasoner_example_articulation(command, reasoner, example, '', target)
 
 def run_command_reasoner(command, reasoner, examples, articulations, target):
    if '{example}' in open('./commands/' + command).read():
@@ -34,7 +34,7 @@ def run_command_reasoner(command, reasoner, examples, articulations, target):
          for example in examples:
             run_command_reasoner_example(command, reasoner, example, articulations, target)
    else:
-      run_command_reasoner_example(command, reasoner, None, articulations, target)
+      run_command_reasoner_example(command, reasoner, '', articulations, target)
 
 def run_command(command, reasoners, examples, articulations, target):
    if '{reasoner}' in open('./commands/' + command).read():
@@ -45,7 +45,7 @@ def run_command(command, reasoners, examples, articulations, target):
          for reasoner in reasoners:
             run_command_reasoner(command, reasoner, examples, articulations, target)
    else:
-      run_command_reasoner(command, None, examples, articulations, target)
+      run_command_reasoner(command, '', examples, articulations, target)
 
 @click.command()
 @click.option('--commands', default=None, help='Choose from one of the available commands files')

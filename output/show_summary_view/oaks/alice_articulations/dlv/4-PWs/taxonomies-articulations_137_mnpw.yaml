@@ -1,7 +1,7 @@
 FloraChina.ChineseOakSpecies1:
   concept: ChineseOakSpecies1
   group: FloraChina
-  name: test5
+  name: test0
 FloraChina.ChineseOakSpecies2:
   concept: ChineseOakSpecies2
   group: FloraChina
@@ -9,19 +9,19 @@ FloraChina.ChineseOakSpecies2:
 FloraChina.OakGenus:
   concept: OakGenus
   group: FloraChina
-  name: test86
+  name: test49
 FloraMexico.MexicanOakSpecies1:
   concept: MexicanOakSpecies1
   group: FloraMexico
-  name: test3
+  name: test75
 FloraMexico.MexicanOakSpecies2:
   concept: MexicanOakSpecies2
   group: FloraMexico
-  name: test92
+  name: test42
 FloraMexico.OakGenus:
   concept: OakGenus
   group: FloraMexico
-  name: test89
+  name: test43
 FloraChina.ChineseOakSpecies1_FloraMexico.MexicanOakSpecies1:
   label: overlaps
   s: FloraChina.ChineseOakSpecies1

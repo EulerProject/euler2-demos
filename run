@@ -125,7 +125,7 @@ def run(commands, example, articulations, target, reasoner):
     root = get_root()
     output = get_output(commands, example, articulations, reasoner)
     commands_file_path = get_commands_file_path(commands)
-    print '===> Run demo {commands} {example} {target} {reasoner}'.format(commands = commands, example = example, target = target, reasoner = reasoner)
+    print '===> Run demo {commands} {example} {articulations} {target} {reasoner}'.format(commands = commands, example = example, articulations = articulations, target = target, reasoner = reasoner)
     if not os.path.exists(output):
         os.makedirs(output)
     with open(commands_file_path, 'r') as commands_file:
