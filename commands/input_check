@@ -1,2 +1,3 @@
 input_check:
- euler2 check {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt
+ command: euler2 check {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt
+ doc: https://github.com/EulerProject/EulerX#2-check-the-input-file

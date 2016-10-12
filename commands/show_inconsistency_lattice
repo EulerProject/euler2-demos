@@ -1,5 +1,6 @@
 align:
- euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
+ doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 show_inconsistency_lattice:
- euler2 show -o {.}/output/{commands}/{example}/{articulations} inconLat
-
+ command: euler2 show -o {.}/output/{commands}/{example}/{articulations} inconLat
+ doc: ?

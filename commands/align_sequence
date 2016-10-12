@@ -1,10 +1,15 @@
 align_alice:
- euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/alice_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/alice_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 align_gaby:
- euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/gaby_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/gaby_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 align_bob:
- euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/bob_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/bob_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 align_carol:
- euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/carol_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/carol_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 align_dan:
- euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/dan_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/dan_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands

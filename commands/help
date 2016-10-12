@@ -1,2 +1,3 @@
 help:
- euler2 --help
+ command: euler2 --help
+ doc: ?
