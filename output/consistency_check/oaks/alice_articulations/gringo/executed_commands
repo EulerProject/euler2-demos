@@ -1,0 +1,1 @@
+euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/alice_articulations/articulations.txt --consistency -o ./output/consistency_check/oaks/alice_articulations/gringo -r gringo

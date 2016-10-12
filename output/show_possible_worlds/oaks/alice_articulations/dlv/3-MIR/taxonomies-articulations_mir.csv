@@ -1,0 +1,9 @@
+FloraChina.ChineseOakSpecies1,{=, >, <, !, ><},FloraMexico.MexicanOakSpecies1,inferred
+FloraChina.ChineseOakSpecies1,{=, >, <, !, ><},FloraMexico.MexicanOakSpecies2,inferred
+FloraChina.ChineseOakSpecies1,{=, >, <, !, ><},FloraMexico.OakGenus,inferred
+FloraChina.ChineseOakSpecies2,{=, >, <, !, ><},FloraMexico.MexicanOakSpecies1,inferred
+FloraChina.ChineseOakSpecies2,{=, >, <, !, ><},FloraMexico.MexicanOakSpecies2,inferred
+FloraChina.ChineseOakSpecies2,{=, >, <, !, ><},FloraMexico.OakGenus,inferred
+FloraChina.OakGenus,{=, >, <, !, ><},FloraMexico.MexicanOakSpecies1,inferred
+FloraChina.OakGenus,{=, >, <, !, ><},FloraMexico.MexicanOakSpecies2,inferred
+FloraChina.OakGenus,{=, >, <, !, ><},FloraMexico.OakGenus,inferred

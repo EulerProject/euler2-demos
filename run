@@ -72,7 +72,6 @@ def execute(commands, example, articulations, reasoner, key, value):
     with open(os.path.join(output, '%s.stdout' % key), 'w+') as out:
         with open(os.path.join(output, '%s.stderr' % key), 'w+') as err:
             with open(os.path.join(output, '%s.returncode' % key), 'w+') as rc:
-                print value
                 p = Popen(value, stdout=PIPE, stderr=PIPE, shell=True)
                 stdout, stderr = p.communicate()
                 print stdout
