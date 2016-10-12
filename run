@@ -48,9 +48,10 @@ class OrderedDictYAMLLoader(yaml.Loader):
         return mapping
 
 class Command:
-    def __init__(self, key, value):
-        self.key = key
-        self.value = value
+    def __init__(self, label, command, doc):
+        self.label = label
+        self.command = command
+        self.doc = doc
 
 def get_root():
     return os.path.abspath(os.path.dirname(__file__))
@@ -67,20 +68,20 @@ def get_output(commands, example, articulations, reasoner):
 def get_commands_file_path(commands):
     return get_root() + '/commands/{commands}'.format(commands = commands)
 
-def execute(commands, example, articulations, reasoner, key, value):
+def execute(commands, example, articulations, reasoner, label, command):
     print 'start @ ' + str(datetime.now())
-    print 'run {key} effectively with: {value}'.format(key=key, value=value)
-    #output = get_output(commands, example, articulations, reasoner)
-    #with open(os.path.join(output, '%s.stdout' % key), 'w+') as out:
-    #    with open(os.path.join(output, '%s.stderr' % key), 'w+') as err:
-    #        with open(os.path.join(output, '%s.returncode' % key), 'w+') as rc:
-    #            p = Popen(value, stdout=PIPE, stderr=PIPE, shell=True)
-    #            stdout, stderr = p.communicate()
-    #            print stdout
-    #            print stderr
-#	        out.write(stdout)
- #               err.write(stderr)
-  #              rc.write('%s' % p.returncode)
+    print 'run {label} effectively with: {command}'.format(label=label, command=command)
+    output = get_output(commands, example, articulations, reasoner)
+    with open(os.path.join(output, '%s.stdout' % label), 'w+') as out:
+        with open(os.path.join(output, '%s.stderr' % label), 'w+') as err:
+            with open(os.path.join(output, '%s.returncode' % label), 'w+') as rc:
+                p = Popen(command, stdout=PIPE, stderr=PIPE, shell=True)
+                stdout, stderr = p.communicate()
+                print stdout
+                print stderr
+	        out.write(stdout)
+                err.write(stderr)
+                rc.write('%s' % p.returncode)
     print 'complete @ ' + str(datetime.now())
     
             
@@ -94,10 +95,16 @@ def run_clean(commands, example, articulations, reasoner):
         if os.path.isdir(path):
             shutil.rmtree(path)
 
+def create_command(k, v):
+   if type(v) is OrderedDict:
+      return Command(k, v['command'], v['doc'])
+   else:
+      return Command(k, v, '')
+
 def get_all_commands(doc):
     result = []
     for k, v in doc.items():
-        result.append(Command(k, v))
+       result.append(create_command(k, v))
     return result
 
 def get_commands_sequence(doc, start, end):
@@ -105,9 +112,9 @@ def get_commands_sequence(doc, start, end):
     inside = False
     for k, v in doc.items():
         if inside:
-            result.append(Command(k, v))
+            result.append(create_command(k, v))
         if k == start:
-            result.append(Command(k, v))
+            result.append(create_command(k, v))
             inside = True
         if k == end:
             inside = False
@@ -116,7 +123,7 @@ def get_commands_sequence(doc, start, end):
 def get_commands_list(doc, commands):
     result = []
     for command in commands:
-        result.append(Command(command, doc[command]))
+        result.append(create_command(command, doc[command]))
     return result
 
 @click.command()
@@ -134,7 +141,7 @@ def run(commands, example, articulations, target, reasoner):
         os.makedirs(output)
     with open(commands_file_path, 'r') as commands_file:
         doc = yaml.load(commands_file, OrderedDictYAMLLoader)
-	with open(os.path.join(output, 'executed_commands'), 'w+') as cmds_file:
+        with open(os.path.join(output, 'executed_commands'), 'w+') as cmds_file:
    	    cmds = []
             if target == 'all':
                 cmds = get_all_commands(doc)
@@ -146,9 +153,10 @@ def run(commands, example, articulations, target, reasoner):
                 cmds = get_commands_sequence(doc, target.split('-')[0], target.split('-')[-1])
             if cmds:
 	        for cmd in cmds:
-		    print 'run {key} with: {value}'.format(key=cmd.key, value=cmd.value)
-                    value = cmd.value
-		    show_command = cmd.value
+		    print 'run {label} with: {command}'.format(label=cmd.label, command=cmd.command)
+		    print 'for more see: {doc}'.format(doc=cmd.doc)
+                    value = cmd.command
+		    show_command = cmd.command
                     value = value.replace('{.}', root)
 		    show_command = show_command.replace('{.}', '.')
                     value = value.replace('{commands}', commands)
@@ -160,8 +168,8 @@ def run(commands, example, articulations, target, reasoner):
                     value = value.replace('{reasoner}', reasoner)
                     show_command = show_command.replace('{reasoner}', reasoner)
                     cmds_file.write(show_command + '\n')
-		    execute(commands, example, articulations, reasoner, cmd.key, value)
-    clean_outputs(commands, example, articulations, reasoner)
+		    execute(commands, example, articulations, reasoner, cmd.label, value)
+    clean_outputs(commands, example, articulations, reasoner)  
 
 def clean_outputs(commands, example, articulations, reasoner):
     root = get_root()

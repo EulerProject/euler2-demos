@@ -1,13 +1,19 @@
 input_check:
- euler2 check {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt
+ command: euler2 check {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt
+ doc: https://github.com/EulerProject/EulerX#2-check-the-input-file
 consistency_check:
- euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt --consistency -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt --consistency -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
+ doc: ?
 input_viusalization:
- euler2 show iv {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner}
+ command: euler2 show iv {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner}
+ doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#consistent-example-abstract4
 align:
- euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
+ doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 show_possible_worlds:
- euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} pw
+ command: euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} pw
+ doc: https://github.com/EulerProject/EulerX#5-show-the-possible-worlds
 show_summary_view:
- euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} sv
+ command: euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} sv
+ doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#the-consistent-example-example-abstract4
  
