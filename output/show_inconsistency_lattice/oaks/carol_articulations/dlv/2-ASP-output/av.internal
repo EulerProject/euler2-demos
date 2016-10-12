@@ -1,0 +1,8 @@
+firstTName = 'FloraChina'
+secondTName = 'FloraMexico'
+thirdTName = ''
+fourthTName = ''
+fifthTName = ''
+allRcgEdgesDict = {}
+numOfPws = 3
+avFlag = False
