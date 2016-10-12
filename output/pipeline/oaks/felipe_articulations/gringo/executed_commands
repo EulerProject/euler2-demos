@@ -1,6 +1,0 @@
-euler2 check ./examples/oaks/taxonomies.txt ./examples/oaks/felipe_articulations/articulations.txt
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/felipe_articulations/articulations.txt --consistency -o ./output/pipeline/oaks/felipe_articulations/gringo -r gringo
-euler2 show iv ./examples/oaks/taxonomies.txt ./examples/oaks/felipe_articulations/articulations.txt -o ./output/pipeline/oaks/felipe_articulations/gringo
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/felipe_articulations/articulations.txt -o ./output/pipeline/oaks/felipe_articulations/gringo -r gringo
-euler2 show -o ./output/pipeline/oaks/felipe_articulations/gringo pw
-euler2 show -o ./output/pipeline/oaks/felipe_articulations/gringo sv

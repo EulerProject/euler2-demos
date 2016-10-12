@@ -1,2 +1,0 @@
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/alice_articulations/articulations.txt -o ./output/show_inconsistency_lattice/oaks/alice_articulations/gringo -r gringo
-euler2 show -o ./output/show_inconsistency_lattice/oaks/alice_articulations inconLat

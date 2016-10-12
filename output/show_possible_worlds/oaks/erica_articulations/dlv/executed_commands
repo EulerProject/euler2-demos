@@ -1,2 +1,0 @@
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/erica_articulations/articulations.txt -o ./output/show_possible_worlds/oaks/erica_articulations/dlv -r dlv
-euler2 show -o ./output/show_possible_worlds/oaks/erica_articulations/dlv pw
