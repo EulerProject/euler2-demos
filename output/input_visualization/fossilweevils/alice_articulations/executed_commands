@@ -1,0 +1,1 @@
+euler2 show iv ./examples/fossilweevils/taxonomies.txt ./examples/fossilweevils/alice_articulations/articulations.txt -o ./output/input_visualization/fossilweevils/alice_articulations

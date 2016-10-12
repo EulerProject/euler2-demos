@@ -1,0 +1,1 @@
+euler2 align ./examples/fossilweevils/taxonomies.txt ./examples/fossilweevils/alice_articulations/articulations.txt --consistency -o ./output/consistency_check/fossilweevils/alice_articulations/dlv -r dlv

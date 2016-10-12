@@ -9,6 +9,7 @@ import yaml.constructor
 from collections import OrderedDict
 import re
 import click
+from datetime import datetime
 
 class OrderedDictYAMLLoader(yaml.Loader):
     """
@@ -67,18 +68,21 @@ def get_commands_file_path(commands):
     return get_root() + '/commands/{commands}'.format(commands = commands)
 
 def execute(commands, example, articulations, reasoner, key, value):
+    print 'start @ ' + str(datetime.now())
     print 'run {key} effectively with: {value}'.format(key=key, value=value)
-    output = get_output(commands, example, articulations, reasoner)
-    with open(os.path.join(output, '%s.stdout' % key), 'w+') as out:
-        with open(os.path.join(output, '%s.stderr' % key), 'w+') as err:
-            with open(os.path.join(output, '%s.returncode' % key), 'w+') as rc:
-                p = Popen(value, stdout=PIPE, stderr=PIPE, shell=True)
-                stdout, stderr = p.communicate()
-                print stdout
-                print stderr
-	        out.write(stdout)
-                err.write(stderr)
-                rc.write('%s' % p.returncode)
+    #output = get_output(commands, example, articulations, reasoner)
+    #with open(os.path.join(output, '%s.stdout' % key), 'w+') as out:
+    #    with open(os.path.join(output, '%s.stderr' % key), 'w+') as err:
+    #        with open(os.path.join(output, '%s.returncode' % key), 'w+') as rc:
+    #            p = Popen(value, stdout=PIPE, stderr=PIPE, shell=True)
+    #            stdout, stderr = p.communicate()
+    #            print stdout
+    #            print stderr
+#	        out.write(stdout)
+ #               err.write(stderr)
+  #              rc.write('%s' % p.returncode)
+    print 'complete @ ' + str(datetime.now())
+    
             
 def run_clean(commands, example, articulations, reasoner):
     output = get_output(commands, example, articulations, reasoner)

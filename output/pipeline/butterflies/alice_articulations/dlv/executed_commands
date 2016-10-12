@@ -1,0 +1,6 @@
+euler2 check ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt
+euler2 align ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt --consistency -o ./output/pipeline/butterflies/alice_articulations/dlv -r dlv
+euler2 show iv ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt -o ./output/pipeline/butterflies/alice_articulations/dlv
+euler2 align ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt -o ./output/pipeline/butterflies/alice_articulations/dlv -r dlv
+euler2 show -o ./output/pipeline/butterflies/alice_articulations/dlv pw
+euler2 show -o ./output/pipeline/butterflies/alice_articulations/dlv sv

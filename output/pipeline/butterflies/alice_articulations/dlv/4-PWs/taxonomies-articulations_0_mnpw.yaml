@@ -1,0 +1,52 @@
+1995.Amauris_damocles:
+  concept: Amauris_damocles
+  group: '1995'
+  name: test3
+1995.Amauris_damocles_subsp_hyalites:
+  concept: Amauris_damocles_subsp_hyalites
+  group: '1995'
+  name: test49
+1997.Amauris_hyalites:
+  concept: Amauris_hyalites
+  group: '1997'
+  name: test18
+1997.Amauris_hyalites_subsp_hyalites:
+  concept: Amauris_hyalites_subsp_hyalites
+  group: '1997'
+  name: test96
+comb.1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles:
+  concept: 1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles
+  group: comb
+  name: test89
+comb.1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis:
+  concept: 1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis
+  group: comb
+  name: test57
+1995.Amauris_damocles_subsp_hyalites_1995.Amauris_damocles:
+  label: input
+  s: 1995.Amauris_damocles_subsp_hyalites
+  t: 1995.Amauris_damocles
+1995.Amauris_damocles_subsp_hyalites_1997.Amauris_hyalites:
+  label: overlaps
+  s: 1995.Amauris_damocles_subsp_hyalites
+  t: 1997.Amauris_hyalites
+1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles_1995.Amauris_damocles:
+  label: input
+  s: 1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles
+  t: 1995.Amauris_damocles
+1997.Amauris_hyalites_1995.Amauris_damocles:
+  label: inferred
+  s: 1997.Amauris_hyalites
+  t: 1995.Amauris_damocles
+1997.Amauris_hyalites_subsp_hyalites_1995.Amauris_damocles_subsp_hyalites:
+  label: input
+  s: 1997.Amauris_hyalites_subsp_hyalites
+  t: 1995.Amauris_damocles_subsp_hyalites
+1997.Amauris_hyalites_subsp_hyalites_1997.Amauris_hyalites:
+  label: input
+  s: 1997.Amauris_hyalites_subsp_hyalites
+  t: 1997.Amauris_hyalites
+1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis_1997.Amauris_hyalites:
+  label: input
+  s: 1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis
+  t: 1997.Amauris_hyalites

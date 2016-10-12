@@ -1,0 +1,1 @@
+euler2 align ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt -o ./output/repair_hst/butterflies/alice_articulations/dlv --repair=HST -r dlv

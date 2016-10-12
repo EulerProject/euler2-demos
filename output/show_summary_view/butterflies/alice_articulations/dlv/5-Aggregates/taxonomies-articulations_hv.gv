@@ -1,0 +1,18 @@
+digraph {
+
+rankdir = RL
+
+"1995.Amauris_damocles" [shape=octagon style="filled" fillcolor="#FFFFCC"]
+"1995.Amauris_damocles_subsp_hyalites" [shape=octagon style="filled" fillcolor="#FFFFCC"]
+"1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles" [shape=box style="filled,rounded" fillcolor="#EEEEEE"]
+"1997.Amauris_hyalites" [shape=box style="filled" fillcolor="#CCFFCC"]
+"1997.Amauris_hyalites_subsp_hyalites" [shape=box style="filled" fillcolor="#CCFFCC"]
+"1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis" [shape=box style="filled,rounded" fillcolor="#EEEEEE"]
+"1995.Amauris_damocles_subsp_hyalites" -> "1995.Amauris_damocles" [style=filled,label=1,color="#761212"];
+"1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles" -> "1995.Amauris_damocles" [style=filled,label=1,color="#761212"];
+"1997.Amauris_hyalites" -> "1995.Amauris_damocles" [style=filled,label=1,color="#761212"];
+"1997.Amauris_hyalites_subsp_hyalites" -> "1995.Amauris_damocles_subsp_hyalites" [style=filled,label=1,color="#761212"];
+"1997.Amauris_hyalites_subsp_hyalites" -> "1997.Amauris_hyalites" [style=filled,label=1,color="#761212"];
+"1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis" -> "1995.Amauris_damocles" [style=filled,label=1,color="#761212"];
+"1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis" -> "1997.Amauris_hyalites" [style=filled,label=1,color="#761212"];
+}

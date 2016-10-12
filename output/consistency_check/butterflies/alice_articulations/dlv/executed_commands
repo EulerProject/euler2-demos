@@ -1,0 +1,1 @@
+euler2 align ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt --consistency -o ./output/consistency_check/butterflies/alice_articulations/dlv -r dlv

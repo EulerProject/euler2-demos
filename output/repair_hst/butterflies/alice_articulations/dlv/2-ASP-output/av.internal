@@ -1,0 +1,8 @@
+firstTName = '1997'
+secondTName = '1995'
+thirdTName = ''
+fourthTName = ''
+fifthTName = ''
+allRcgEdgesDict = {}
+numOfPws = 1
+avFlag = False
