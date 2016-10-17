@@ -1,2 +1,2 @@
 euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/alice_articulations/articulations.txt -o ./output/show_inconsistency_lattice/oaks/alice_articulations/dlv -r dlv
-euler2 show -o ./output/show_inconsistency_lattice/oaks/alice_articulations inconLat --svg
+euler2 show -o ./output/show_inconsistency_lattice/oaks/alice_articulations/dlv inconLat --svg

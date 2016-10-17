@@ -1,2 +1,2 @@
 euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/bob_articulations/articulations.txt -o ./output/show_inconsistency_lattice/oaks/bob_articulations/gringo -r gringo
-euler2 show -o ./output/show_inconsistency_lattice/oaks/bob_articulations inconLat --svg
+euler2 show -o ./output/show_inconsistency_lattice/oaks/bob_articulations/gringo inconLat --svg
