@@ -1,6 +1,6 @@
 euler2 check ./examples/fossilweevils/taxonomies.txt ./examples/fossilweevils/alice_articulations/articulations.txt
 euler2 align ./examples/fossilweevils/taxonomies.txt ./examples/fossilweevils/alice_articulations/articulations.txt --consistency -o ./output/pipeline/fossilweevils/alice_articulations/gringo -r gringo
-euler2 show iv ./examples/fossilweevils/taxonomies.txt ./examples/fossilweevils/alice_articulations/articulations.txt -o ./output/pipeline/fossilweevils/alice_articulations/gringo
+euler2 show iv ./examples/fossilweevils/taxonomies.txt ./examples/fossilweevils/alice_articulations/articulations.txt -o ./output/pipeline/fossilweevils/alice_articulations/gringo --svg
 euler2 align ./examples/fossilweevils/taxonomies.txt ./examples/fossilweevils/alice_articulations/articulations.txt -o ./output/pipeline/fossilweevils/alice_articulations/gringo -r gringo
-euler2 show -o ./output/pipeline/fossilweevils/alice_articulations/gringo pw
-euler2 show -o ./output/pipeline/fossilweevils/alice_articulations/gringo sv
+euler2 show -o ./output/pipeline/fossilweevils/alice_articulations/gringo pw --svg
+euler2 show -o ./output/pipeline/fossilweevils/alice_articulations/gringo sv --svg

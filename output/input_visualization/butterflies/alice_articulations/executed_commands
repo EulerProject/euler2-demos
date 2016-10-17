@@ -1,1 +1,1 @@
-euler2 show iv ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt -o ./output/input_visualization/butterflies/alice_articulations
+euler2 show iv ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt -o ./output/input_visualization/butterflies/alice_articulations --svg

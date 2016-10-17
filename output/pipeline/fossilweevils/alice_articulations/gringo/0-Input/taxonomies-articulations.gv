@@ -1,0 +1,292 @@
+digraph{
+rankdir=LR
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=box style=filled fillcolor="#FFCCCC"] 
+"1999.Diaprepes_esuriens"
+"1999.Diaprepes_famelicus"
+"1999.Diaprepes_sommeri"
+"1999.Diaprepes_excavatus"
+"1999.Diaprepes_elegantulus"
+"1999.Diaprepes"
+"1999.Diaprepes_balloui"
+"1999.Diaprepes_comma"
+"1999.Diaprepes_marginatus"
+"1999.Diaprepes_albofasciatus"
+"1999.Diaprepes_barbadensis"
+"1999.Diaprepes_doublierii"
+"1999.Diaprepes_rufescens"
+"1999.Diaprepes_spengleri"
+"1999.Diaprepes_maugei"
+"1999.Diaprepes_pulverulentus"
+"1999.Diaprepes_abbreviatus"
+"1999.Diaprepes_variegatus"
+"1999.Diaprepes_reticulatus"
+"1999.Diaprepes_boxi"
+"1999.Diaprepes_revestitus"
+"1999.Diaprepes_rohrii"
+"1999.Diaprepes_glaucus"
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=box style=filled fillcolor="#CCFFCC"] 
+"2016.Diaprepes_anticus"
+"2016.Diaprepes"
+"2016.nc_Diaprepes"
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=box style=filled fillcolor="#CCCCFF"] 
+"2001.Diaprepes_comma"
+"2001.Diaprepes_famelicus"
+"2001.Diaprepes_rufescens"
+"2001.Diaprepes_boxi"
+"2001.Diaprepes"
+"2001.Diaprepes_balloui"
+"2001.Diaprepes_maugei"
+"2001.Diaprepes_reticulatus"
+"2001.Diaprepes_variegatus"
+"2001.Diaprepes_marginatus"
+"2001.Diaprepes_abbreviatus"
+"2001.Diaprepes_rohrii"
+"2001.Diaprepes_excavatus"
+"2001.Diaprepes_revestitus"
+"2001.Diaprepes_sommeri"
+"2001.Diaprepes_glaucus"
+"2001.Diaprepes_doublierii"
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=box style=filled fillcolor="#CCFFFF"] 
+"1982.Diaprepes_rufescens"
+"1982.Diaprepes_sommeri"
+"1982.Diaprepes_balloui"
+"1982.Diaprepes_maugei"
+"1982.Diaprepes"
+"1982.Diaprepes_spengleri"
+"1982.Diaprepes_boxi"
+"1982.Diaprepes_pulverulentus"
+"1982.Diaprepes_abbreviatus"
+"1982.Diaprepes_marginatus"
+"1982.Diaprepes_doublierii"
+"1982.Diaprepes_reticulatus"
+"1982.Diaprepes_excavatus"
+"1982.Diaprepes_albofasciatus"
+"1982.Diaprepes_rohrii"
+"1982.Diaprepes_variegatus"
+"1982.Diaprepes_glaucus"
+"1982.Diaprepes_viridans"
+"1982.Diaprepes_revestitus"
+"1982.Diaprepes_famelicus"
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=octagon style=filled fillcolor="#FFFFCC"] 
+"2012.nc_Diaprepes"
+"2012.Diaprepes_famelicus"
+"2012.Diaprepes_comma"
+"2012.Diaprepes_rohrii"
+"2012.Diaprepes"
+"2012.Diaprepes_marginicollis"
+"2012.Diaprepes_doublierii"
+"2012.Diaprepes_maugei"
+"2012.Diaprepes_abbreviatus"
+"2012.Diaprepes_balloui"
+edge[style=solid color="#000000" constraint=true penwidth=1]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+"1982.Diaprepes_variegatus" -> "1982.Diaprepes"
+"1982.Diaprepes_reticulatus" -> "1982.Diaprepes"
+"1982.Diaprepes_excavatus" -> "1982.Diaprepes"
+"1982.Diaprepes_spengleri" -> "1982.Diaprepes"
+"1982.Diaprepes_marginatus" -> "1982.Diaprepes"
+"1982.Diaprepes_balloui" -> "1982.Diaprepes"
+"1982.Diaprepes_viridans" -> "1982.Diaprepes"
+"1982.Diaprepes_pulverulentus" -> "1982.Diaprepes"
+"1982.Diaprepes_boxi" -> "1982.Diaprepes"
+"1982.Diaprepes_albofasciatus" -> "1982.Diaprepes"
+"1982.Diaprepes_glaucus" -> "1982.Diaprepes"
+"1982.Diaprepes_maugei" -> "1982.Diaprepes"
+"1982.Diaprepes_abbreviatus" -> "1982.Diaprepes"
+"1982.Diaprepes_famelicus" -> "1982.Diaprepes"
+"1982.Diaprepes_sommeri" -> "1982.Diaprepes"
+"1982.Diaprepes_revestitus" -> "1982.Diaprepes"
+"1982.Diaprepes_doublierii" -> "1982.Diaprepes"
+"1982.Diaprepes_rufescens" -> "1982.Diaprepes"
+"1982.Diaprepes_rohrii" -> "1982.Diaprepes"
+edge[style=solid color="#000000" constraint=true penwidth=1]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+"1999.Diaprepes" -> "1999.Diaprepes_variegatus" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_marginatus" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_boxi" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_elegantulus" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_rohrii" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_barbadensis" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_revestitus" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_maugei" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_sommeri" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_famelicus" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_doublierii" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_glaucus" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_albofasciatus" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_pulverulentus" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_spengleri" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_abbreviatus" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_esuriens" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_balloui" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_rufescens" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_comma" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_reticulatus" [dir=back]
+"1999.Diaprepes" -> "1999.Diaprepes_excavatus" [dir=back]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+"2001.Diaprepes" -> "2001.Diaprepes_abbreviatus" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_revestitus" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_doublierii" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_maugei" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_marginatus" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_rohrii" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_famelicus" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_reticulatus" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_sommeri" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_excavatus" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_boxi" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_variegatus" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_glaucus" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_balloui" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_comma" [dir=back]
+"2001.Diaprepes" -> "2001.Diaprepes_rufescens" [dir=back]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+"2016.Diaprepes" -> "2016.Diaprepes_anticus" [dir=back]
+"2016.Diaprepes" -> "2016.nc_Diaprepes" [dir=back]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+edge[style=dotted color="#AA00FF" constraint=true penwidth=3]
+"2001.Diaprepes_marginatus" -> "1999.Diaprepes_marginatus" [label="=="]
+"1999.Diaprepes_albofasciatus" -> "1982.Diaprepes_albofasciatus" [label="=="]
+"2001.Diaprepes" -> "1999.Diaprepes_albofasciatus" [label="!"]
+"2012.nc_Diaprepes" -> "2001.Diaprepes_revestitus" [label=">"]
+"2001.Diaprepes_famelicus" -> "1999.Diaprepes_barbadensis" [label=">"]
+"1999.Diaprepes_comma" -> "1982.Diaprepes_doublierii" [label="<"]
+"2012.nc_Diaprepes" -> "2001.Diaprepes" [label="<"]
+"1999.Diaprepes_esuriens" -> "1982.Diaprepes_famelicus" [label="<"]
+"1999.Diaprepes_sommeri" -> "1982.Diaprepes_sommeri" [label="=="]
+"1999.Diaprepes_elegantulus" -> "1982.Diaprepes_famelicus" [label="<"]
+"2012.Diaprepes_maugei" -> "2001.Diaprepes_maugei" [label="=="]
+"2001.Diaprepes_sommeri" -> "1999.Diaprepes_sommeri" [label="=="]
+"2012.Diaprepes_abbreviatus" -> "2001.Diaprepes_abbreviatus" [label="=="]
+"2016.nc_Diaprepes" -> "2012.Diaprepes" [label="=="]
+"1999.Diaprepes_rufescens" -> "1982.Diaprepes_rufescens" [label="=="]
+"1999.Diaprepes_marginatus" -> "1982.Diaprepes_marginatus" [label="=="]
+"2001.Diaprepes_glaucus" -> "1999.Diaprepes_glaucus" [label="=="]
+"2001.Diaprepes_abbreviatus" -> "1999.Diaprepes_abbreviatus" [label=">"]
+"2001.Diaprepes_rufescens" -> "1999.Diaprepes_rufescens" [label="=="]
+"2001.Diaprepes_balloui" -> "1999.Diaprepes_balloui" [label="=="]
+"2016.Diaprepes" -> "1982.Diaprepes_viridans" [label="!"]
+"1999.Diaprepes_doublierii" -> "1982.Diaprepes_doublierii" [label="<"]
+"2012.Diaprepes_marginicollis" -> "1999.Diaprepes" [label="!"]
+"2001.Diaprepes_famelicus" -> "1999.Diaprepes_esuriens" [label=">"]
+"1999.Diaprepes_abbreviatus" -> "1982.Diaprepes_abbreviatus" [label="=="]
+"2001.Diaprepes_variegatus" -> "1999.Diaprepes_variegatus" [label="=="]
+"2001.Diaprepes" -> "1999.Diaprepes" [label="<"]
+"2001.Diaprepes_excavatus" -> "1999.Diaprepes_excavatus" [label="=="]
+"1999.Diaprepes_excavatus" -> "1982.Diaprepes_excavatus" [label="=="]
+"2001.Diaprepes_famelicus" -> "1999.Diaprepes_famelicus" [label=">"]
+"2012.nc_Diaprepes" -> "2001.Diaprepes_variegatus" [label=">"]
+"2012.Diaprepes_comma" -> "2001.Diaprepes_comma" [label="=="]
+"2012.Diaprepes_doublierii" -> "2001.Diaprepes_doublierii" [label="=="]
+"1999.Diaprepes_rohrii" -> "1982.Diaprepes_rohrii" [label="=="]
+"2012.Diaprepes" -> "1982.Diaprepes_viridans" [label="!"]
+"2012.nc_Diaprepes" -> "2001.Diaprepes_marginatus" [label=">"]
+"1999.Diaprepes_variegatus" -> "1982.Diaprepes_variegatus" [label="=="]
+"2001.Diaprepes_revestitus" -> "1999.Diaprepes_revestitus" [label="=="]
+"2012.Diaprepes_rohrii" -> "2001.Diaprepes_rohrii" [label="=="]
+"2012.nc_Diaprepes" -> "2001.Diaprepes_excavatus" [label=">"]
+"2016.Diaprepes_anticus" -> "1999.Diaprepes" [label="!"]
+"2012.Diaprepes_balloui" -> "2001.Diaprepes_balloui" [label="=="]
+"1999.Diaprepes_revestitus" -> "1982.Diaprepes_revestitus" [label="=="]
+"2016.Diaprepes_anticus" -> "1982.Diaprepes" [label="!"]
+"1999.Diaprepes_boxi" -> "1982.Diaprepes_boxi" [label="=="]
+"1999.Diaprepes_maugei" -> "1982.Diaprepes_maugei" [label="=="]
+"2012.nc_Diaprepes" -> "2001.Diaprepes_boxi" [label=">"]
+"2001.Diaprepes_maugei" -> "1999.Diaprepes_maugei" [label="=="]
+"2012.Diaprepes_famelicus" -> "2001.Diaprepes_famelicus" [label="=="]
+"2001.Diaprepes" -> "1999.Diaprepes_pulverulentus" [label="!"]
+"2012.nc_Diaprepes" -> "2001.Diaprepes_rufescens" [label=">"]
+"2001.Diaprepes_doublierii" -> "1999.Diaprepes_doublierii" [label="=="]
+"2001.Diaprepes_rohrii" -> "1999.Diaprepes_rohrii" [label="=="]
+"2012.Diaprepes" -> "1999.Diaprepes_albofasciatus" [label="!"]
+"1999.Diaprepes_spengleri" -> "1982.Diaprepes_spengleri" [label="=="]
+"1999.Diaprepes_barbadensis" -> "1982.Diaprepes_famelicus" [label="<"]
+"2012.Diaprepes_marginicollis" -> "1982.Diaprepes" [label="!"]
+"2012.nc_Diaprepes" -> "2001.Diaprepes_reticulatus" [label=">"]
+"1999.Diaprepes_balloui" -> "1982.Diaprepes_balloui" [label="=="]
+"2001.Diaprepes_comma" -> "1999.Diaprepes_comma" [label="=="]
+"2016.Diaprepes" -> "1999.Diaprepes_albofasciatus" [label="!"]
+"2012.Diaprepes" -> "1999.Diaprepes_pulverulentus" [label="!"]
+"1999.Diaprepes_glaucus" -> "1982.Diaprepes_glaucus" [label="=="]
+"1999.Diaprepes" -> "1982.Diaprepes_famelicus" [label=">"]
+"2016.Diaprepes" -> "1999.Diaprepes_pulverulentus" [label="!"]
+"2001.Diaprepes_abbreviatus" -> "1999.Diaprepes_spengleri" [label=">"]
+"2012.nc_Diaprepes" -> "2001.Diaprepes_glaucus" [label=">"]
+"1999.Diaprepes_reticulatus" -> "1982.Diaprepes_reticulatus" [label="=="]
+"2001.Diaprepes_reticulatus" -> "1999.Diaprepes_reticulatus" [label="=="]
+"1999.Diaprepes_famelicus" -> "1982.Diaprepes_famelicus" [label="<"]
+"1999.Diaprepes_pulverulentus" -> "1982.Diaprepes_pulverulentus" [label="=="]
+"2001.Diaprepes_famelicus" -> "1999.Diaprepes_elegantulus" [label=">"]
+"2012.nc_Diaprepes" -> "2001.Diaprepes_sommeri" [label=">"]
+"1999.Diaprepes" -> "1982.Diaprepes_doublierii" [label=">"]
+"2001.Diaprepes_boxi" -> "1999.Diaprepes_boxi" [label="=="]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+"2012.Diaprepes" -> "2012.Diaprepes_balloui" [dir=back]
+"2012.Diaprepes" -> "2012.Diaprepes_doublierii" [dir=back]
+"2012.Diaprepes" -> "2012.Diaprepes_famelicus" [dir=back]
+"2012.Diaprepes" -> "2012.Diaprepes_rohrii" [dir=back]
+"2012.Diaprepes" -> "2012.Diaprepes_comma" [dir=back]
+"2012.Diaprepes" -> "2012.Diaprepes_abbreviatus" [dir=back]
+"2012.Diaprepes" -> "2012.Diaprepes_marginicollis" [dir=back]
+"2012.Diaprepes" -> "2012.Diaprepes_maugei" [dir=back]
+"2012.Diaprepes" -> "2012.nc_Diaprepes" [dir=back]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#FFCCCC">1999</TD> 
+ <TD>23</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC">2016</TD> 
+ <TD>3</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#CCCCFF">2001</TD> 
+ <TD>17</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#CCFFFF">1982</TD> 
+ <TD>20</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC">2012</TD> 
+ <TD>10</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">isa_1982</font></TD> 
+ <TD>19</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#000000">isa_1999</font></TD> 
+ <TD>22</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#000000">isa_2001</font></TD> 
+ <TD>16</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#000000">isa_2016</font></TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#AA00FF">Art.</font></TD> 
+ <TD>75</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#000000">isa_2012</font></TD> 
+ <TD>9</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}

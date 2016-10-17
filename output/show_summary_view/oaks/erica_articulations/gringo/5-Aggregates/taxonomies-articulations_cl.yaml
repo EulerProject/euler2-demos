@@ -1,23 +1,23 @@
 pw0:
   concept: pw0
   group: cluster
-  name: test69
+  name: test1
 pw1:
   concept: pw1
   group: cluster
-  name: test85
+  name: test42
 pw2:
   concept: pw2
   group: cluster
-  name: test35
+  name: test37
 pw3:
   concept: pw3
   group: cluster
-  name: test23
+  name: test64
 pw4:
   concept: pw4
   group: cluster
-  name: test76
+  name: test28
 pw1_pw0:
   dist: 2
   label: '2'

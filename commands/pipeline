@@ -3,17 +3,17 @@ input_check:
  doc: https://github.com/EulerProject/EulerX#2-check-the-input-file
 consistency_check:
  command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt --consistency -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
- doc: ?
+ doc: 
 input_viusalization:
- command: euler2 show iv {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner}
+ command: euler2 show iv {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} --svg
  doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#consistent-example-abstract4
 align:
  command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} -r {reasoner}
  doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 show_possible_worlds:
- command: euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} pw
+ command: euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} pw --svg
  doc: https://github.com/EulerProject/EulerX#5-show-the-possible-worlds
 show_summary_view:
- command: euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} sv
+ command: euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} sv --svg
  doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#the-consistent-example-example-abstract4
  

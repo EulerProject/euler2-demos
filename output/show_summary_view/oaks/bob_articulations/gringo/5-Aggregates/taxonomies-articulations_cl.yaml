@@ -1,19 +1,19 @@
 pw0:
   concept: pw0
   group: cluster
-  name: test93
+  name: test22
 pw1:
   concept: pw1
   group: cluster
-  name: test68
+  name: test17
 pw10:
   concept: pw10
   group: cluster
-  name: test63
+  name: test24
 pw11:
   concept: pw11
   group: cluster
-  name: test89
+  name: test24
 pw12:
   concept: pw12
   group: cluster
@@ -21,35 +21,35 @@ pw12:
 pw13:
   concept: pw13
   group: cluster
-  name: test80
+  name: test86
 pw14:
   concept: pw14
   group: cluster
-  name: test48
+  name: test86
 pw15:
   concept: pw15
   group: cluster
-  name: test73
+  name: test6
 pw16:
   concept: pw16
   group: cluster
-  name: test74
+  name: test90
 pw2:
   concept: pw2
   group: cluster
-  name: test54
+  name: test60
 pw3:
   concept: pw3
   group: cluster
-  name: test25
+  name: test32
 pw4:
   concept: pw4
   group: cluster
-  name: test22
+  name: test69
 pw5:
   concept: pw5
   group: cluster
-  name: test39
+  name: test9
 pw6:
   concept: pw6
   group: cluster
@@ -57,15 +57,15 @@ pw6:
 pw7:
   concept: pw7
   group: cluster
-  name: test7
+  name: test26
 pw8:
   concept: pw8
   group: cluster
-  name: test15
+  name: test93
 pw9:
   concept: pw9
   group: cluster
-  name: test67
+  name: test88
 pw10_pw2:
   dist: 3
   label: '3'

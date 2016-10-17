@@ -1,6 +1,6 @@
 euler2 check ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt
 euler2 align ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt --consistency -o ./output/pipeline/butterflies/alice_articulations/gringo -r gringo
-euler2 show iv ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt -o ./output/pipeline/butterflies/alice_articulations/gringo
+euler2 show iv ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt -o ./output/pipeline/butterflies/alice_articulations/gringo --svg
 euler2 align ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt -o ./output/pipeline/butterflies/alice_articulations/gringo -r gringo
-euler2 show -o ./output/pipeline/butterflies/alice_articulations/gringo pw
-euler2 show -o ./output/pipeline/butterflies/alice_articulations/gringo sv
+euler2 show -o ./output/pipeline/butterflies/alice_articulations/gringo pw --svg
+euler2 show -o ./output/pipeline/butterflies/alice_articulations/gringo sv --svg

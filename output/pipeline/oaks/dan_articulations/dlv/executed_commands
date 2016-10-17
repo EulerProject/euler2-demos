@@ -1,6 +1,6 @@
 euler2 check ./examples/oaks/taxonomies.txt ./examples/oaks/dan_articulations/articulations.txt
 euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/dan_articulations/articulations.txt --consistency -o ./output/pipeline/oaks/dan_articulations/dlv -r dlv
-euler2 show iv ./examples/oaks/taxonomies.txt ./examples/oaks/dan_articulations/articulations.txt -o ./output/pipeline/oaks/dan_articulations/dlv
+euler2 show iv ./examples/oaks/taxonomies.txt ./examples/oaks/dan_articulations/articulations.txt -o ./output/pipeline/oaks/dan_articulations/dlv --svg
 euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/dan_articulations/articulations.txt -o ./output/pipeline/oaks/dan_articulations/dlv -r dlv
-euler2 show -o ./output/pipeline/oaks/dan_articulations/dlv pw
-euler2 show -o ./output/pipeline/oaks/dan_articulations/dlv sv
+euler2 show -o ./output/pipeline/oaks/dan_articulations/dlv pw --svg
+euler2 show -o ./output/pipeline/oaks/dan_articulations/dlv sv --svg

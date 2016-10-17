@@ -1,3 +1,3 @@
 euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/alice_articulations/articulations.txt -o ./output/show_summary_view/oaks/alice_articulations/gringo -r gringo
-euler2 show -o ./output/show_summary_view/oaks/alice_articulations/gringo pw
-euler2 show -o ./output/show_summary_view/oaks/alice_articulations/gringo sv
+euler2 show -o ./output/show_summary_view/oaks/alice_articulations/gringo pw --svg
+euler2 show -o ./output/show_summary_view/oaks/alice_articulations/gringo sv --svg

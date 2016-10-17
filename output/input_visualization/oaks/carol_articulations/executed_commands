@@ -1,1 +1,1 @@
-euler2 show iv ./examples/oaks/taxonomies.txt ./examples/oaks/carol_articulations/articulations.txt -o ./output/input_visualization/oaks/carol_articulations
+euler2 show iv ./examples/oaks/taxonomies.txt ./examples/oaks/carol_articulations/articulations.txt -o ./output/input_visualization/oaks/carol_articulations --svg

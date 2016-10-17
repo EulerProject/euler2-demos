@@ -1,27 +1,27 @@
 1995.Amauris_damocles:
   concept: Amauris_damocles
   group: '1995'
-  name: test53
+  name: test27
 1995.Amauris_damocles_subsp_hyalites:
   concept: Amauris_damocles_subsp_hyalites
   group: '1995'
-  name: test16
+  name: test37
 1997.Amauris_hyalites:
   concept: Amauris_hyalites
   group: '1997'
-  name: test6
+  name: test17
 1997.Amauris_hyalites_subsp_hyalites:
   concept: Amauris_hyalites_subsp_hyalites
   group: '1997'
-  name: test7
+  name: test13
 comb.1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles:
   concept: 1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles
   group: comb
-  name: test82
+  name: test23
 comb.1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis:
   concept: 1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis
   group: comb
-  name: test34
+  name: test66
 1995.Amauris_damocles_subsp_hyalites_1995.Amauris_damocles:
   label: input
   s: 1995.Amauris_damocles_subsp_hyalites

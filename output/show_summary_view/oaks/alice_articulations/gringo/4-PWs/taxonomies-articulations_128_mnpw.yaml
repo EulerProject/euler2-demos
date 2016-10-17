@@ -5,19 +5,19 @@ FloraChina.ChineseOakSpecies1:
 FloraChina.OakGenus:
   concept: OakGenus
   group: FloraChina
-  name: test28
+  name: test65
 FloraMexico.MexicanOakSpecies1:
   concept: MexicanOakSpecies1
   group: FloraMexico
-  name: test61
+  name: test81
 FloraMexico.MexicanOakSpecies2:
   concept: MexicanOakSpecies2
   group: FloraMexico
-  name: test7
+  name: test100
 comb.FloraChina.ChineseOakSpecies2\nFloraMexico.OakGenus:
   concept: FloraChina.ChineseOakSpecies2\nFloraMexico.OakGenus
   group: comb
-  name: test38
+  name: test47
 FloraChina.ChineseOakSpecies1_FloraChina.OakGenus:
   label: input
   s: FloraChina.ChineseOakSpecies1
