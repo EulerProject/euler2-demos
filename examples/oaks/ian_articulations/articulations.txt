@@ -1,0 +1,6 @@
+articulation FloraChina-FloraMexico
+[FloraChina.OakGenus {includes is_included_in} FloraMexico.OakGenus]
+[FloraChina.ChineseOakSpecies1 rsum FloraMexico.MexicanOakSpecies1 FloraMexico.MexicanOakSpecies2]
+[FloraChina.ChineseOakSpecies1 includes FloraMexico.MexicanOakSpecies1]
+[FloraChina.ChineseOakSpecies1 includes FloraMexico.MexicanOakSpecies2]
+[FloraChina.ChineseOakSpecies2 equals FloraMexico.MexicanOakSpecies1]
