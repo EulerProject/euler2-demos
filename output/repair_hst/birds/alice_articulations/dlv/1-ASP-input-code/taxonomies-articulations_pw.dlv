@@ -1,0 +1,217 @@
+%%% Max Number of Euler Regions
+#maxint=15.
+
+%%% Euler Regions
+r(M):- #int(M),M>=1,M<=#maxint.
+
+%%% Concepts
+tax(t2015,0).
+concept2(A, B) :- concept(A,B,_).
+concept(c2015_Neoaves,0,0).
+concept2(c2015_Aves,0).
+concept(c2015_Galloanserae,0,1).
+concept(c2015_Palaeognathae,0,2).
+concept2(c2015_Gall_Neoa_Clade,0).
+tax(t2014,1).
+concept2(A, B) :- concept(A,B,_).
+concept2(c2014_Aves,1).
+concept(c2014_Neognathae,1,0).
+concept2(c2014_Paleognathae,1).
+concept(c2014_Tinamiformes,1,1).
+concept(c2014_Struthioniformes,1,2).
+
+%%% Euler Bit
+bit(M, 0, V):-r(M),M1=M/1, #mod(M1,4,V).
+bit(M, 1, V):-r(M),M1=M/4, #mod(M1,4,V).
+
+
+%%% Meaning of regions
+in(X, M) :- r(M),concept(X,T,N),N1=N+1,bit(M,T,N1).
+out(X, M) :- r(M),concept(X,T,N),N1=N+1,not bit(M,T,N1).
+in(X, M) :- r(M),concept2(X,_),not out(X, M).
+out(X, M) :- out3(X, M, _), ix.
+irs(M) :- in(X, M), out(X, M), r(M), concept2(X,_).
+
+%%% Constraints of regions.
+irs(X) :- ir(X, _).
+vrs(X) :- vr(X, _).
+vr(X, X) :- not irs(X), r(X).
+ir(X, X) :- not vrs(X), r(X), pw.
+ie(prod(A,B)) :- vr(X, A), ir(X, B), ix.
+:- vrs(X), irs(X), pw.
+
+%%% Inconsistency Explanation.
+ie(s(R, A, Y)) :- pie(R, A, Y), not cc(R, Y), ix.
+cc(R, Y) :- c(R, _, Y), ix.
+
+%%% Parent-Child relations
+%% ISA
+% c2015_Gall_Neoa_Clade isa c2015_Aves
+ir(X, r456) :- in(c2015_Gall_Neoa_Clade, X), out(c2015_Aves, X), pw.
+ir(X, prod(r456,R)) :- in(c2015_Gall_Neoa_Clade,X), out3(c2015_Aves, X, R), ix.
+:- #count {X : vrs(X), in(c2015_Gall_Neoa_Clade,X), in(c2015_Aves,X)} <= 0, pw.
+pie(r456, A, 1) :- ir(X, A), in(c2015_Gall_Neoa_Clade, X), in(c2015_Aves, X), ix.
+c(r456, A, 1) :- vr(X, A), in(c2015_Gall_Neoa_Clade, X), in(c2015_Aves, X), ix.
+
+% c2015_Palaeognathae isa c2015_Aves
+ir(X, r457) :- in(c2015_Palaeognathae, X), out(c2015_Aves, X), pw.
+ir(X, prod(r457,R)) :- in(c2015_Palaeognathae,X), out3(c2015_Aves, X, R), ix.
+:- #count {X : vrs(X), in(c2015_Palaeognathae,X), in(c2015_Aves,X)} <= 0, pw.
+pie(r457, A, 1) :- ir(X, A), in(c2015_Palaeognathae, X), in(c2015_Aves, X), ix.
+c(r457, A, 1) :- vr(X, A), in(c2015_Palaeognathae, X), in(c2015_Aves, X), ix.
+
+%% coverage
+out3(c2015_Aves, X, r458) :- out(c2015_Gall_Neoa_Clade, X), out(c2015_Palaeognathae, X), ix.
+out(c2015_Aves, X) :- out(c2015_Gall_Neoa_Clade, X), out(c2015_Palaeognathae, X), pw.
+%% sibling disjointness
+% c2015_Gall_Neoa_Clade ! c2015_Palaeognathae
+ir(X, r459) :- in(c2015_Gall_Neoa_Clade, X), in(c2015_Palaeognathae, X).
+:- #count {X : vrs(X), in(c2015_Gall_Neoa_Clade,X), out(c2015_Palaeognathae,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c2015_Gall_Neoa_Clade,X), in(c2015_Palaeognathae,X)} <= 0, pw.
+pie(r459, A, 1) :- ir(X, A), in(c2015_Gall_Neoa_Clade, X), out(c2015_Palaeognathae, X), ix.
+c(r459, A, 1) :- vr(X, A), in(c2015_Gall_Neoa_Clade, X), out(c2015_Palaeognathae, X), ix.
+pie(r459, A, 2) :- ir(X, A), out(c2015_Gall_Neoa_Clade, X), in(c2015_Palaeognathae, X), ix.
+c(r459, A, 2) :- vr(X, A), out(c2015_Gall_Neoa_Clade, X), in(c2015_Palaeognathae, X), ix.
+
+%% ISA
+% c2015_Galloanserae isa c2015_Gall_Neoa_Clade
+ir(X, r460) :- in(c2015_Galloanserae, X), out(c2015_Gall_Neoa_Clade, X), pw.
+ir(X, prod(r460,R)) :- in(c2015_Galloanserae,X), out3(c2015_Gall_Neoa_Clade, X, R), ix.
+:- #count {X : vrs(X), in(c2015_Galloanserae,X), in(c2015_Gall_Neoa_Clade,X)} <= 0, pw.
+pie(r460, A, 1) :- ir(X, A), in(c2015_Galloanserae, X), in(c2015_Gall_Neoa_Clade, X), ix.
+c(r460, A, 1) :- vr(X, A), in(c2015_Galloanserae, X), in(c2015_Gall_Neoa_Clade, X), ix.
+
+% c2015_Neoaves isa c2015_Gall_Neoa_Clade
+ir(X, r461) :- in(c2015_Neoaves, X), out(c2015_Gall_Neoa_Clade, X), pw.
+ir(X, prod(r461,R)) :- in(c2015_Neoaves,X), out3(c2015_Gall_Neoa_Clade, X, R), ix.
+:- #count {X : vrs(X), in(c2015_Neoaves,X), in(c2015_Gall_Neoa_Clade,X)} <= 0, pw.
+pie(r461, A, 1) :- ir(X, A), in(c2015_Neoaves, X), in(c2015_Gall_Neoa_Clade, X), ix.
+c(r461, A, 1) :- vr(X, A), in(c2015_Neoaves, X), in(c2015_Gall_Neoa_Clade, X), ix.
+
+%% coverage
+out3(c2015_Gall_Neoa_Clade, X, r462) :- out(c2015_Galloanserae, X), out(c2015_Neoaves, X), ix.
+out(c2015_Gall_Neoa_Clade, X) :- out(c2015_Galloanserae, X), out(c2015_Neoaves, X), pw.
+%% sibling disjointness
+% c2015_Galloanserae ! c2015_Neoaves
+ir(X, r463) :- in(c2015_Galloanserae, X), in(c2015_Neoaves, X).
+:- #count {X : vrs(X), in(c2015_Galloanserae,X), out(c2015_Neoaves,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c2015_Galloanserae,X), in(c2015_Neoaves,X)} <= 0, pw.
+pie(r463, A, 1) :- ir(X, A), in(c2015_Galloanserae, X), out(c2015_Neoaves, X), ix.
+c(r463, A, 1) :- vr(X, A), in(c2015_Galloanserae, X), out(c2015_Neoaves, X), ix.
+pie(r463, A, 2) :- ir(X, A), out(c2015_Galloanserae, X), in(c2015_Neoaves, X), ix.
+c(r463, A, 2) :- vr(X, A), out(c2015_Galloanserae, X), in(c2015_Neoaves, X), ix.
+
+%% ISA
+% c2014_Neognathae isa c2014_Aves
+ir(X, r464) :- in(c2014_Neognathae, X), out(c2014_Aves, X), pw.
+ir(X, prod(r464,R)) :- in(c2014_Neognathae,X), out3(c2014_Aves, X, R), ix.
+:- #count {X : vrs(X), in(c2014_Neognathae,X), in(c2014_Aves,X)} <= 0, pw.
+pie(r464, A, 1) :- ir(X, A), in(c2014_Neognathae, X), in(c2014_Aves, X), ix.
+c(r464, A, 1) :- vr(X, A), in(c2014_Neognathae, X), in(c2014_Aves, X), ix.
+
+% c2014_Paleognathae isa c2014_Aves
+ir(X, r465) :- in(c2014_Paleognathae, X), out(c2014_Aves, X), pw.
+ir(X, prod(r465,R)) :- in(c2014_Paleognathae,X), out3(c2014_Aves, X, R), ix.
+:- #count {X : vrs(X), in(c2014_Paleognathae,X), in(c2014_Aves,X)} <= 0, pw.
+pie(r465, A, 1) :- ir(X, A), in(c2014_Paleognathae, X), in(c2014_Aves, X), ix.
+c(r465, A, 1) :- vr(X, A), in(c2014_Paleognathae, X), in(c2014_Aves, X), ix.
+
+%% coverage
+out3(c2014_Aves, X, r466) :- out(c2014_Neognathae, X), out(c2014_Paleognathae, X), ix.
+out(c2014_Aves, X) :- out(c2014_Neognathae, X), out(c2014_Paleognathae, X), pw.
+%% sibling disjointness
+% c2014_Neognathae ! c2014_Paleognathae
+ir(X, r467) :- in(c2014_Neognathae, X), in(c2014_Paleognathae, X).
+:- #count {X : vrs(X), in(c2014_Neognathae,X), out(c2014_Paleognathae,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c2014_Neognathae,X), in(c2014_Paleognathae,X)} <= 0, pw.
+pie(r467, A, 1) :- ir(X, A), in(c2014_Neognathae, X), out(c2014_Paleognathae, X), ix.
+c(r467, A, 1) :- vr(X, A), in(c2014_Neognathae, X), out(c2014_Paleognathae, X), ix.
+pie(r467, A, 2) :- ir(X, A), out(c2014_Neognathae, X), in(c2014_Paleognathae, X), ix.
+c(r467, A, 2) :- vr(X, A), out(c2014_Neognathae, X), in(c2014_Paleognathae, X), ix.
+
+%% ISA
+% c2014_Struthioniformes isa c2014_Paleognathae
+ir(X, r468) :- in(c2014_Struthioniformes, X), out(c2014_Paleognathae, X), pw.
+ir(X, prod(r468,R)) :- in(c2014_Struthioniformes,X), out3(c2014_Paleognathae, X, R), ix.
+:- #count {X : vrs(X), in(c2014_Struthioniformes,X), in(c2014_Paleognathae,X)} <= 0, pw.
+pie(r468, A, 1) :- ir(X, A), in(c2014_Struthioniformes, X), in(c2014_Paleognathae, X), ix.
+c(r468, A, 1) :- vr(X, A), in(c2014_Struthioniformes, X), in(c2014_Paleognathae, X), ix.
+
+% c2014_Tinamiformes isa c2014_Paleognathae
+ir(X, r469) :- in(c2014_Tinamiformes, X), out(c2014_Paleognathae, X), pw.
+ir(X, prod(r469,R)) :- in(c2014_Tinamiformes,X), out3(c2014_Paleognathae, X, R), ix.
+:- #count {X : vrs(X), in(c2014_Tinamiformes,X), in(c2014_Paleognathae,X)} <= 0, pw.
+pie(r469, A, 1) :- ir(X, A), in(c2014_Tinamiformes, X), in(c2014_Paleognathae, X), ix.
+c(r469, A, 1) :- vr(X, A), in(c2014_Tinamiformes, X), in(c2014_Paleognathae, X), ix.
+
+%% coverage
+out3(c2014_Paleognathae, X, r470) :- out(c2014_Struthioniformes, X), out(c2014_Tinamiformes, X), ix.
+out(c2014_Paleognathae, X) :- out(c2014_Struthioniformes, X), out(c2014_Tinamiformes, X), pw.
+%% sibling disjointness
+% c2014_Struthioniformes ! c2014_Tinamiformes
+ir(X, r471) :- in(c2014_Struthioniformes, X), in(c2014_Tinamiformes, X).
+:- #count {X : vrs(X), in(c2014_Struthioniformes,X), out(c2014_Tinamiformes,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c2014_Struthioniformes,X), in(c2014_Tinamiformes,X)} <= 0, pw.
+pie(r471, A, 1) :- ir(X, A), in(c2014_Struthioniformes, X), out(c2014_Tinamiformes, X), ix.
+c(r471, A, 1) :- vr(X, A), in(c2014_Struthioniformes, X), out(c2014_Tinamiformes, X), ix.
+pie(r471, A, 2) :- ir(X, A), out(c2014_Struthioniformes, X), in(c2014_Tinamiformes, X), ix.
+c(r471, A, 2) :- vr(X, A), out(c2014_Struthioniformes, X), in(c2014_Tinamiformes, X), ix.
+
+
+%%% Articulations
+% 2015.Palaeognathae is_included_in 2014.Paleognathae
+:- #count {X : vrs(X), in(c2015_Palaeognathae,X), in(c2014_Paleognathae,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c2015_Palaeognathae,X), in(c2014_Paleognathae,X)} <= 0, pw.
+ir(X, r472) :- in(c2015_Palaeognathae,X), out(c2014_Paleognathae,X), pw.
+pie(r472, A, 1) :- ir(X, A), out(c2015_Palaeognathae, X), in(c2014_Paleognathae, X), ix.
+c(r472, A, 1) :- vr(X, A), out(c2015_Palaeognathae, X), in(c2014_Paleognathae, X), ix.
+
+pie(r472, A, 2) :- ir(X, A), in(c2015_Palaeognathae, X), in(c2014_Paleognathae, X), ix.
+c(r472, A, 2) :- vr(X, A), in(c2015_Palaeognathae, X), in(c2014_Paleognathae, X), ix.
+
+
+% 2015.Neoaves equals 2014.Tinamiformes
+ir(X, r473) :- out(c2015_Neoaves,X), in(c2014_Tinamiformes,X).
+ir(X, r473) :- in(c2015_Neoaves,X), out(c2014_Tinamiformes,X).
+ir(X, prod(r473,R)) :- out3(c2015_Neoaves, X, R), in(c2014_Tinamiformes,X), ix.
+ir(X, prod(r473,R)) :- in(c2015_Neoaves,X), out3(c2014_Tinamiformes, X, R), ix.
+:- #count {X : vrs(X), in(c2015_Neoaves,X), in(c2014_Tinamiformes,X)} <= 0, pw.
+pie(r473, A, 1) :- ir(X, A), in(c2015_Neoaves, X), in(c2014_Tinamiformes, X), ix.
+c(r473, A, 1) :- vr(X, A), in(c2015_Neoaves, X), in(c2014_Tinamiformes, X), ix.
+
+
+% 2015.Aves is_included_in 2014.Aves
+:- #count {X : vrs(X), in(c2015_Aves,X), in(c2014_Aves,X)} <= 0, pw.
+:- #count {X : vrs(X), out(c2015_Aves,X), in(c2014_Aves,X)} <= 0, pw.
+ir(X, r474) :- in(c2015_Aves,X), out(c2014_Aves,X), pw.
+pie(r474, A, 1) :- ir(X, A), out(c2015_Aves, X), in(c2014_Aves, X), ix.
+c(r474, A, 1) :- vr(X, A), out(c2015_Aves, X), in(c2014_Aves, X), ix.
+
+pie(r474, A, 2) :- ir(X, A), in(c2015_Aves, X), in(c2014_Aves, X), ix.
+c(r474, A, 2) :- vr(X, A), in(c2015_Aves, X), in(c2014_Aves, X), ix.
+
+
+%%% Decoding now
+:- rel(X, Y, "="), rel(X, Y, "<"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "="), rel(X, Y, ">"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "="), rel(X, Y, "><"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "="), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "<"), rel(X, Y, ">"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "<"), rel(X, Y, "><"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "<"), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, ">"), rel(X, Y, "><"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, ">"), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- rel(X, Y, "><"), rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), pw.
+:- not rel(X, Y, "="), not rel(X, Y, "<"), not rel(X, Y, ">"), not rel(X, Y, "><"), not rel(X, Y, "!"), concept2(X, N1), concept2(Y, N2), N1 < N2, not ncf(X), not ncf(Y), pw.
+
+rel(X, Y, "=") :- not hint(X, Y, 0), hint(X, Y, 1), not hint(X, Y, 2), pw.
+rel(X, Y, "<") :- not hint(X, Y, 0), hint(X, Y, 1), hint(X, Y, 2), pw.
+rel(X, Y, ">") :- hint(X, Y, 0), hint(X, Y, 1), not hint(X, Y, 2), pw.
+rel(X, Y, "><") :- hint(X, Y, 0), hint(X, Y, 1), hint(X, Y, 2), pw.
+rel(X, Y, "!") :- hint(X, Y, 0), not hint(X, Y, 1), hint(X, Y, 2), pw.
+
+
+hint(X, Y, 0) :- concept2(X, N1), concept2(Y, N2), N1 < N2, vrs(R), in(X, R), out(Y, R), not ncf(X), not ncf(Y), pw.
+hint(X, Y, 1) :- concept2(X, N1), concept2(Y, N2), N1 < N2, vrs(R), in(X, R), in(Y, R), not ncf(X), not ncf(Y), pw.
+hint(X, Y, 2) :- concept2(X, N1), concept2(Y, N2), N1 < N2, vrs(R), out(X, R), in(Y, R), not ncf(X), not ncf(Y), pw.
+

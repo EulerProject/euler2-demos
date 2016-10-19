@@ -1,0 +1,16 @@
+digraph {
+
+rankdir = RL
+
+"FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies1" [shape=box style="filled,rounded" fillcolor="#EEEEEE"]
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies2" [shape=box style="filled,rounded" fillcolor="#EEEEEE"]
+"FloraChina.OakGenus\nFloraMexico.OakGenus" [shape=box style="filled,rounded" fillcolor="#EEEEEE"]
+"FloraChina.ChineseOakSpecies1\n\nFloraMexico.MexicanOakSpecies1\n\n" [shape=oval style="filled,rounded" fillcolor="#00BFFF"]
+"FloraChina.OakGenus\n\nFloraMexico.OakGenus\n\n" [shape=oval style="filled,rounded" fillcolor="#00BFFF"]
+"FloraChina.ChineseOakSpecies1\n\nFloraMexico.MexicanOakSpecies1\n\n" -> "FloraChina.OakGenus\n\nFloraMexico.OakGenus\n\n" [style=filled,label=2,color="#53442c"];
+"FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies1" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [style=filled,label=1,color="#2f7747"];
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies2" -> "FloraChina.OakGenus\n\nFloraMexico.OakGenus\n\n" [style=filled,label=2,color="#53442c"];
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies2" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [style=filled,label=1,color="#2f7747"];
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies2" -> "FloraChina.OakGenus\n\nFloraMexico.OakGenus\n\n" [style=filled,label=2,color="#53442c"];
+"FloraChina.ChineseOakSpecies1\n\nFloraMexico.MexicanOakSpecies1\n\n" -> "FloraChina.OakGenus\n\nFloraMexico.OakGenus\n\n" [style=filled,label=2,color="#53442c"];
+}
