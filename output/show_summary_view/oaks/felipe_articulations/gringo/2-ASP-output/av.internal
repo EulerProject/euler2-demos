@@ -1,0 +1,11 @@
+firstTName = 'FloraChina'
+secondTName = 'FloraMexico'
+thirdTName = ''
+fourthTName = ''
+fifthTName = ''
+allRcgEdgesDict = {}
+numOfPws = 1
+avFlag = False
+allRcgNodesDict = {'FloraMexico.MexicanOakSpecies1': {'concept': 'MexicanOakSpecies1', 'group': 'FloraMexico', 'name': 'test28'}, 'FloraMexico.MexicanOakSpecies2': {'concept': 'MexicanOakSpecies2', 'group': 'FloraMexico', 'name': 'test63'}, 'FloraChina.ChineseOakSpecies1': {'concept': 'ChineseOakSpecies1', 'group': 'FloraChina', 'name': 'test22'}, 'FloraChina.ChineseOakSpecies2': {'concept': 'ChineseOakSpecies2', 'group': 'FloraChina', 'name': 'test32'}, 'FloraMexico.OakGenus': {'concept': 'OakGenus', 'group': 'FloraMexico', 'name': 'test13'}, 'FloraChina.OakGenus': {'concept': 'OakGenus', 'group': 'FloraChina', 'name': 'test53'}}
+trlist = [['FloraChina.ChineseOakSpecies2', 'FloraChina.OakGenus', 0], ['FloraMexico.MexicanOakSpecies1', 'FloraMexico.OakGenus', 0], ['FloraMexico.MexicanOakSpecies2', 'FloraMexico.OakGenus', 0], ['FloraMexico.OakGenus', 'FloraChina.OakGenus', 0], ['FloraChina.ChineseOakSpecies1', 'FloraMexico.MexicanOakSpecies1', 0], ['FloraMexico.MexicanOakSpecies2', 'FloraChina.ChineseOakSpecies2', 1], ['FloraChina.ChineseOakSpecies1', 'FloraChina.OakGenus', 2]]
+avFlag = True

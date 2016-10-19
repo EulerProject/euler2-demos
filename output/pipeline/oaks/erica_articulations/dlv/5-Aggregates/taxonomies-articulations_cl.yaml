@@ -1,0 +1,65 @@
+pw0:
+  concept: pw0
+  group: cluster
+  name: test94
+pw1:
+  concept: pw1
+  group: cluster
+  name: test65
+pw2:
+  concept: pw2
+  group: cluster
+  name: test96
+pw3:
+  concept: pw3
+  group: cluster
+  name: test57
+pw4:
+  concept: pw4
+  group: cluster
+  name: test85
+pw1_pw0:
+  dist: 3
+  label: '3'
+  s: pw1
+  t: pw0
+pw2_pw0:
+  dist: 2
+  label: '2'
+  s: pw2
+  t: pw0
+pw2_pw1:
+  dist: 4
+  label: '4'
+  s: pw2
+  t: pw1
+pw3_pw0:
+  dist: 4
+  label: '4'
+  s: pw3
+  t: pw0
+pw3_pw1:
+  dist: 2
+  label: '2'
+  s: pw3
+  t: pw1
+pw3_pw2:
+  dist: 3
+  label: '3'
+  s: pw3
+  t: pw2
+pw4_pw1:
+  dist: 4
+  label: '4'
+  s: pw4
+  t: pw1
+pw4_pw2:
+  dist: 2
+  label: '2'
+  s: pw4
+  t: pw2
+pw4_pw3:
+  dist: 3
+  label: '3'
+  s: pw4
+  t: pw3

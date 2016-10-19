@@ -1,0 +1,51 @@
+digraph{
+rankdir=RL
+node[shape=box style=filled fillcolor="#CCFFCC"] 
+"FloraChina.OakGenus"
+"FloraChina.ChineseOakSpecies1"
+"FloraChina.ChineseOakSpecies2"
+node[shape=octagon style=filled fillcolor="#FFFFCC"] 
+"FloraMexico.OakGenus"
+"FloraMexico.MexicanOakSpecies2"
+"FloraMexico.MexicanOakSpecies1"
+edge[arrowhead=none style=dotted color="#0000FF" constraint=false penwidth=1]
+"FloraChina.ChineseOakSpecies1" -> "FloraMexico.OakGenus"
+"FloraChina.ChineseOakSpecies2" -> "FloraMexico.OakGenus"
+edge[arrowhead=normal style=solid color="#000000" constraint=true penwidth=1]
+"FloraMexico.MexicanOakSpecies2" -> "FloraMexico.OakGenus"
+"FloraMexico.MexicanOakSpecies1" -> "FloraMexico.OakGenus"
+"FloraChina.ChineseOakSpecies1" -> "FloraChina.OakGenus"
+"FloraChina.ChineseOakSpecies2" -> "FloraChina.OakGenus"
+edge[arrowhead=normal style=solid color="#FF0000" constraint=true penwidth=1]
+"FloraMexico.OakGenus" -> "FloraChina.OakGenus"
+"FloraMexico.MexicanOakSpecies1" -> "FloraChina.ChineseOakSpecies2"
+"FloraMexico.MexicanOakSpecies2" -> "FloraChina.ChineseOakSpecies1"
+edge[arrowhead=normal style=dotted color="#000000" constraint=true penwidth=1]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC">FloraChina</TD> 
+ <TD>3</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC">FloraMexico</TD> 
+ <TD>3</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#0000FF">overlaps</font></TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#000000">input</font></TD> 
+ <TD>4</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#FF0000">inferred</font></TD> 
+ <TD>3</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}

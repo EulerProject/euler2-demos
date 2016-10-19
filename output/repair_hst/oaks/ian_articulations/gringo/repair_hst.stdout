@@ -1,0 +1,11 @@
+******* You are running example taxonomies-articulations *******
+************************************
+Input is inconsistent
+
+You can use "--repair=WAY" to do the repairing, see details in "euler2 -h"
+************************************
+Min inconsistent subset  0 : [ 9 : FloraChina.ChineseOakSpecies1 rsum FloraMexico.MexicanOakSpecies1 FloraMexico.MexicanOakSpecies2 , 12 : FloraChina.ChineseOakSpecies2 equals FloraMexico.MexicanOakSpecies1 ]
+************************************
+************************************
+Min inconsistent subset  1 : [ 10 : FloraChina.ChineseOakSpecies1 includes FloraMexico.MexicanOakSpecies1 , 12 : FloraChina.ChineseOakSpecies2 equals FloraMexico.MexicanOakSpecies1 ]
+************************************

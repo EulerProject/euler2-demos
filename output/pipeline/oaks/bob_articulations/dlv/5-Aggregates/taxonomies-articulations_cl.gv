@@ -1,0 +1,107 @@
+digraph{
+rankdir=TB
+node[shape=box style="filled, rounded" fillcolor="#FFFFCC"] 
+"pw6"
+"pw4"
+"pw2"
+"pw0"
+"pw7"
+"pw8"
+"pw9"
+"pw5"
+"pw3"
+"pw1"
+"pw10"
+"pw11"
+"pw12"
+"pw13"
+"pw14"
+"pw15"
+"pw16"
+edge[style=solid color="#000000" constraint=true penwidth=1]
+"pw15" -> "pw11" [label="4", len = "4"]
+"pw15" -> "pw12" [label="3", len = "3"]
+"pw15" -> "pw14" [label="2", len = "2"]
+"pw11" -> "pw10" [label="4", len = "4"]
+"pw10" -> "pw4" [label="2", len = "2"]
+"pw10" -> "pw5" [label="5", len = "5"]
+"pw10" -> "pw6" [label="4", len = "4"]
+"pw10" -> "pw0" [label="4", len = "4"]
+"pw10" -> "pw2" [label="4", len = "4"]
+"pw10" -> "pw3" [label="3", len = "3"]
+"pw10" -> "pw8" [label="3", len = "3"]
+"pw10" -> "pw9" [label="2", len = "2"]
+"pw3" -> "pw1" [label="2", len = "2"]
+"pw3" -> "pw0" [label="4", len = "4"]
+"pw4" -> "pw2" [label="3", len = "3"]
+"pw4" -> "pw3" [label="2", len = "2"]
+"pw4" -> "pw0" [label="4", len = "4"]
+"pw14" -> "pw12" [label="3", len = "3"]
+"pw14" -> "pw13" [label="4", len = "4"]
+"pw11" -> "pw3" [label="4", len = "4"]
+"pw13" -> "pw6" [label="6", len = "6"]
+"pw15" -> "pw13" [label="4", len = "4"]
+"pw14" -> "pw1" [label="1", len = "1"]
+"pw6" -> "pw4" [label="4", len = "4"]
+"pw6" -> "pw5" [label="2", len = "2"]
+"pw6" -> "pw0" [label="4", len = "4"]
+"pw12" -> "pw11" [label="6", len = "6"]
+"pw6" -> "pw2" [label="3", len = "3"]
+"pw6" -> "pw3" [label="5", len = "5"]
+"pw15" -> "pw0" [label="4", len = "4"]
+"pw15" -> "pw5" [label="1", len = "1"]
+"pw9" -> "pw3" [label="2", len = "2"]
+"pw16" -> "pw14" [label="2", len = "2"]
+"pw9" -> "pw0" [label="4", len = "4"]
+"pw9" -> "pw7" [label="2", len = "2"]
+"pw9" -> "pw6" [label="5", len = "5"]
+"pw9" -> "pw4" [label="3", len = "3"]
+"pw13" -> "pw12" [label="2", len = "2"]
+"pw13" -> "pw11" [label="5", len = "5"]
+"pw2" -> "pw0" [label="6", len = "6"]
+"pw12" -> "pw0" [label="6", len = "6"]
+"pw2" -> "pw1" [label="1", len = "1"]
+"pw8" -> "pw2" [label="2", len = "2"]
+"pw8" -> "pw0" [label="6", len = "6"]
+"pw8" -> "pw6" [label="3", len = "3"]
+"pw8" -> "pw7" [label="1", len = "1"]
+"pw8" -> "pw4" [label="4", len = "4"]
+"pw12" -> "pw9" [label="3", len = "3"]
+"pw5" -> "pw4" [label="5", len = "5"]
+"pw5" -> "pw1" [label="2", len = "2"]
+"pw5" -> "pw0" [label="4", len = "4"]
+"pw11" -> "pw5" [label="4", len = "4"]
+"pw11" -> "pw4" [label="4", len = "4"]
+"pw11" -> "pw6" [label="4", len = "4"]
+"pw11" -> "pw0" [label="1", len = "1"]
+"pw12" -> "pw7" [label="2", len = "2"]
+"pw11" -> "pw2" [label="6", len = "6"]
+"pw16" -> "pw11" [label="4", len = "4"]
+"pw16" -> "pw12" [label="4", len = "4"]
+"pw16" -> "pw13" [label="3", len = "3"]
+"pw11" -> "pw9" [label="4", len = "4"]
+"pw11" -> "pw8" [label="6", len = "6"]
+"pw7" -> "pw5" [label="2", len = "2"]
+"pw7" -> "pw1" [label="2", len = "2"]
+"pw13" -> "pw7" [label="3", len = "3"]
+"pw16" -> "pw3" [label="1", len = "1"]
+"pw16" -> "pw0" [label="4", len = "4"]
+"pw13" -> "pw0" [label="5", len = "5"]
+"pw13" -> "pw9" [label="2", len = "2"]
+edge[style=dotted color="#AA00FF" constraint=true penwidth=3]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC">cluster</TD> 
+ <TD>17</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">default</font></TD> 
+ <TD>69</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}

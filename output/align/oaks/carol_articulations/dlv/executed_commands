@@ -1,0 +1,1 @@
+euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/carol_articulations/articulations.txt -o ./output/align/oaks/carol_articulations/dlv -r dlv

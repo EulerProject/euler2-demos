@@ -1,0 +1,8 @@
+taxonomy FloraChina 2012
+(OakGenus ChineseOakSpecies1 ChineseOakSpecies2)
+
+taxonomy FloraMexico 2008
+(OakGenus MexicanOakSpecies1 MexicanOakSpecies2)
+articulation FloraChina-FloraMexico
+[FloraChina.OakGenus includes FloraMexico.OakGenus]
+[FloraChina.ChineseOakSpecies1 is_included_in FloraMexico.MexicanOakSpecies1]
