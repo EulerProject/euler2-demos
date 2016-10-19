@@ -1,2 +1,0 @@
-tr = [['FloraChina.ChineseOakSpecies1', 'FloraChina.OakGenus', 0], ['FloraChina.ChineseOakSpecies2\\nFloraMexico.OakGenus', 'FloraChina.OakGenus', 0], ['FloraMexico.MexicanOakSpecies2', 'FloraChina.ChineseOakSpecies2\\nFloraMexico.OakGenus', 0], ['FloraMexico.MexicanOakSpecies1', 'FloraChina.ChineseOakSpecies2\\nFloraMexico.OakGenus', 0]]
-pwIndex = 128
