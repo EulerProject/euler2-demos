@@ -1,1 +1,0 @@
-euler2 show iv ./examples/primates/taxonomies.txt ./examples/primates/alice_articulations/articulations.txt -o ./output/input_visualization/primates/alice_articulations --svg

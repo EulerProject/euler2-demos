@@ -1,1 +1,0 @@
-euler2 align ./examples/fossilweevils/taxonomies.txt ./examples/fossilweevils/alice_articulations/articulations.txt -o ./output/repair_topdown/fossilweevils/alice_articulations/dlv --repair=topdown -r dlv

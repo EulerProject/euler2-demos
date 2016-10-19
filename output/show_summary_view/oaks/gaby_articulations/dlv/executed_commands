@@ -1,3 +1,0 @@
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/gaby_articulations/articulations.txt -o ./output/show_summary_view/oaks/gaby_articulations/dlv -r dlv
-euler2 show -o ./output/show_summary_view/oaks/gaby_articulations/dlv pw --svg
-euler2 show -o ./output/show_summary_view/oaks/gaby_articulations/dlv sv --svg

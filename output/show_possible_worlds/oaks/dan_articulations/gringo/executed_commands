@@ -1,2 +1,0 @@
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/dan_articulations/articulations.txt -o ./output/show_possible_worlds/oaks/dan_articulations/gringo -r gringo
-euler2 show -o ./output/show_possible_worlds/oaks/dan_articulations/gringo pw --svg

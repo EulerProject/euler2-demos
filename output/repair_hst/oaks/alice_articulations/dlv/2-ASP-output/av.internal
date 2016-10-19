@@ -1,8 +1,0 @@
-firstTName = 'FloraChina'
-secondTName = 'FloraMexico'
-thirdTName = ''
-fourthTName = ''
-fifthTName = ''
-allRcgEdgesDict = {}
-numOfPws = 161
-avFlag = False
