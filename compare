@@ -63,7 +63,7 @@ def do_compare_gold_standard(run):
 @click.option('--articulations', default=None, help='Provide a comma separated list from the available example articulations (./examples/{example}/{articulations}')
 @click.option('--reasoners', default=','.join(all_reasoners), help='Provide a comma separated list from the available reasoners:  \'dlv\' and \'gringo\'')
 @click.option('--compare_gold_standard', is_flag=True)
-def compare(commands, examples, articulations, target, reasoners, compare_gold_standard):
+def compare(commands, examples, articulations, reasoners, compare_gold_standard):
    if examples is None:
       return
    examples = examples.split(',')
