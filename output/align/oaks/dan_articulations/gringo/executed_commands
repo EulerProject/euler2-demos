@@ -1,1 +1,0 @@
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/dan_articulations/articulations.txt -o ./output/align/oaks/dan_articulations/gringo -r gringo
