@@ -1,0 +1,483 @@
+
+Possible world 0:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 1:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 2:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 3:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 4:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 5:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 6:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 7:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 8:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 9:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 10:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 11:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 12:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 13:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 14:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 15:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 16:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 17:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 18:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 19:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 20:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 21:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 22:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 23:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 24:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 25:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 26:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 27:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 28:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 29:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 30:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 31:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 32:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 33:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 34:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 35:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 36:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 37:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 38:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 39:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 40:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 41:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 42:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 43:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 44:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 45:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 46:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 47:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 48:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 49:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 50:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 51:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 52:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 53:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 54:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 55:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 56:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 57:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 58:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"="FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1}
+
+Possible world 59:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"="FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 60:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 61:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 62:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"="FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 63:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"="FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"="FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 64:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 65:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 66:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 67:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 68:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 69:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 70:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 71:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 72:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 73:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 74:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 75:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 76:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 77:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 78:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 79:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 80:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 81:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 82:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 83:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 84:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 85:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 86:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 87:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 88:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 89:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 90:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 91:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 92:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 93:
+{FloraChina.ChineseOakSpecies1"="FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 94:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 95:
+{FloraChina.OakGenus"<"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 96:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 97:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 98:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 99:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"="FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 100:
+{FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 101:
+{FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"!"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 102:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 103:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 104:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 105:
+{FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 106:
+{FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 107:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 108:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 109:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 110:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 111:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 112:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 113:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 114:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"="FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 115:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.OakGenus"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 116:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"="FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 117:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 118:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 119:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 120:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 121:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 122:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 123:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 124:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 125:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 126:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 127:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 128:
+{FloraChina.ChineseOakSpecies2"="FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 129:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 130:
+{FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 131:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 132:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 133:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 134:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 135:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 136:
+{FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 137:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 138:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 139:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 140:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 141:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 142:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 143:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 144:
+{FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 145:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 146:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 147:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 148:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"="FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 149:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 150:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 151:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 152:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"="FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 153:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 154:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 155:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 156:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"="FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 157:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 158:
+{FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+
+Possible world 159:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"="FloraMexico.OakGenus, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2">"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2}
+
+Possible world 160:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"="FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"="FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}

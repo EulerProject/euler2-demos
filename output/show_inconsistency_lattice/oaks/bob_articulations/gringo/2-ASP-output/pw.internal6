@@ -1,0 +1,12 @@
+from sets import Set
+fileName = 'taxonomies-articulations_6_mnpw'
+pwIndex = 6
+eq = {}
+firstTName = 'FloraChina'
+secondTName = 'FloraMexico'
+thirdTName = ''
+fourthTName = ''
+fifthTName = ''
+eqConLi = []
+tr = [['FloraChina.ChineseOakSpecies1', 'FloraChina.OakGenus', 0], ['FloraChina.ChineseOakSpecies2', 'FloraChina.OakGenus', 0], ['FloraMexico.MexicanOakSpecies1', 'FloraMexico.OakGenus', 0], ['FloraMexico.MexicanOakSpecies2', 'FloraMexico.OakGenus', 0], ['FloraChina.ChineseOakSpecies1', 'FloraMexico.MexicanOakSpecies1', 0], ['FloraChina.ChineseOakSpecies1', 'FloraMexico.OakGenus', 1], ['FloraChina.ChineseOakSpecies1', 'FloraMexico.MexicanOakSpecies1', 1]]
+mir = {'FloraChina.OakGenus,FloraChina.ChineseOakSpecies1': 8, 'FloraChina.OakGenus,FloraChina.ChineseOakSpecies2': 8, 'FloraChina.ChineseOakSpecies1,FloraMexico.MexicanOakSpecies2': 1, 'FloraChina.ChineseOakSpecies1,FloraMexico.MexicanOakSpecies1': 2, 'FloraMexico.OakGenus,FloraMexico.MexicanOakSpecies1': 8, 'FloraMexico.OakGenus,FloraChina.ChineseOakSpecies1': 8, 'FloraChina.ChineseOakSpecies2,FloraChina.ChineseOakSpecies1': 1, 'FloraChina.ChineseOakSpecies2,FloraMexico.MexicanOakSpecies1': 1, 'FloraChina.OakGenus,FloraMexico.MexicanOakSpecies1': 16, 'FloraChina.ChineseOakSpecies1,FloraMexico.OakGenus': 2, 'FloraMexico.MexicanOakSpecies1,FloraMexico.MexicanOakSpecies2': 1, 'FloraChina.OakGenus,FloraMexico.MexicanOakSpecies2': 16, 'FloraChina.OakGenus,FloraMexico.OakGenus': 16, 'FloraChina.ChineseOakSpecies1,FloraChina.ChineseOakSpecies2': 1, 'FloraMexico.OakGenus,FloraMexico.MexicanOakSpecies2': 8, 'FloraMexico.MexicanOakSpecies2,FloraMexico.MexicanOakSpecies1': 1, 'FloraChina.ChineseOakSpecies2,FloraMexico.MexicanOakSpecies2': 16, 'FloraChina.ChineseOakSpecies2,FloraMexico.OakGenus': 16}

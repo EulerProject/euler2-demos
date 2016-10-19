@@ -1,0 +1,11 @@
+digraph{
+rankdir=RL
+edge[arrowhead=normal style=solid color="#000000" constraint=true ]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+</TABLE> 
+ >] } 
+}
