@@ -68,9 +68,10 @@ def get_output(commands, example, articulations, reasoner):
 def get_commands_file_path(commands):
     return get_root() + '/commands/{commands}'.format(commands = commands)
 
-def execute(commands, example, articulations, reasoner, label, command):
-    print 'start @ ' + str(datetime.now())
-    print 'run {label} effectively with: {command}'.format(label=label, command=command)
+def execute(commands, example, articulations, reasoner, label, command, doc):
+    #print 'start @ ' + str(datetime.now())
+    print 'run {label}: {command}'.format(label=label, command=command)
+    print 'for more see: {doc}'.format(doc=doc)
     output = get_output(commands, example, articulations, reasoner)
     with open(os.path.join(output, '%s.stdout' % label), 'w+') as out:
         with open(os.path.join(output, '%s.stderr' % label), 'w+') as err:
@@ -82,7 +83,7 @@ def execute(commands, example, articulations, reasoner, label, command):
 	        out.write(stdout)
                 err.write(stderr)
                 rc.write('%s' % p.returncode)
-    print 'complete @ ' + str(datetime.now())
+    #print 'complete @ ' + str(datetime.now())
     
             
 def run_clean(commands, example, articulations, reasoner):
@@ -153,8 +154,8 @@ def run(commands, example, articulations, target, reasoner):
                 cmds = get_commands_sequence(doc, target.split('-')[0], target.split('-')[-1])
             if cmds:
 	        for cmd in cmds:
-		    print 'run {label} with: {command}'.format(label=cmd.label, command=cmd.command)
-		    print 'for more see: {doc}'.format(doc=cmd.doc)
+		    #print 'run {label} with: {command}'.format(label=cmd.label, command=cmd.command)
+		    #print 'for more see: {doc}'.format(doc=cmd.doc)
                     value = cmd.command
 		    show_command = cmd.command
                     value = value.replace('{.}', root)
@@ -168,7 +169,7 @@ def run(commands, example, articulations, target, reasoner):
                     value = value.replace('{reasoner}', reasoner)
                     show_command = show_command.replace('{reasoner}', reasoner)
                     cmds_file.write(show_command + '\n')
-		    execute(commands, example, articulations, reasoner, cmd.label, value)
+		    execute(commands, example, articulations, reasoner, cmd.label, value, cmd.doc)
     clean_outputs(commands, example, articulations, reasoner)  
 
 def clean_outputs(commands, example, articulations, reasoner):
