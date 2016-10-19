@@ -48,11 +48,11 @@ def run_command(command, reasoners, examples, articulations, target):
       run_command_reasoner(command, '', examples, articulations, target)
 
 @click.command()
-@click.option('--commands', default=None, help='Choose from one of the available commands files')
-@click.option('--examples', default=None, help='Choose from one of the available examples')
-@click.option('--articulations', default=None, help='Choose from one of the available example articulations')
+@click.option('--commands', default=None, help='Provide a comma separated list from the available commands files.')
+@click.option('--examples', default=None, help='Provide a comma separated list from the available examples')
+@click.option('--articulations', default=None, help='Provide a comma separated list from the available example articulations.')
 @click.option('--target', default='all', help='Choose between \'all\', a list (\'command1,command2,...\') or a sequence (\'command1-command3\') of command labels or \'clean\'. Default: all')
-@click.option('--reasoners', default=','.join(all_reasoners), help='Choose between \'dlv\' and \'gringo\'')
+@click.option('--reasoners', default=','.join(all_reasoners), help='Provide a comma separated list from the available reasoners:  \'dlv\' and \'gringo\'')
 def run_all(commands, examples, articulations, target, reasoners):
    if commands is None:
       commands = []

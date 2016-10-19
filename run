@@ -128,9 +128,9 @@ def get_commands_list(doc, commands):
     return result
 
 @click.command()
-@click.option('--commands', default='', help='Choose from one of the available commands files')
-@click.option('--example', default='', help='Choose from one of the available examples')
-@click.option('--articulations', default='', help='Choose from one of the available example articulations')
+@click.option('--commands', default='', help='Choose one of the available commands files')
+@click.option('--example', default='', help='Choose one of the available examples')
+@click.option('--articulations', default='', help='Choose one of the available example articulations')
 @click.option('--target', default='all', help='Choose between \'all\', a list (\'command1,command2,...\') or a sequence (\'command1-command3\') of command labels or \'clean\'. Default: all')
 @click.option('--reasoner', default='dlv', help='Choose between \'dlv\' and \'gringo\'')
 def run(commands, example, articulations, target, reasoner):
