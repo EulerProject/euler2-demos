@@ -74,7 +74,7 @@ articulation 1997-1995 D’Abrera-AckeryEtAl
 ```
 
 ### Script usage
-#### run usage:
+#### ./run usage:
 
 ```
 Runs a demo contained in this repository
@@ -91,7 +91,7 @@ Options:
   --help                Show this message and exit.
 ```
 
-#### compare usage:
+#### ./compare usage:
 
 ```
 Compares the output between demos locally, or with the stored output of the same demo in the repository HEAD.
@@ -108,7 +108,7 @@ Options:
   --help                Show this message and exit.
 ```
 
-#### run_all usage:
+#### ./run_all usage:
 ```
 Runs all demos contained in this repository, meeting the options provided.
 E.g. 
