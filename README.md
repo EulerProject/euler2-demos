@@ -23,7 +23,7 @@ width="180" height="120"></a>
 width="180" height="120"></a>
 
 ### Prerequisites
-Python 2.7.x, <a href="https://github.com/EulerProject/EulerX" target="_blank">EulerX</a> 
+Python 2.7.x, [EulerX](https://github.com/EulerProject/EulerX) 
 
 ### Repository organization
 
