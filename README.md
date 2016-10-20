@@ -15,7 +15,7 @@ Additionally, this repository stores the correct outputs of the demos for the pu
 width="180" height="120"></a>
 
 #### Replay a demo and compare its output to the repository HEAD
-<a target="_blank" href="http://content.screencast.com/users/thomas.rodenhausen/folders/Jing/media/fb65bc4b-0dcf-4fce-b41c-1d4214c2aa4a/2016-10-19_1418.swf&blurover=false"><img src="https://img.youtube.com/vi/BbqY7htrY5U/0.jpg" alt="Replay a demo and compare its output to the repository HEAD" 
+<a target="_blank" href="http://content.screencast.com/users/thomas.rodenhausen/folders/Jing/media/213791ed-4dda-46b2-8304-442f37d845d8/2016-10-20_1036.swf&blurover=false"><img src="https://img.youtube.com/vi/BbqY7htrY5U/0.jpg" alt="Replay a demo and compare its output to the repository HEAD" 
 width="180" height="120"></a>
 
 #### Replay two demos (vary reasoner on the same taxonomy alignment problem) and compare their outputs
