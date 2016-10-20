@@ -35,12 +35,12 @@ Directory                              | Description
 ./examples/{example}/taxonomies.txt    							 | Input taxonomies and corresponding articulations sets
 ./examples/{example}/{articulations}/articulations.txt			 | Input articulations for an example
 ./output/{commands}/{example}/{articulations}/{reasoner}/*	     | Output produced by commands using given example input taxonomies, articulations and reasoner as applicable
-./run															 | Python script to replay a demo
-./run_all														 | Python script to replay a set of demos
+./EULER_WORKFLOW.md												 | Documentation of the internal workflows of EulerX
+./README.md														 | The documentation of this repository
 ./compare														 | Python script to compare the output between demos locally, or with the stored output of the same demo in the repository HEAD.
 ./compare_reasoner          | Python script to compare the reasoner output between demos locally
-./EulerWorkflow.md												 | Documentation of the internal workflows of EulerX
-./README.md														 | The documentation of this repository
+./run															 | Python script to replay a demo
+./run_all														 | Python script to replay a set of demos
 
 #### ./commands/{commands} example:
 
@@ -85,43 +85,18 @@ Usage: run [OPTIONS]
 
 Options:
   --commands TEXT       Choose one of the available commands files
+                        (./commands/{commands})
   --example TEXT        Choose one of the available examples
+                        (./examples/{example})
   --articulations TEXT  Choose one of the available example articulations
-  --target TEXT         Choose between 'all', a list ('align,input_visualization,...')
-                        or a sequence ('align-show_possible_worlds') of command labels
-                        or 'clean'. Default: all
+                        (./examples/{example}/{articulations}
+  --target TEXT         Choose between 'all', a list ('command1,command2,...')
+                        or a sequence ('command1-command3') of command labels
+                        or 'clean'. You can find the command labels in the
+                        selected commands file. Default: all
   --reasoner TEXT       Choose between 'dlv' and 'gringo'
   --help                Show this message and exit.
-```
 
-#### ./compare usage:
-
-```
-Compares the output between demos locally, or with the stored output of the same demo in the repository HEAD.
-Usage: compare [OPTIONS]
-
-Options:
-  --commands TEXT       Choose one of the available commands files
-  --example TEXT        Choose one of the available examples
-  --articulations TEXT  Choose one of the available example articulations
-  --target TEXT         Choose between 'all', a list ('align,input_visualization,...')
-                        or a sequence ('align-show_possible_worlds') of command labels
-                        or 'clean'. Default: all
-  --reasoner TEXT       Choose between 'dlv' and 'gringo'
-  --help                Show this message and exit.
-```
-
-#### ./compare_reasoner usage:
-
-```
-Compares the reasoneroutput between demos locally
-Usage: compare_reasoner [OPTIONS]
-
-Options:
-  --commands TEXT       Choose one of the available commands files
-  --example TEXT        Choose one of the available examples
-  --articulations TEXT  Choose one of the available example articulations
-  --help                Show this message and exit.
 ```
 
 #### ./run_all usage:
@@ -146,12 +121,56 @@ run --commands=pipeline --example=oaks --articulations=gaby_articulations --reas
 Usage: run_all [OPTIONS]
 
 Options:
-  --commands TEXT       Optional: List of commands
-  --examples TEXT       Optional: List of examples
-  --articulations TEXT  Optional: List of articulations
-  --target TEXT         Choose between 'all', a list ('align,input_visualization,...')
-                        or a sequence ('align-show_possible_worlds') of command labels
+  --commands TEXT       Provide a comma separated list from the available
+                        commands files (./commands/{commands})
+  --examples TEXT       Provide a comma separated list from the available
+                        examples (./examples/{example})
+  --articulations TEXT  Provide a comma separated list from the available
+                        example articulations
+                        (./examples/{example}/{articulations}
+  --target TEXT         Choose between 'all', a list ('command1,command2,...')
+                        or a sequence ('command1-command3') of command labels
                         or 'clean'. Default: all
-  --reasoners TEXT      Optional: List of reasoners
+  --reasoners TEXT      Provide a comma separated list from the available
+                        reasoners:  'dlv' and 'gringo'
+  --help                Show this message and exit.
+
+```
+
+#### ./compare usage:
+
+```
+Compares the output between demos locally, or with the stored output of the same demo in the repository HEAD.
+Usage: compare [OPTIONS]
+
+Options:
+  --commands TEXT          Provide a comma separated list from the available
+                           commands files (./commands/{commands})
+  --examples TEXT          Provide a comma separated list from the available
+                           examples (./examples/{example})
+  --articulations TEXT     Provide a comma separated list from the available
+                           example articulations
+                           (./examples/{example}/{articulations}
+  --reasoners TEXT         Provide a comma separated list from the available
+                           reasoners:  'dlv' and 'gringo'
+  --compare_gold_standard  Compare output of demo to corresponding output at
+                           repository HEAD
+  --help                   Show this message and exit.
+
+```
+
+#### ./compare_reasoner usage:
+
+```
+Compares the reasoneroutput between demos locally
+Usage: compare_reasoner [OPTIONS]
+
+Options:
+  --commands TEXT       Choose one of the available commands files
+                        (./commands/{commands})
+  --example TEXT        Choose one of the available examples
+                        (./examples/{example})
+  --articulations TEXT  Choose one of the available example articulations
+                        (./examples/{example}/{articulations}
   --help                Show this message and exit.
 ```
