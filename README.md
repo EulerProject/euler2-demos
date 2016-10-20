@@ -5,7 +5,7 @@ This repository is for demos of the [EulerX](https://github.com/EulerProject/Eul
 ### Introduction
 Here we demonstrate how the [EulerX](https://github.com/EulerProject/EulerX) toolkit 
 developed by the EulerProject team allows to solve the taxonomy alignment problem.
-A python script exercises commmands that make up demos on example taxonomy alignment problem inputs.
+A python script exercises commmands that make up demos on example taxonomy alignment problems.
 Additionally, this repository stores the correct outputs of the demos for the purpose of testing EulerX development efforts.
 
 ### How to use
