@@ -1,3 +1,4 @@
+<img src="http://euler.cs.ucdavis.edu/_/rsrc/1366832610901/home/logo_small.png" alt="The EulerX toolkit" width="100" height="88">
 #euler2-demos
 This repository is for demos of the [EulerX](https://github.com/EulerProject/EulerX) toolkit.
 
@@ -10,15 +11,15 @@ Additionally, this repository stores the correct outputs of the demos for the pu
 ### How to use
 #### Replay a demo and inspect executed commands
 <a href="http://content.screencast.com/users/thomas.rodenhausen/folders/Jing/media/fb65bc4b-0dcf-4fce-b41c-1d4214c2aa4a/2016-10-19_1418.swf&blurover=false"><img src="https://img.youtube.com/vi/BbqY7htrY5U/0.jpg" alt="Replay a demo and inspect executed commands" 
-width="120" height="80"></a>
+width="180" height="120"></a>
 
 #### Replay a demo and compare its output to the repository HEAD
 <a href="http://content.screencast.com/users/thomas.rodenhausen/folders/Jing/media/fb65bc4b-0dcf-4fce-b41c-1d4214c2aa4a/2016-10-19_1418.swf&blurover=false"><img src="https://img.youtube.com/vi/BbqY7htrY5U/0.jpg" alt="Replay a demo and compare its output to the repository HEAD" 
-width="120" height="80"></a>
+width="180" height="120"></a>
 
 #### Replay two demos (vary reasoner on the same taxonomy alignment problem) and compare their outputs
 <a href="http://content.screencast.com/users/thomas.rodenhausen/folders/Jing/media/fb65bc4b-0dcf-4fce-b41c-1d4214c2aa4a/2016-10-19_1418.swf&blurover=false"><img src="https://img.youtube.com/vi/BbqY7htrY5U/0.jpg" alt="Replay two demos (vary reasoner on the same taxonomy alignment problem) and compare their outputs" 
-width="120" height="80"></a>
+width="180" height="120"></a>
 
 ### Prerequisites
 Python 2.7.x, [EulerX](https://github.com/EulerProject/EulerX) 
