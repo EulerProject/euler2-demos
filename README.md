@@ -4,7 +4,7 @@ This repository is for demos of the [EulerX](https://github.com/EulerProject/Eul
 
 ### Introduction
 Here we demonstrate how the [EulerX](https://github.com/EulerProject/EulerX) toolkit 
-developed by the EulerProject team allows to solve the taxonomy alignment problem.
+developed by the EulerProject team allows to solve the taxonomy alignment problem [[1](http://www.slideshare.net/taxonbytes/ludaescher-etal-2014hybriddiagnosisconceptreasoning), [2](http://taxonbytes.org/pdf/ChenEtAl2014-HybridDiagnosisApproach.pdf)].
 A python script exercises commmands that make up demos on example taxonomy alignment problems.
 Additionally, this repository stores the correct outputs of the demos for the purpose of testing EulerX development efforts.
 
