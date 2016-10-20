@@ -1,0 +1,46 @@
+#!/usr/bin/env python
+
+import os
+import click
+from datetime import datetime
+from subprocess import call, Popen, PIPE
+
+class Run:
+    def __init__(self, command, example, articulation, reasoner):
+        self.command = command
+        self.example = example
+        self.articulation = articulation
+        self.reasoner = reasoner
+
+    def __hash__(self):
+        return hash(self.__str__());   
+
+    def __eq__(self, other):
+        return self.command == other.command and self.example == other.example and self.articulation == other.articulation and self.reasoner == other.reasoner
+
+    def __str__(self):
+        return "{command} {example} {articulation} {reasoner}".format(command = self.command, example = self.example, articulation = self.articulation, reasoner = self.reasoner)
+
+    def get_reasoner_output(self):
+       return get_root() + '/output/{command}/{example}/{articulation}/{reasoner}/2-ASP-output'.format(command = self.command, example = self.example, articulation = self.articulation, reasoner = self.reasoner)
+
+def get_root():
+    return os.path.abspath(os.path.dirname(__file__))
+
+def do_compare(run_a, run_b):
+    print "--- compare reasonser: {run_a} vs {run_b} ---".format(run_a = run_a, run_b = run_b)
+    p = Popen("git diff --no-index {output_run_a} {output_run_b}".format(output_run_a = run_a.get_reasoner_output(), output_run_b = run_b.get_reasoner_output()), stdout=PIPE, stderr=PIPE, shell=True)
+    stdout, stderr = p.communicate()
+    print stdout
+    print stderr
+    print '-- end compare ---'
+
+@click.command()
+@click.option('--commands', default='', help='Choose one of the available commands files (./commands/{commands})')
+@click.option('--example', default='', help='Choose one of the available examples (./examples/{example})')
+@click.option('--articulations', default='', help='Choose one of the available example articulations (./examples/{example}/{articulations}')
+def compare(commands, example, articulations):
+   do_compare(Run(commands, example, articulations, 'dlv'), Run(commands, example, articulations, 'gringo'))
+
+if __name__ == '__main__':
+    compare()
