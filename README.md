@@ -10,15 +10,15 @@ A python script exercises commmands that make up demos on example taxonomy align
 Additionally, this repository stores the correct outputs of the demos for the purpose of testing EulerX development efforts.
 
 ### How to use
-#### Replay a demo and inspect executed commands
+#### 1. Replay a demo and inspect executed commands
 <a target="_blank" href="http://content.screencast.com/users/thomas.rodenhausen/folders/Jing/media/fb65bc4b-0dcf-4fce-b41c-1d4214c2aa4a/2016-10-19_1418.swf&blurover=false"><img src="https://img.youtube.com/vi/BbqY7htrY5U/0.jpg" alt="Replay a demo and inspect executed commands" 
 width="180" height="120"></a>
 
-#### Replay a demo and compare its output to the repository HEAD
+#### 2. Replay a demo and compare its output to the repository HEAD
 <a target="_blank" href="http://content.screencast.com/users/thomas.rodenhausen/folders/Jing/media/213791ed-4dda-46b2-8304-442f37d845d8/2016-10-20_1036.swf&blurover=false"><img src="https://img.youtube.com/vi/BbqY7htrY5U/0.jpg" alt="Replay a demo and compare its output to the repository HEAD" 
 width="180" height="120"></a>
 
-#### Replay two demos (vary reasoner on the same taxonomy alignment problem) and compare their outputs
+#### 3. Replay two demos (vary reasoner on the same taxonomy alignment problem) and compare their outputs
 <a target="_blank" href="http://content.screencast.com/users/thomas.rodenhausen/folders/Jing/media/7144d074-0eb8-452c-99f5-9a1bc4cdcc76/2016-10-20_1051.swf&blurover=false"><img src="https://img.youtube.com/vi/BbqY7htrY5U/0.jpg" alt="Replay two demos (vary reasoner on the same taxonomy alignment problem) and compare their outputs" 
 width="180" height="120"></a>
 
@@ -38,6 +38,7 @@ Directory                              | Description
 ./run															 | Python script to replay a demo
 ./run_all														 | Python script to replay a set of demos
 ./compare														 | Python script to compare the output between demos locally, or with the stored output of the same demo in the repository HEAD.
+./compare_reasoner          | Python script to compare the reasoner output between demos locally
 ./EulerWorkflow.md												 | Documentation of the internal workflows of EulerX
 ./README.md														 | The documentation of this repository
 
@@ -97,7 +98,7 @@ Options:
 
 ```
 Compares the output between demos locally, or with the stored output of the same demo in the repository HEAD.
-Usage: run [OPTIONS]
+Usage: compare [OPTIONS]
 
 Options:
   --commands TEXT       Choose one of the available commands files
@@ -107,6 +108,19 @@ Options:
                         or a sequence ('align-show_possible_worlds') of command labels
                         or 'clean'. Default: all
   --reasoner TEXT       Choose between 'dlv' and 'gringo'
+  --help                Show this message and exit.
+```
+
+#### ./compare_reasoner usage:
+
+```
+Compares the reasoneroutput between demos locally
+Usage: compare_reasoner [OPTIONS]
+
+Options:
+  --commands TEXT       Choose one of the available commands files
+  --example TEXT        Choose one of the available examples
+  --articulations TEXT  Choose one of the available example articulations
   --help                Show this message and exit.
 ```
 
