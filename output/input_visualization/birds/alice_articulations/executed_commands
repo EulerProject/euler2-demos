@@ -1,1 +1,0 @@
-euler2 show iv ./examples/birds/taxonomies.txt ./examples/birds/alice_articulations/articulations.txt -o ./output/input_visualization/birds/alice_articulations --svg

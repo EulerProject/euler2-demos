@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import os
+import re
 import click
 from datetime import datetime
 from subprocess import call, Popen, PIPE
@@ -29,10 +30,32 @@ def get_root():
 
 def do_compare(run_a, run_b):
     print "--- compare reasonser: {run_a} vs {run_b} ---".format(run_a = run_a, run_b = run_b)
-    p = Popen("git diff --no-index {output_run_a} {output_run_b}".format(output_run_a = run_a.get_reasoner_output(), output_run_b = run_b.get_reasoner_output()), stdout=PIPE, stderr=PIPE, shell=True)
-    stdout, stderr = p.communicate()
-    print stdout
-    print stderr
+    #p = Popen("git diff --no-index {output_run_a} {output_run_b}".format(output_run_a = run_a.get_reasoner_output(), output_run_b = run_b.get_reasoner_output()), stdout=PIPE, stderr=PIPE, shell=True)
+    #stdout, stderr = p.communicate()
+    #print stdout
+    #print stderr
+
+    run_a_pws = []
+    run_b_pws = []
+    
+    run_a_pw_file = open(run_a.get_reasoner_output() + "/taxonomies-articulations.pw", "r")
+    lines = run_a_pw_file.readlines()
+    for line in lines:
+        if (re.match("\{(.*)\}", line)):
+            rels = re.split(", " , (re.match("\{(.*)\}", line)).group(1))
+            run_a_pws.append(sorted(rels))
+    run_b_pw_file = open(run_b.get_reasoner_output() + "/taxonomies-articulations.pw", "r")
+    lines = run_b_pw_file.readlines()
+    for line in lines:
+        if (re.match("\{(.*)\}", line)):
+            rels = re.split(", " , (re.match("\{(.*)\}", line)).group(1))
+            run_b_pws.append(sorted(rels))
+    for run_a_pw in run_a_pws:
+        if run_a_pw not in run_b_pws:
+            print run_a_pw + " of " + run_a + " does not exist in " + run_b
+    for run_b_pw in run_b_pws:
+        if run_b_pw not in run_a_pws:
+            print run_b_pw + " of " + run_b + " does not exist in " + run_a
     print '-- end compare ---'
 
 @click.command()

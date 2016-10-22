@@ -1,2 +1,0 @@
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/gaby_articulations/articulations.txt -o ./output/show_inconsistency_lattice/oaks/gaby_articulations/dlv -r dlv
-euler2 show -o ./output/show_inconsistency_lattice/oaks/gaby_articulations/dlv inconLat --svg
