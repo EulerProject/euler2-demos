@@ -1,0 +1,65 @@
+FloraChina.ChineseOakSpecies1:
+  concept: ChineseOakSpecies1
+  group: FloraChina
+FloraChina.ChineseOakSpecies2:
+  concept: ChineseOakSpecies2
+  group: FloraChina
+FloraChina.OakGenus:
+  concept: OakGenus
+  group: FloraChina
+FloraChinaChineseOakSpecies1+:
+  concept: FloraChinaChineseOakSpecies1+
+  group: (+)
+FloraMexico.MexicanOakSpecies1:
+  concept: MexicanOakSpecies1
+  group: FloraMexico
+FloraMexico.MexicanOakSpecies2:
+  concept: MexicanOakSpecies2
+  group: FloraMexico
+FloraMexico.OakGenus:
+  concept: OakGenus
+  group: FloraMexico
+FloraChina.ChineseOakSpecies1_FloraChina.OakGenus:
+  label: isa
+  s: FloraChina.ChineseOakSpecies1
+  t: FloraChina.OakGenus
+FloraChina.ChineseOakSpecies1_FloraMexico.MexicanOakSpecies1:
+  label: '>'
+  s: FloraChina.ChineseOakSpecies1
+  t: FloraMexico.MexicanOakSpecies1
+FloraChina.ChineseOakSpecies1_FloraMexico.MexicanOakSpecies2:
+  label: '>'
+  s: FloraChina.ChineseOakSpecies1
+  t: FloraMexico.MexicanOakSpecies2
+FloraChina.ChineseOakSpecies2_FloraChina.OakGenus:
+  label: isa
+  s: FloraChina.ChineseOakSpecies2
+  t: FloraChina.OakGenus
+FloraChina.ChineseOakSpecies2_FloraMexico.MexicanOakSpecies1:
+  label: ==
+  s: FloraChina.ChineseOakSpecies2
+  t: FloraMexico.MexicanOakSpecies1
+FloraChina.OakGenus_FloraMexico.OakGenus:
+  label: '> OR <'
+  s: FloraChina.OakGenus
+  t: FloraMexico.OakGenus
+FloraChinaChineseOakSpecies1+_FloraChina.ChineseOakSpecies1:
+  label: out
+  s: FloraChinaChineseOakSpecies1+
+  t: FloraChina.ChineseOakSpecies1
+FloraMexico.MexicanOakSpecies1_FloraChinaChineseOakSpecies1+:
+  label: in
+  s: FloraMexico.MexicanOakSpecies1
+  t: FloraChinaChineseOakSpecies1+
+FloraMexico.MexicanOakSpecies1_FloraMexico.OakGenus:
+  label: isa
+  s: FloraMexico.MexicanOakSpecies1
+  t: FloraMexico.OakGenus
+FloraMexico.MexicanOakSpecies2_FloraChinaChineseOakSpecies1+:
+  label: in
+  s: FloraMexico.MexicanOakSpecies2
+  t: FloraChinaChineseOakSpecies1+
+FloraMexico.MexicanOakSpecies2_FloraMexico.OakGenus:
+  label: isa
+  s: FloraMexico.MexicanOakSpecies2
+  t: FloraMexico.OakGenus

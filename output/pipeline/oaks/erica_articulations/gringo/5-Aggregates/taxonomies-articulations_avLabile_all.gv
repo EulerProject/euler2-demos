@@ -1,0 +1,50 @@
+digraph{
+rankdir=RL
+node[shape=box style=filled fillcolor="#CCFFCC"] 
+"FloraChina.OakGenus"
+"FloraChina.ChineseOakSpecies1"
+"FloraChina.ChineseOakSpecies2"
+node[shape=box style="filled,rounded" fillcolor="#EEEEEE"] 
+"FloraChina.OakGenus\nFloraMexico.OakGenus"
+node[shape=octagon style=filled fillcolor="#FFFFCC"] 
+"FloraMexico.OakGenus"
+"FloraMexico.MexicanOakSpecies1"
+"FloraMexico.MexicanOakSpecies2"
+edge[arrowhead=normal style=solid color="#000000" constraint=true ]
+"FloraMexico.MexicanOakSpecies1" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="1"][color="#218b51"]
+"FloraMexico.MexicanOakSpecies1" -> "FloraMexico.OakGenus" [label="4"][color="#613022"]
+"FloraChina.ChineseOakSpecies2" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="1"][color="#218b51"]
+"FloraChina.ChineseOakSpecies1" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="1"][color="#218b51"]
+"FloraChina.OakGenus" -> "FloraMexico.OakGenus" [label="1"][color="#218b51"]
+"FloraMexico.MexicanOakSpecies2" -> "FloraChina.ChineseOakSpecies2" [label="2"][color="#366d41"]
+"FloraMexico.OakGenus" -> "FloraChina.OakGenus" [label="1"][color="#218b51"]
+"FloraChina.ChineseOakSpecies2" -> "FloraChina.OakGenus" [label="4"][color="#613022"]
+"FloraChina.ChineseOakSpecies1" -> "FloraChina.OakGenus" [label="4"][color="#613022"]
+"FloraMexico.MexicanOakSpecies2" -> "FloraMexico.OakGenus" [label="4"][color="#613022"]
+"FloraMexico.MexicanOakSpecies1" -> "FloraChina.OakGenus" [label="4"][color="#613022"]
+"FloraMexico.MexicanOakSpecies2" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="1"][color="#218b51"]
+edge[arrowhead=normal style=solid color="#000000" constraint=true ]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC">FloraChina</TD> 
+ <TD>3</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#EEEEEE">comb</TD> 
+ <TD>1</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC">FloraMexico</TD> 
+ <TD>3</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">default</font></TD> 
+ <TD>12</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}

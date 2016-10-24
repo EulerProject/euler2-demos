@@ -1,0 +1,43 @@
+digraph{
+node[fontname="Helvetica-Narrow"]
+rankdir=TB
+"AllOtherRed" [shape=octagon color="#FFB0B0" style=dashed]
+"AllOtherGreen" [shape=box color="#006400" style="rounded,dashed"]
+"1, 4, 5" [shape=box color="#006400" fillcolor="#A0FFA0" style="rounded,filled"];
+"1, 2, 3, 4" [shape=box color="#006400" fillcolor="#A0FFA0" style="rounded,filled"];
+"5, 3" [shape=octagon color="#FF0000" fillcolor="#FFB0B0" style="filled"];
+"2, 5" [shape=octagon color="#FF0000" fillcolor="#FFB0B0" style="filled"];
+"AllOtherRed" -> "1, 4, 5" [color=blue, arrowhead=none, label=2];
+"1, 4, 5" -> "AllOtherGreen" [color="#006400" style=dashed, label=3];
+"AllOtherRed" -> "1, 2, 3, 4" [color=blue, arrowhead=none, label=1];
+"1, 2, 3, 4" -> "AllOtherGreen" [color="#006400" style=dashed, label=4];
+"AllOtherRed" -> "5, 3" [color=red, style=dashed, dir=back, label=3];
+"5, 3" -> "AllOtherGreen" [color=blue, arrowhead=none, label=2];
+"AllOtherRed" -> "2, 5" [color=red, style=dashed, dir=back, label=3];
+"2, 5" -> "AllOtherGreen" [color=blue, arrowhead=none, label=2];
+node[shape=box] 
+{rank=sink Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> 
+ <TD>1</TD> 
+ <TD>FloraChina.OakGenus {includes is_included_in} FloraMexico.OakGenus</TD> 
+ </TR> 
+<TR> 
+ <TD>2</TD> 
+ <TD>FloraChina.ChineseOakSpecies1 rsum FloraMexico.MexicanOakSpecies1 FloraMexico.MexicanOakSpecies2</TD> 
+ </TR> 
+<TR> 
+ <TD>3</TD> 
+ <TD>FloraChina.ChineseOakSpecies1 includes FloraMexico.MexicanOakSpecies1</TD> 
+ </TR> 
+<TR> 
+ <TD>4</TD> 
+ <TD>FloraChina.ChineseOakSpecies1 includes FloraMexico.MexicanOakSpecies2</TD> 
+ </TR> 
+<TR> 
+ <TD>5</TD> 
+ <TD>FloraChina.ChineseOakSpecies2 equals FloraMexico.MexicanOakSpecies1</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}

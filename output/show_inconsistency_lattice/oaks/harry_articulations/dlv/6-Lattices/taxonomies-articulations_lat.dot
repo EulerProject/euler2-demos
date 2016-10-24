@@ -1,0 +1,44 @@
+digraph{
+node[fontname="Helvetica-Narrow"]
+rankdir=TB
+"AllOtherRed" [shape=octagon color="#FFB0B0" style=dashed]
+"AllOtherGreen" [shape=box color="#006400" style="rounded,dashed"]
+"1, 3, 4" [shape=box color="#006400" fillcolor="#A0FFA0" style="rounded,filled"];
+"2, 4" [shape=box color="#006400" fillcolor="#A0FFA0" style="rounded,filled"];
+"1, 2" [shape=box color="#006400" fillcolor="#A0FFA0" style="rounded,filled"];
+"3, 2" [shape=octagon color="#FF0000" fillcolor="#FFB0B0" style="filled"];
+"4, 1, 2" [shape=octagon color="#FF0000" fillcolor="#FFB0B0" style="filled"];
+"AllOtherRed" -> "1, 3, 4" [color=blue, arrowhead=none, label=1];
+"1, 3, 4" -> "AllOtherGreen" [color="#006400" style=dashed, label=3];
+"AllOtherRed" -> "2, 4" [color=blue, arrowhead=none, label=2];
+"2, 4" -> "AllOtherGreen" [color="#006400" style=dashed, label=2];
+"AllOtherRed" -> "1, 2" [color=blue, arrowhead=none, label=2];
+"1, 2" -> "AllOtherGreen" [color="#006400" style=dashed, label=2];
+"AllOtherRed" -> "3, 2" [color=red, style=dashed, dir=back, label=2];
+"3, 2" -> "AllOtherGreen" [color=blue, arrowhead=none, label=2];
+"AllOtherRed" -> "4, 1, 2" [color=red, style=dashed, dir=back, label=1];
+"4, 1, 2" -> "AllOtherGreen" [color=blue, arrowhead=none, label=3];
+"4, 1, 2" -> "2, 4" [color=blue, arrowhead=none, label=1];
+"4, 1, 2" -> "1, 2" [color=blue, arrowhead=none, label=1];
+node[shape=box] 
+{rank=sink Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> 
+ <TD>1</TD> 
+ <TD>FloraChina.OakGenus includes FloraMexico.OakGenus</TD> 
+ </TR> 
+<TR> 
+ <TD>2</TD> 
+ <TD>FloraChina.ChineseOakSpecies1 is_included_in FloraMexico.MexicanOakSpecies1</TD> 
+ </TR> 
+<TR> 
+ <TD>3</TD> 
+ <TD>FloraChina.ChineseOakSpecies1 includes FloraMexico.OakGenus</TD> 
+ </TR> 
+<TR> 
+ <TD>4</TD> 
+ <TD>FloraChina.ChineseOakSpecies2 disjoint FloraMexico.MexicanOakSpecies1</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}
