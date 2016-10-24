@@ -187,9 +187,9 @@ def clean_outputs(commands, example, articulations, reasoner):
     #for root, dirs, files in os.walk(output):
     #	for file in filter(lambda x: re.match('^.*\.pdf$', x), files):
     #	     os.remove(os.path.join(root, file))
-    for root, dirs, files in os.walk(output):
-    	for file in filter(lambda x: re.match('^.*\.yaml$', x), files):
-    	     os.remove(os.path.join(root, file))
+    #for root, dirs, files in os.walk(output):
+    # 	for file in filter(lambda x: re.match('^.*\.yaml$', x), files):
+    #	     os.remove(os.path.join(root, file))
     for root, dirs, files in os.walk(output):
     	for file in filter(lambda x: re.match('^.*\.internal.*$', x), files):
     	     os.remove(os.path.join(root, file))

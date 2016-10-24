@@ -1,1 +1,0 @@
-euler2 align ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt -o ./output/repair_topdown/butterflies/alice_articulations/dlv --repair=topdown -r dlv

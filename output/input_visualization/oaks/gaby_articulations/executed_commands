@@ -1,1 +1,0 @@
-euler2 show iv ./examples/oaks/taxonomies.txt ./examples/oaks/gaby_articulations/articulations.txt -o ./output/input_visualization/oaks/gaby_articulations --svg

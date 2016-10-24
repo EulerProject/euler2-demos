@@ -1,5 +1,0 @@
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/alice_articulations/articulations.txt -o ./output/align_sequence/butterflies/dlv -r dlv
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/gaby_articulations/articulations.txt -o ./output/align_sequence/butterflies/dlv -r dlv
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/bob_articulations/articulations.txt -o ./output/align_sequence/butterflies/dlv -r dlv
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/carol_articulations/articulations.txt -o ./output/align_sequence/butterflies/dlv -r dlv
-euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/dan_articulations/articulations.txt -o ./output/align_sequence/butterflies/dlv -r dlv

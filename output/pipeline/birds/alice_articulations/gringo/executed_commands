@@ -1,6 +1,0 @@
-euler2 check ./examples/birds/taxonomies.txt ./examples/birds/alice_articulations/articulations.txt
-euler2 align ./examples/birds/taxonomies.txt ./examples/birds/alice_articulations/articulations.txt --consistency -o ./output/pipeline/birds/alice_articulations/gringo -r gringo
-euler2 show iv ./examples/birds/taxonomies.txt ./examples/birds/alice_articulations/articulations.txt -o ./output/pipeline/birds/alice_articulations/gringo --svg
-euler2 align ./examples/birds/taxonomies.txt ./examples/birds/alice_articulations/articulations.txt -o ./output/pipeline/birds/alice_articulations/gringo -r gringo
-euler2 show -o ./output/pipeline/birds/alice_articulations/gringo pw --svg
-euler2 show -o ./output/pipeline/birds/alice_articulations/gringo sv --svg
