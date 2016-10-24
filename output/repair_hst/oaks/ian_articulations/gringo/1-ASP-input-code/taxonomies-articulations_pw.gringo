@@ -39,72 +39,84 @@ cc(R, Y) :- c(R, _, Y), ix.
 %%% Parent-Child relations
 %% ISA
 % cFloraChina_ChineseOakSpecies1 isa cFloraChina_OakGenus
-ir(X, r162) :- in(cFloraChina_ChineseOakSpecies1, X), out(cFloraChina_OakGenus, X), pw.
-ir(X, prod(r162,R)) :- in(cFloraChina_ChineseOakSpecies1,X), out3(cFloraChina_OakGenus, X, R), ix.
+ir(X, r211) :- in(cFloraChina_ChineseOakSpecies1, X), out(cFloraChina_OakGenus, X), pw.
+ir(X, prod(r211,R)) :- in(cFloraChina_ChineseOakSpecies1,X), out3(cFloraChina_OakGenus, X, R), ix.
 :- #count {X : vrs(X), in(cFloraChina_ChineseOakSpecies1,X), in(cFloraChina_OakGenus,X)} <= 0, pw.
-pie(r162, A, 1) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraChina_OakGenus, X), ix.
-c(r162, A, 1) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraChina_OakGenus, X), ix.
+pie(r211, A, 1) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraChina_OakGenus, X), ix.
+c(r211, A, 1) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraChina_OakGenus, X), ix.
 
 % cFloraChina_ChineseOakSpecies2 isa cFloraChina_OakGenus
-ir(X, r163) :- in(cFloraChina_ChineseOakSpecies2, X), out(cFloraChina_OakGenus, X), pw.
-ir(X, prod(r163,R)) :- in(cFloraChina_ChineseOakSpecies2,X), out3(cFloraChina_OakGenus, X, R), ix.
+ir(X, r212) :- in(cFloraChina_ChineseOakSpecies2, X), out(cFloraChina_OakGenus, X), pw.
+ir(X, prod(r212,R)) :- in(cFloraChina_ChineseOakSpecies2,X), out3(cFloraChina_OakGenus, X, R), ix.
 :- #count {X : vrs(X), in(cFloraChina_ChineseOakSpecies2,X), in(cFloraChina_OakGenus,X)} <= 0, pw.
-pie(r163, A, 1) :- ir(X, A), in(cFloraChina_ChineseOakSpecies2, X), in(cFloraChina_OakGenus, X), ix.
-c(r163, A, 1) :- vr(X, A), in(cFloraChina_ChineseOakSpecies2, X), in(cFloraChina_OakGenus, X), ix.
+pie(r212, A, 1) :- ir(X, A), in(cFloraChina_ChineseOakSpecies2, X), in(cFloraChina_OakGenus, X), ix.
+c(r212, A, 1) :- vr(X, A), in(cFloraChina_ChineseOakSpecies2, X), in(cFloraChina_OakGenus, X), ix.
 
 %% coverage
-out3(cFloraChina_OakGenus, X, r164) :- out(cFloraChina_ChineseOakSpecies1, X), out(cFloraChina_ChineseOakSpecies2, X), ix.
+out3(cFloraChina_OakGenus, X, r213) :- out(cFloraChina_ChineseOakSpecies1, X), out(cFloraChina_ChineseOakSpecies2, X), ix.
 out(cFloraChina_OakGenus, X) :- out(cFloraChina_ChineseOakSpecies1, X), out(cFloraChina_ChineseOakSpecies2, X), pw.
 %% sibling disjointness
 % cFloraChina_ChineseOakSpecies1 ! cFloraChina_ChineseOakSpecies2
-ir(X, r165) :- in(cFloraChina_ChineseOakSpecies1, X), in(cFloraChina_ChineseOakSpecies2, X).
+ir(X, r214) :- in(cFloraChina_ChineseOakSpecies1, X), in(cFloraChina_ChineseOakSpecies2, X).
 :- #count {X : vrs(X), in(cFloraChina_ChineseOakSpecies1,X), out(cFloraChina_ChineseOakSpecies2,X)} <= 0, pw.
 :- #count {X : vrs(X), out(cFloraChina_ChineseOakSpecies1,X), in(cFloraChina_ChineseOakSpecies2,X)} <= 0, pw.
-pie(r165, A, 1) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraChina_ChineseOakSpecies2, X), ix.
-c(r165, A, 1) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraChina_ChineseOakSpecies2, X), ix.
-pie(r165, A, 2) :- ir(X, A), out(cFloraChina_ChineseOakSpecies1, X), in(cFloraChina_ChineseOakSpecies2, X), ix.
-c(r165, A, 2) :- vr(X, A), out(cFloraChina_ChineseOakSpecies1, X), in(cFloraChina_ChineseOakSpecies2, X), ix.
+pie(r214, A, 1) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraChina_ChineseOakSpecies2, X), ix.
+c(r214, A, 1) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraChina_ChineseOakSpecies2, X), ix.
+pie(r214, A, 2) :- ir(X, A), out(cFloraChina_ChineseOakSpecies1, X), in(cFloraChina_ChineseOakSpecies2, X), ix.
+c(r214, A, 2) :- vr(X, A), out(cFloraChina_ChineseOakSpecies1, X), in(cFloraChina_ChineseOakSpecies2, X), ix.
 
 %% ISA
 % cFloraMexico_MexicanOakSpecies1 isa cFloraMexico_OakGenus
-ir(X, r166) :- in(cFloraMexico_MexicanOakSpecies1, X), out(cFloraMexico_OakGenus, X), pw.
-ir(X, prod(r166,R)) :- in(cFloraMexico_MexicanOakSpecies1,X), out3(cFloraMexico_OakGenus, X, R), ix.
+ir(X, r215) :- in(cFloraMexico_MexicanOakSpecies1, X), out(cFloraMexico_OakGenus, X), pw.
+ir(X, prod(r215,R)) :- in(cFloraMexico_MexicanOakSpecies1,X), out3(cFloraMexico_OakGenus, X, R), ix.
 :- #count {X : vrs(X), in(cFloraMexico_MexicanOakSpecies1,X), in(cFloraMexico_OakGenus,X)} <= 0, pw.
-pie(r166, A, 1) :- ir(X, A), in(cFloraMexico_MexicanOakSpecies1, X), in(cFloraMexico_OakGenus, X), ix.
-c(r166, A, 1) :- vr(X, A), in(cFloraMexico_MexicanOakSpecies1, X), in(cFloraMexico_OakGenus, X), ix.
+pie(r215, A, 1) :- ir(X, A), in(cFloraMexico_MexicanOakSpecies1, X), in(cFloraMexico_OakGenus, X), ix.
+c(r215, A, 1) :- vr(X, A), in(cFloraMexico_MexicanOakSpecies1, X), in(cFloraMexico_OakGenus, X), ix.
 
 % cFloraMexico_MexicanOakSpecies2 isa cFloraMexico_OakGenus
-ir(X, r167) :- in(cFloraMexico_MexicanOakSpecies2, X), out(cFloraMexico_OakGenus, X), pw.
-ir(X, prod(r167,R)) :- in(cFloraMexico_MexicanOakSpecies2,X), out3(cFloraMexico_OakGenus, X, R), ix.
+ir(X, r216) :- in(cFloraMexico_MexicanOakSpecies2, X), out(cFloraMexico_OakGenus, X), pw.
+ir(X, prod(r216,R)) :- in(cFloraMexico_MexicanOakSpecies2,X), out3(cFloraMexico_OakGenus, X, R), ix.
 :- #count {X : vrs(X), in(cFloraMexico_MexicanOakSpecies2,X), in(cFloraMexico_OakGenus,X)} <= 0, pw.
-pie(r167, A, 1) :- ir(X, A), in(cFloraMexico_MexicanOakSpecies2, X), in(cFloraMexico_OakGenus, X), ix.
-c(r167, A, 1) :- vr(X, A), in(cFloraMexico_MexicanOakSpecies2, X), in(cFloraMexico_OakGenus, X), ix.
+pie(r216, A, 1) :- ir(X, A), in(cFloraMexico_MexicanOakSpecies2, X), in(cFloraMexico_OakGenus, X), ix.
+c(r216, A, 1) :- vr(X, A), in(cFloraMexico_MexicanOakSpecies2, X), in(cFloraMexico_OakGenus, X), ix.
 
 %% coverage
-out3(cFloraMexico_OakGenus, X, r168) :- out(cFloraMexico_MexicanOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), ix.
+out3(cFloraMexico_OakGenus, X, r217) :- out(cFloraMexico_MexicanOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), ix.
 out(cFloraMexico_OakGenus, X) :- out(cFloraMexico_MexicanOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), pw.
 %% sibling disjointness
 % cFloraMexico_MexicanOakSpecies1 ! cFloraMexico_MexicanOakSpecies2
-ir(X, r169) :- in(cFloraMexico_MexicanOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies2, X).
+ir(X, r218) :- in(cFloraMexico_MexicanOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies2, X).
 :- #count {X : vrs(X), in(cFloraMexico_MexicanOakSpecies1,X), out(cFloraMexico_MexicanOakSpecies2,X)} <= 0, pw.
 :- #count {X : vrs(X), out(cFloraMexico_MexicanOakSpecies1,X), in(cFloraMexico_MexicanOakSpecies2,X)} <= 0, pw.
-pie(r169, A, 1) :- ir(X, A), in(cFloraMexico_MexicanOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), ix.
-c(r169, A, 1) :- vr(X, A), in(cFloraMexico_MexicanOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), ix.
-pie(r169, A, 2) :- ir(X, A), out(cFloraMexico_MexicanOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies2, X), ix.
-c(r169, A, 2) :- vr(X, A), out(cFloraMexico_MexicanOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies2, X), ix.
+pie(r218, A, 1) :- ir(X, A), in(cFloraMexico_MexicanOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), ix.
+c(r218, A, 1) :- vr(X, A), in(cFloraMexico_MexicanOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), ix.
+pie(r218, A, 2) :- ir(X, A), out(cFloraMexico_MexicanOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies2, X), ix.
+c(r218, A, 2) :- vr(X, A), out(cFloraMexico_MexicanOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies2, X), ix.
 
 
 %%% Articulations
 % FloraChina.ChineseOakSpecies1 includes FloraMexico.MexicanOakSpecies1
-ir(X, r170) :- out(cFloraChina_ChineseOakSpecies1,X), in(cFloraMexico_MexicanOakSpecies1,X), pw.
-ir(X, prod(r170,R)) :- out3(cFloraChina_ChineseOakSpecies1, X, R), in(cFloraMexico_MexicanOakSpecies1,X), ix.
+ir(X, r219) :- out(cFloraChina_ChineseOakSpecies1,X), in(cFloraMexico_MexicanOakSpecies1,X), pw.
+ir(X, prod(r219,R)) :- out3(cFloraChina_ChineseOakSpecies1, X, R), in(cFloraMexico_MexicanOakSpecies1,X), ix.
 :- #count {X : vrs(X), in(cFloraChina_ChineseOakSpecies1,X), in(cFloraMexico_MexicanOakSpecies1,X)} <= 0, pw.
 :- #count {X : vrs(X), in(cFloraChina_ChineseOakSpecies1,X), out(cFloraMexico_MexicanOakSpecies1,X)} <= 0, pw.
-pie(r170, A, 1) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies1, X), ix.
-c(r170, A, 1) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies1, X), ix.
+pie(r219, A, 1) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies1, X), ix.
+c(r219, A, 1) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies1, X), ix.
 
-pie(r170, A, 2) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies1, X), ix.
-c(r170, A, 2) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies1, X), ix.
+pie(r219, A, 2) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies1, X), ix.
+c(r219, A, 2) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies1, X), ix.
+
+
+% FloraChina.ChineseOakSpecies1 includes FloraMexico.MexicanOakSpecies2
+ir(X, r220) :- out(cFloraChina_ChineseOakSpecies1,X), in(cFloraMexico_MexicanOakSpecies2,X), pw.
+ir(X, prod(r220,R)) :- out3(cFloraChina_ChineseOakSpecies1, X, R), in(cFloraMexico_MexicanOakSpecies2,X), ix.
+:- #count {X : vrs(X), in(cFloraChina_ChineseOakSpecies1,X), in(cFloraMexico_MexicanOakSpecies2,X)} <= 0, pw.
+:- #count {X : vrs(X), in(cFloraChina_ChineseOakSpecies1,X), out(cFloraMexico_MexicanOakSpecies2,X)} <= 0, pw.
+pie(r220, A, 1) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), ix.
+c(r220, A, 1) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), ix.
+
+pie(r220, A, 2) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies2, X), ix.
+c(r220, A, 2) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies2, X), ix.
 
 
 % FloraChina.ChineseOakSpecies1 rsum FloraMexico.MexicanOakSpecies1 FloraMexico.MexicanOakSpecies2
@@ -112,24 +124,12 @@ c(r170, A, 2) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraMexic
 :- #count {X : vrs(X), in(cFloraMexico_MexicanOakSpecies1,X), in(cFloraChina_ChineseOakSpecies1,X)} <= 0, pw.
 :- #count {X : vrs(X), out(cFloraMexico_MexicanOakSpecies2,X), in(cFloraChina_ChineseOakSpecies1,X)} <= 0, pw.
 :- #count {X : vrs(X), in(cFloraMexico_MexicanOakSpecies2,X), in(cFloraChina_ChineseOakSpecies1,X)} <= 0, pw.
-ir(X, r171) :- in(cFloraMexico_MexicanOakSpecies1,X), out(cFloraChina_ChineseOakSpecies1,X).
-ir(X, r171) :- in(cFloraMexico_MexicanOakSpecies2,X), out(cFloraChina_ChineseOakSpecies1,X).
-
-% FloraChina.ChineseOakSpecies1 includes FloraMexico.MexicanOakSpecies2
-ir(X, r172) :- out(cFloraChina_ChineseOakSpecies1,X), in(cFloraMexico_MexicanOakSpecies2,X), pw.
-ir(X, prod(r172,R)) :- out3(cFloraChina_ChineseOakSpecies1, X, R), in(cFloraMexico_MexicanOakSpecies2,X), ix.
-:- #count {X : vrs(X), in(cFloraChina_ChineseOakSpecies1,X), in(cFloraMexico_MexicanOakSpecies2,X)} <= 0, pw.
-:- #count {X : vrs(X), in(cFloraChina_ChineseOakSpecies1,X), out(cFloraMexico_MexicanOakSpecies2,X)} <= 0, pw.
-pie(r172, A, 1) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), ix.
-c(r172, A, 1) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), out(cFloraMexico_MexicanOakSpecies2, X), ix.
-
-pie(r172, A, 2) :- ir(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies2, X), ix.
-c(r172, A, 2) :- vr(X, A), in(cFloraChina_ChineseOakSpecies1, X), in(cFloraMexico_MexicanOakSpecies2, X), ix.
-
+ir(X, r221) :- in(cFloraMexico_MexicanOakSpecies1,X), out(cFloraChina_ChineseOakSpecies1,X).
+ir(X, r221) :- in(cFloraMexico_MexicanOakSpecies2,X), out(cFloraChina_ChineseOakSpecies1,X).
 
 % FloraChina.OakGenus {includes is_included_in} FloraMexico.OakGenus
-ir(X, r173) :- in(cFloraChina_OakGenus,X), out(cFloraMexico_OakGenus,X), vr(Y, _), in(cFloraMexico_OakGenus,Y), out(cFloraChina_OakGenus,Y).
-ir(Y, r173) :- 0 < #count {X : vrs(X), in(cFloraChina_OakGenus,X), out(cFloraMexico_OakGenus,X)}, in(cFloraMexico_OakGenus,Y), out(cFloraChina_OakGenus,Y).
+ir(X, r222) :- in(cFloraChina_OakGenus,X), out(cFloraMexico_OakGenus,X), vr(Y, _), in(cFloraMexico_OakGenus,Y), out(cFloraChina_OakGenus,Y).
+ir(Y, r222) :- 0 < #count {X : vrs(X), in(cFloraChina_OakGenus,X), out(cFloraMexico_OakGenus,X)}, in(cFloraMexico_OakGenus,Y), out(cFloraChina_OakGenus,Y).
 
 %%% Decoding now
 :- rel(X, Y, "="), rel(X, Y, "<"), concept2(X, N1), concept2(Y, N2), pw.
