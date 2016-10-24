@@ -1,0 +1,3 @@
+euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/ian_articulations/articulations.txt -o ./output/show_summary_view/oaks/ian_articulations/dlv -r dlv
+euler2 show -o ./output/show_summary_view/oaks/ian_articulations/dlv pw --svg
+euler2 show -o ./output/show_summary_view/oaks/ian_articulations/dlv sv --svg

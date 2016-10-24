@@ -1,0 +1,1 @@
+euler2 align ./examples/oaks/taxonomies.txt ./examples/oaks/gaby_articulations/articulations.txt -o ./output/repair_hst/oaks/gaby_articulations/dlv --repair=HST -r dlv

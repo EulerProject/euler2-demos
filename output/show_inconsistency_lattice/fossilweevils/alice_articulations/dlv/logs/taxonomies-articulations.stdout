@@ -1,0 +1,51 @@
+##### Executing command:
+
+/home/thomas/EulerX/src-el/euler2 align /home/thomas/demo/euler2-demos/examples/fossilweevils/taxonomies.txt /home/thomas/demo/euler2-demos/examples/fossilweevils/alice_articulations/articulations.txt -o /home/thomas/demo/euler2-demos/output/show_inconsistency_lattice/fossilweevils/alice_articulations/dlv -r dlv 
+
+
+##### Euler version:
+
+main
+22e2b7e80b75d65ea0bce6fafc4fd58654333627
+
+
+##### GraphViz version:
+
+dot - graphviz version 2.36.0 (20140111.2315)
+
+
+##### DLV version:
+
+DLV [build BEN/Dec 17 2012   gcc 4.6.1]
+
+usage: dlv {FRONTEND} {OPTIONS} [filename [filename [...]]]
+
+Specify -help for more detailed usage information.
+
+
+##### Running User, Host and Date:
+User:	thomas
+Host:	thomas-VirtualBox
+Date:	2016-10-23-03:54:02
+
+
+##### Euler Outputs:
+******* You are running example taxonomies-articulations *******
+Traceback (most recent call last):
+  File "/home/thomas/EulerX/src-el/euler2", line 148, in <module>
+    main()
+  File "/home/thomas/EulerX/src-el/euler2", line 87, in main
+    elRunner.run(args)
+  File "/home/thomas/EulerX/src-el/runner2.py", line 42, in run
+    taxMap.run()
+  File "/home/thomas/EulerX/src-el/alignment2.py", line 371, in run
+    self.genPW()
+  File "/home/thomas/EulerX/src-el/alignment2.py", line 672, in genPW
+    self.intOutPw(self.name, self.pwflag)
+  File "/home/thomas/EulerX/src-el/alignment2.py", line 694, in intOutPw
+    self.outPW(name, pws, pwflag, "rel")
+  File "/home/thomas/EulerX/src-el/alignment2.py", line 726, in outPW
+    dotc1 = self.dlvName2dot(rel[0])
+  File "/home/thomas/EulerX/src-el/alignment2.py", line 2608, in dlvName2dot
+    return elems.group(1) + "." + elems.group(2)
+AttributeError: 'NoneType' object has no attribute 'group'

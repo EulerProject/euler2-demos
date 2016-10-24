@@ -1,0 +1,96 @@
+digraph{
+rankdir=RL
+node[shape=box style=filled fillcolor="#CCFFCC"] 
+"FloraChina.OakGenus"
+"FloraChina.ChineseOakSpecies1"
+"FloraChina.ChineseOakSpecies2"
+node[shape=box style="filled,rounded" fillcolor="#EEEEEE"] 
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies1"
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies2"
+"FloraChina.OakGenus\nFloraMexico.OakGenus"
+"FloraChina.ChineseOakSpecies2\nFloraMexico.OakGenus"
+"FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies2"
+"FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies1"
+"FloraChina.OakGenus\nFloraMexico.MexicanOakSpecies1"
+"FloraChina.OakGenus\nFloraMexico.MexicanOakSpecies2"
+"FloraChina.ChineseOakSpecies1\nFloraMexico.OakGenus"
+node[shape=octagon style=filled fillcolor="#FFFFCC"] 
+"FloraMexico.MexicanOakSpecies1"
+"FloraMexico.MexicanOakSpecies2"
+"FloraMexico.OakGenus"
+edge[arrowhead=normal style=solid color="#000000" constraint=true ]
+"FloraMexico.MexicanOakSpecies2" -> "FloraChina.OakGenus" [label="15"][color="#169b5a"]
+"FloraMexico.MexicanOakSpecies1" -> "FloraChina.ChineseOakSpecies2\nFloraMexico.OakGenus" [label="1"][color="#da861"]
+"FloraMexico.MexicanOakSpecies2" -> "FloraChina.ChineseOakSpecies2" [label="15"][color="#169b5a"]
+"FloraChina.ChineseOakSpecies2" -> "FloraMexico.OakGenus" [label="15"][color="#169b5a"]
+"FloraChina.ChineseOakSpecies1" -> "FloraChina.OakGenus" [label="143"][color="#6a231b"]
+"FloraChina.ChineseOakSpecies1" -> "FloraMexico.OakGenus" [label="15"][color="#169b5a"]
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies1" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="1"][color="#da861"]
+"FloraMexico.MexicanOakSpecies2" -> "FloraChina.ChineseOakSpecies1" [label="15"][color="#169b5a"]
+"FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies2" -> "FloraChina.OakGenus" [label="4"][color="#fa55f"]
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies1" -> "FloraMexico.OakGenus" [label="4"][color="#fa55f"]
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies1" -> "FloraChina.OakGenus" [label="4"][color="#fa55f"]
+"FloraChina.ChineseOakSpecies2" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="5"][color="#fa45f"]
+"FloraMexico.OakGenus" -> "FloraChina.ChineseOakSpecies2" [label="1"][color="#da861"]
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies2" -> "FloraMexico.OakGenus" [label="4"][color="#fa55f"]
+"FloraMexico.OakGenus" -> "FloraChina.ChineseOakSpecies1" [label="1"][color="#da861"]
+"FloraChina.ChineseOakSpecies1" -> "FloraChina.OakGenus\nFloraMexico.MexicanOakSpecies1" [label="1"][color="#da861"]
+"FloraChina.ChineseOakSpecies1" -> "FloraChina.OakGenus\nFloraMexico.MexicanOakSpecies2" [label="1"][color="#da861"]
+"FloraMexico.MexicanOakSpecies2" -> "FloraChina.ChineseOakSpecies2\nFloraMexico.OakGenus" [label="1"][color="#da861"]
+"FloraChina.ChineseOakSpecies2\nFloraMexico.OakGenus" -> "FloraChina.OakGenus" [label="1"][color="#da861"]
+"FloraMexico.MexicanOakSpecies2" -> "FloraChina.ChineseOakSpecies1\nFloraMexico.OakGenus" [label="1"][color="#da861"]
+"FloraChina.OakGenus\nFloraMexico.MexicanOakSpecies2" -> "FloraMexico.OakGenus" [label="1"][color="#da861"]
+"FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies1" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="1"][color="#da861"]
+"FloraChina.ChineseOakSpecies2" -> "FloraChina.OakGenus\nFloraMexico.MexicanOakSpecies2" [label="1"][color="#da861"]
+"FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies1" -> "FloraMexico.OakGenus" [label="4"][color="#fa55f"]
+"FloraChina.ChineseOakSpecies2" -> "FloraChina.OakGenus\nFloraMexico.MexicanOakSpecies1" [label="1"][color="#da861"]
+"FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies2" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="1"][color="#da861"]
+"FloraChina.OakGenus" -> "FloraMexico.MexicanOakSpecies2" [label="1"][color="#da861"]
+"FloraChina.OakGenus" -> "FloraMexico.MexicanOakSpecies1" [label="1"][color="#da861"]
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies2" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="1"][color="#da861"]
+"FloraMexico.MexicanOakSpecies1" -> "FloraChina.ChineseOakSpecies1\nFloraMexico.OakGenus" [label="1"][color="#da861"]
+"FloraMexico.MexicanOakSpecies1" -> "FloraMexico.OakGenus" [label="143"][color="#6a231b"]
+"FloraMexico.OakGenus" -> "FloraChina.OakGenus" [label="21"][color="#1a9557"]
+"FloraChina.ChineseOakSpecies2" -> "FloraChina.OakGenus" [label="143"][color="#6a231b"]
+"FloraMexico.MexicanOakSpecies1" -> "FloraChina.ChineseOakSpecies2" [label="15"][color="#169b5a"]
+"FloraMexico.MexicanOakSpecies1" -> "FloraChina.ChineseOakSpecies1" [label="15"][color="#169b5a"]
+"FloraMexico.MexicanOakSpecies2" -> "FloraMexico.OakGenus" [label="143"][color="#6a231b"]
+"FloraMexico.MexicanOakSpecies2" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="5"][color="#fa45f"]
+"FloraChina.ChineseOakSpecies2" -> "FloraMexico.MexicanOakSpecies1" [label="15"][color="#169b5a"]
+"FloraChina.ChineseOakSpecies2" -> "FloraMexico.MexicanOakSpecies2" [label="15"][color="#169b5a"]
+"FloraMexico.MexicanOakSpecies1" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="5"][color="#fa45f"]
+"FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies2" -> "FloraMexico.OakGenus" [label="4"][color="#fa55f"]
+"FloraChina.ChineseOakSpecies1\nFloraMexico.MexicanOakSpecies1" -> "FloraChina.OakGenus" [label="4"][color="#fa55f"]
+"FloraChina.ChineseOakSpecies1" -> "FloraChina.OakGenus\nFloraMexico.OakGenus" [label="5"][color="#fa45f"]
+"FloraChina.OakGenus" -> "FloraMexico.OakGenus" [label="21"][color="#1a9557"]
+"FloraChina.ChineseOakSpecies1" -> "FloraMexico.MexicanOakSpecies1" [label="15"][color="#169b5a"]
+"FloraChina.ChineseOakSpecies1" -> "FloraMexico.MexicanOakSpecies2" [label="15"][color="#169b5a"]
+"FloraChina.ChineseOakSpecies2\nFloraMexico.MexicanOakSpecies2" -> "FloraChina.OakGenus" [label="4"][color="#fa55f"]
+"FloraMexico.MexicanOakSpecies1" -> "FloraChina.OakGenus" [label="15"][color="#169b5a"]
+"FloraChina.OakGenus\nFloraMexico.MexicanOakSpecies1" -> "FloraMexico.OakGenus" [label="1"][color="#da861"]
+"FloraChina.ChineseOakSpecies1\nFloraMexico.OakGenus" -> "FloraChina.OakGenus" [label="1"][color="#da861"]
+edge[arrowhead=normal style=solid color="#000000" constraint=true ]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC">FloraChina</TD> 
+ <TD>3</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#EEEEEE">comb</TD> 
+ <TD>9</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC">FloraMexico</TD> 
+ <TD>3</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">default</font></TD> 
+ <TD>50</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}

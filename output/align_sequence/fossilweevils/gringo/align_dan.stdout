@@ -1,0 +1,5 @@
+******* You are running example taxonomies-articulations *******
+
+Possible world 0:
+{FloraChina.ChineseOakSpecies1"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies1"<"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies2"<"FloraMexico.OakGenus, FloraChina.OakGenus"<"FloraMexico.OakGenus, FloraChina.ChineseOakSpecies2"="FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus">"FloraMexico.MexicanOakSpecies2, FloraChina.OakGenus"><"FloraMexico.MexicanOakSpecies1, FloraChina.ChineseOakSpecies1"!"FloraMexico.MexicanOakSpecies2, FloraChina.ChineseOakSpecies2"!"FloraMexico.MexicanOakSpecies1}
+

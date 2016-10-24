@@ -1,0 +1,16 @@
+1997.Amauris_damocles,<,1995.Amauris_damocles,deduced
+1997.Amauris_damocles,!,1995.Amauris_damocles_subsp_hyalites,deduced
+1997.Amauris_damocles,!,1995.Amauris_damocles_subsp_makuyensis,deduced
+1997.Amauris_hyalites,>,1995.Amauris_damocles_subsp_makuyensis,deduced
+1997.Amauris_hyalites_subsp_hyalites,<,1995.Amauris_damocles,deduced
+1997.Amauris_hyalites_subsp_hyalites,!,1995.Amauris_damocles_subsp_makuyensis,deduced
+1997.Amauris_hyalites_subsp_makuyensis,<,1995.Amauris_damocles,deduced
+1997.Amauris_hyalites_subsp_makuyensis,!,1995.Amauris_damocles_subsp_damocles,deduced
+1997.Amauris_hyalites_subsp_makuyensis,!,1995.Amauris_damocles_subsp_hyalites,deduced
+1997.Amauris_hyalites,<,1995.Amauris_damocles,inferred
+1997.Amauris_hyalites,!,1995.Amauris_damocles_subsp_damocles,inferred
+1997.Amauris_hyalites,><,1995.Amauris_damocles_subsp_hyalites,inferred
+1997.Amauris_hyalites_subsp_hyalites,!,1995.Amauris_damocles_subsp_damocles,inferred
+1997.Amauris_damocles,=,1995.Amauris_damocles_subsp_damocles,input
+1997.Amauris_hyalites_subsp_hyalites,<,1995.Amauris_damocles_subsp_hyalites,input
+1997.Amauris_hyalites_subsp_makuyensis,=,1995.Amauris_damocles_subsp_makuyensis,input

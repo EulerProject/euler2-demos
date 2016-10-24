@@ -1,0 +1,1 @@
+euler2 check ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt

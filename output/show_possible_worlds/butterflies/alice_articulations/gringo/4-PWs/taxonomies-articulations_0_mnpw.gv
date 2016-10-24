@@ -1,0 +1,54 @@
+digraph{
+rankdir=RL
+node[shape=box style="filled,rounded" fillcolor="#EEEEEE"] 
+"1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles"
+"1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis"
+node[shape=octagon style=filled fillcolor="#FFFFCC"] 
+"1995.Amauris_damocles"
+"1995.Amauris_damocles_subsp_hyalites"
+node[shape=box style=filled fillcolor="#CCFFCC"] 
+"1997.Amauris_hyalites"
+"1997.Amauris_hyalites_subsp_hyalites"
+edge[arrowhead=none style=dotted color="#0000FF" constraint=false penwidth=1]
+"1995.Amauris_damocles_subsp_hyalites" -> "1997.Amauris_hyalites"
+edge[arrowhead=normal style=solid color="#000000" constraint=true penwidth=1]
+"1997.Amauris_damocles\n1995.Amauris_damocles_subsp_damocles" -> "1995.Amauris_damocles"
+"1997.Amauris_hyalites_subsp_hyalites" -> "1995.Amauris_damocles_subsp_hyalites"
+"1997.Amauris_hyalites_subsp_hyalites" -> "1997.Amauris_hyalites"
+"1995.Amauris_damocles_subsp_hyalites" -> "1995.Amauris_damocles"
+"1997.Amauris_hyalites_subsp_makuyensis\n1995.Amauris_damocles_subsp_makuyensis" -> "1997.Amauris_hyalites"
+edge[arrowhead=normal style=solid color="#FF0000" constraint=true penwidth=1]
+"1997.Amauris_hyalites" -> "1995.Amauris_damocles"
+edge[arrowhead=normal style=dotted color="#000000" constraint=true penwidth=1]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#EEEEEE">comb</TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC">1995</TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC">1997</TD> 
+ <TD>2</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#0000FF">overlaps</font></TD> 
+ <TD>1</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#000000">input</font></TD> 
+ <TD>5</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#FF0000">inferred</font></TD> 
+ <TD>1</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}

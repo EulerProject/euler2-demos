@@ -1,0 +1,1 @@
+euler2 align ./examples/butterflies/taxonomies.txt ./examples/butterflies/alice_articulations/articulations.txt -o ./output/align/butterflies/alice_articulations/dlv -r dlv
