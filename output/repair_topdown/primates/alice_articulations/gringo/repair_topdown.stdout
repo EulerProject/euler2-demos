@@ -1,0 +1,8 @@
+******* You are running example taxonomies-articulations *******
+************************************
+Input is inconsistent
+
+You can use "--repair=WAY" to do the repairing, see details in "euler2 -h"
+************************************
+Repair option  0 : remove problematic articulation [ 2005.Callitrichinae equals 1993.Callitrichidae ]
+************************************

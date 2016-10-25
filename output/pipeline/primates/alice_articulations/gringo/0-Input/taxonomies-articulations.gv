@@ -1,0 +1,240 @@
+digraph{
+rankdir=LR
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=octagon style=filled fillcolor="#FFFFCC"] 
+"1993.Saguinus_tripartitus"
+"1993.Saguinus_bicolor"
+"1993.Leontopithecus"
+"1993.Callithrix_jacchus"
+"1993.Callithrix_humeralifera"
+"1993.Saguinus"
+"1993.Leontopithecus_caissara"
+"1993.Saguinus_nigricollis"
+"1993.Leontopithecus_chrysomelas"
+"1993.Saguinus_midas"
+"1993.Callithrix"
+"1993.Callithrix_kuhlii"
+"1993.Saguinus_fuscicollis"
+"1993.Leontopithecus_chrysopygus"
+"1993.Callimico"
+"1993.Callithrix_aurita"
+"1993.Saguinus_geoffroyi"
+"1993.Saguinus_mystax"
+"1993.Callithrix_argentata"
+"1993.Callithrix_flaviceps"
+"1993.Saguinus_oedipus"
+"1993.Callithrix_pygmaea"
+"1993.Saguinus_labiatus"
+"1993.Saguinus_imperator"
+"1993.Saguinus_leucopus"
+"1993.Callithrix_geoffroyi"
+"1993.Leontopithecus_rosalia"
+"1993.Callithrix_penicillata"
+"1993.Callimico_goeldii"
+"1993.Callitrichidae"
+"1993.Saguinus_inustus"
+node[shape=circle style=filled fillcolor="#FFFFFF"] 
+node[shape=box style=filled fillcolor="#CCFFCC"] 
+"2005.Leontopithecus_chrysopygus"
+"2005.Saguinus_pileatus"
+"2005.Callithrix_humeralifera"
+"2005.Saguinus_oedipus"
+"2005.Callithrix_melanura"
+"2005.Callimico_goeldii"
+"2005.Saguinus_inustus"
+"2005.Saguinus_mystax"
+"2005.Callithrix_marcai"
+"2005.Leontopithecus"
+"2005.Saguinus_fuscicollis"
+"2005.Callithrix_nigriceps"
+"2005.Callithrix_chrysoleuca"
+"2005.Callithrix_emiliae"
+"2005.Callithrix_mauesi"
+"2005.Saguinus_melanoleucus"
+"2005.Callithrix_argentata"
+"2005.Callitrichinae"
+"2005.Callithrix_leucippe"
+"2005.Saguinus_bicolor"
+"2005.Callithrix_intermedia"
+"2005.Callithrix_saterei"
+"2005.Saguinus_tripartitus"
+"2005.Leontopithecus_rosalia"
+"2005.Saguinus_niger"
+"2005.Saguinus_nigricollis"
+"2005.Callimico"
+"2005.Callithrix"
+"2005.Callithrix_humilis"
+"2005.Saguinus"
+"2005.Saguinus_geoffroyi"
+"2005.Saguinus_martinsi"
+"2005.Saguinus_imperator"
+"2005.Saguinus_labiatus"
+"2005.Saguinus_leucopus"
+"2005.Callithrix_penicillata"
+"2005.Callithrix_pygmaea"
+"2005.Saguinus_midas"
+"2005.Callithrix_kuhlii"
+"2005.Leontopithecus_chrysomelas"
+"2005.Leontopithecus_caissara"
+"2005.Callithrix_aurita"
+"2005.Callithrix_geoffroyi"
+"2005.Saguinus_graellsi"
+"2005.Callithrix_acariensis"
+"2005.Callithrix_manicorensis"
+"2005.Callithrix_jacchus"
+"2005.Callithrix_flaviceps"
+edge[style=solid color="#000000" constraint=true penwidth=1]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+"1993.Leontopithecus" -> "1993.Callitrichidae"
+"1993.Saguinus_midas" -> "1993.Saguinus"
+"1993.Callithrix_geoffroyi" -> "1993.Callithrix"
+"1993.Saguinus_fuscicollis" -> "1993.Saguinus"
+"1993.Saguinus_labiatus" -> "1993.Saguinus"
+"1993.Saguinus_tripartitus" -> "1993.Saguinus"
+"1993.Callithrix_kuhlii" -> "1993.Callithrix"
+"1993.Callimico_goeldii" -> "1993.Callimico"
+"1993.Callithrix_humeralifera" -> "1993.Callithrix"
+"1993.Callithrix_penicillata" -> "1993.Callithrix"
+"1993.Callithrix_jacchus" -> "1993.Callithrix"
+"1993.Saguinus" -> "1993.Callitrichidae"
+"1993.Leontopithecus_chrysomelas" -> "1993.Leontopithecus"
+"1993.Saguinus_oedipus" -> "1993.Saguinus"
+"1993.Leontopithecus_caissara" -> "1993.Leontopithecus"
+"1993.Leontopithecus_rosalia" -> "1993.Leontopithecus"
+"1993.Saguinus_inustus" -> "1993.Saguinus"
+"1993.Leontopithecus_chrysopygus" -> "1993.Leontopithecus"
+"1993.Saguinus_mystax" -> "1993.Saguinus"
+"1993.Callithrix_aurita" -> "1993.Callithrix"
+"1993.Callithrix_flaviceps" -> "1993.Callithrix"
+"1993.Saguinus_nigricollis" -> "1993.Saguinus"
+"1993.Callithrix" -> "1993.Callitrichidae"
+"1993.Saguinus_bicolor" -> "1993.Saguinus"
+"1993.Callithrix_argentata" -> "1993.Callithrix"
+"1993.Saguinus_leucopus" -> "1993.Saguinus"
+"1993.Saguinus_geoffroyi" -> "1993.Saguinus"
+"1993.Callithrix_pygmaea" -> "1993.Callithrix"
+"1993.Saguinus_imperator" -> "1993.Saguinus"
+"1993.Callimico" -> "1993.Callitrichidae"
+edge[style=solid color="#000000" constraint=true penwidth=1]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+"2005.Callitrichinae" -> "2005.Leontopithecus" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_nigriceps" [dir=back]
+"2005.Callimico" -> "2005.Callimico_goeldii" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_oedipus" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_aurita" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_mystax" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_niger" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_melanura" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_penicillata" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_imperator" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_manicorensis" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_humeralifera" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_mauesi" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_acariensis" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_humilis" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_pygmaea" [dir=back]
+"2005.Leontopithecus" -> "2005.Leontopithecus_rosalia" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_jacchus" [dir=back]
+"2005.Leontopithecus" -> "2005.Leontopithecus_chrysomelas" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_martinsi" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_nigricollis" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_emiliae" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_marcai" [dir=back]
+"2005.Callitrichinae" -> "2005.Callithrix" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_intermedia" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_tripartitus" [dir=back]
+"2005.Leontopithecus" -> "2005.Leontopithecus_chrysopygus" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_melanoleucus" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_argentata" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_flaviceps" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_midas" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_graellsi" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_kuhlii" [dir=back]
+"2005.Callitrichinae" -> "2005.Callimico" [dir=back]
+"2005.Leontopithecus" -> "2005.Leontopithecus_caissara" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_bicolor" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_geoffroyi" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_leucopus" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_inustus" [dir=back]
+"2005.Callitrichinae" -> "2005.Saguinus" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_labiatus" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_leucippe" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_saterei" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_geoffroyi" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_fuscicollis" [dir=back]
+"2005.Saguinus" -> "2005.Saguinus_pileatus" [dir=back]
+"2005.Callithrix" -> "2005.Callithrix_chrysoleuca" [dir=back]
+edge[style=solid color="#000000" constraint=true penwidth=1]
+edge[style=dotted color="#AA00FF" constraint=true penwidth=3]
+"2005.Callithrix_manicorensis" -> "1993.Callitrichidae" [label="!"]
+"2005.Callithrix_flaviceps" -> "1993.Callithrix_flaviceps" [label="=="]
+"2005.Callithrix_nigriceps" -> "1993.Callitrichidae" [label="!"]
+"2005.Saguinus_midas" -> "1993.Saguinus_midas" [label="<"]
+"2005.Callithrix_kuhlii" -> "1993.Callithrix_kuhlii" [label="=="]
+"2005.Callithrix_geoffroyi" -> "1993.Callithrix_geoffroyi" [label="=="]
+"2005.Saguinus_imperator" -> "1993.Saguinus_imperator" [label="=="]
+"2005.Leontopithecus_chrysomelas" -> "1993.Leontopithecus_chrysomelas" [label="=="]
+"2005.Callithrix_marcai" -> "1993.Callitrichidae" [label="!"]
+"2005.Leontopithecus_rosalia" -> "1993.Leontopithecus_rosalia" [label="=="]
+"2005.Saguinus_mystax" -> "1993.Saguinus_mystax" [label="<"]
+"2005.Callithrix_jacchus" -> "1993.Callithrix_jacchus" [label="=="]
+"2005.Callithrix_penicillata" -> "1993.Callithrix_penicillata" [label="=="]
+"2005.Callithrix_melanura" -> "1993.Callithrix_argentata" [label="<"]
+"2005.Saguinus_oedipus" -> "1993.Saguinus_oedipus" [label="=="]
+"2005.Saguinus_geoffroyi" -> "1993.Saguinus_geoffroyi" [label="=="]
+"2005.Saguinus_niger" -> "1993.Saguinus_midas" [label="<"]
+"2005.Leontopithecus_chrysopygus" -> "1993.Leontopithecus_chrysopygus" [label="=="]
+"2005.Saguinus_labiatus" -> "1993.Saguinus_labiatus" [label="=="]
+"2005.Saguinus_bicolor" -> "1993.Saguinus_bicolor" [label="<"]
+"2005.Saguinus_nigricollis" -> "1993.Saguinus_nigricollis" [label="<"]
+"2005.Callithrix_aurita" -> "1993.Callithrix_aurita" [label="=="]
+"2005.Callithrix_saterei" -> "1993.Callitrichidae" [label="!"]
+"2005.Callithrix_leucippe" -> "1993.Callithrix_argentata" [label="<"]
+"2005.Callithrix_acariensis" -> "1993.Callitrichidae" [label="!"]
+"2005.Callithrix_pygmaea" -> "1993.Callithrix_pygmaea" [label="=="]
+"2005.Saguinus_tripartitus" -> "1993.Saguinus_tripartitus" [label="=="]
+"2005.Callithrix_argentata" -> "1993.Callithrix_argentata" [label="<"]
+"2005.Callithrix_mauesi" -> "1993.Callitrichidae" [label="!"]
+"2005.Saguinus_martinsi" -> "1993.Saguinus_bicolor" [label="<"]
+"2005.Callithrix_humeralifera" -> "1993.Callithrix_humeralifera" [label="<"]
+"2005.Saguinus_melanoleucus" -> "1993.Saguinus_fuscicollis" [label="<"]
+"2005.Saguinus_fuscicollis" -> "1993.Saguinus_fuscicollis" [label="<"]
+"2005.Saguinus_graellsi" -> "1993.Saguinus_nigricollis" [label="<"]
+"2005.Callimico_goeldii" -> "1993.Callimico_goeldii" [label="=="]
+"2005.Callitrichinae" -> "1993.Callitrichidae" [label="=="]
+"2005.Callithrix_humilis" -> "1993.Callitrichidae" [label="!"]
+"2005.Saguinus_leucopus" -> "1993.Saguinus_leucopus" [label="=="]
+"2005.Saguinus_inustus" -> "1993.Saguinus_inustus" [label="=="]
+"2005.Leontopithecus_caissara" -> "1993.Leontopithecus_caissara" [label="=="]
+"2005.Saguinus_pileatus" -> "1993.Saguinus_mystax" [label="<"]
+"2005.Callithrix_intermedia" -> "1993.Callithrix_humeralifera" [label="<"]
+"2005.Callithrix_emiliae" -> "1993.Callithrix_argentata" [label="<"]
+"2005.Callithrix_chrysoleuca" -> "1993.Callithrix_humeralifera" [label="<"]
+node[shape=box] 
+{rank=source Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> <TD COLSPAN="2"><font face="Arial Black"> Nodes</font></TD> </TR> 
+<TR> 
+ <TD bgcolor="#FFFFCC">1993</TD> 
+ <TD>31</TD> 
+ </TR> 
+<TR> 
+ <TD bgcolor="#CCFFCC">2005</TD> 
+ <TD>48</TD> 
+ </TR> 
+<TR> <TD COLSPAN="2"><font face = "Arial Black"> Edges </font></TD> </TR> 
+<TR> 
+ <TD><font color ="#000000">isa_1993</font></TD> 
+ <TD>30</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#000000">isa_2005</font></TD> 
+ <TD>47</TD> 
+ </TR> 
+<TR> 
+ <TD><font color ="#AA00FF">Art.</font></TD> 
+ <TD>44</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}

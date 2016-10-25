@@ -1,0 +1,26 @@
+******* You are running example taxonomies-articulations *******
+************************************
+Input is inconsistent
+
+You can use "--repair=WAY" to do the repairing, see details in "euler2 -h"
+************************************
+Min inconsistent subset  0 : [ 559 : 2005.Callitrichinae equals 1993.Callitrichidae , 581 : 2005.Callithrix_saterei disjoint 1993.Callitrichidae ]
+************************************
+************************************
+Min inconsistent subset  1 : [ 578 : 2005.Callithrix_nigriceps disjoint 1993.Callitrichidae , 559 : 2005.Callitrichinae equals 1993.Callitrichidae ]
+************************************
+************************************
+Min inconsistent subset  2 : [ 559 : 2005.Callitrichinae equals 1993.Callitrichidae , 576 : 2005.Callithrix_mauesi disjoint 1993.Callitrichidae ]
+************************************
+************************************
+Min inconsistent subset  3 : [ 575 : 2005.Callithrix_marcai disjoint 1993.Callitrichidae , 559 : 2005.Callitrichinae equals 1993.Callitrichidae ]
+************************************
+************************************
+Min inconsistent subset  4 : [ 559 : 2005.Callitrichinae equals 1993.Callitrichidae , 574 : 2005.Callithrix_manicorensis disjoint 1993.Callitrichidae ]
+************************************
+************************************
+Min inconsistent subset  5 : [ 559 : 2005.Callitrichinae equals 1993.Callitrichidae , 569 : 2005.Callithrix_humilis disjoint 1993.Callitrichidae ]
+************************************
+************************************
+Min inconsistent subset  6 : [ 561 : 2005.Callithrix_acariensis disjoint 1993.Callitrichidae , 559 : 2005.Callitrichinae equals 1993.Callitrichidae ]
+************************************

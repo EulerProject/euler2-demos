@@ -1,0 +1,2 @@
+euler2 align ./examples/fossilweevils/taxonomies.txt ./examples/fossilweevils/alice_articulations/articulations.txt -o ./output/show_possible_worlds/fossilweevils/alice_articulations/dlv -r dlv
+euler2 show -o ./output/show_possible_worlds/fossilweevils/alice_articulations/dlv pw --svg

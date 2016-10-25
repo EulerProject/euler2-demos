@@ -1,0 +1,1 @@
+euler2 align ./examples/fossilweevils/taxonomies.txt ./examples/fossilweevils/alice_articulations/articulations.txt -o ./output/repair_hst/fossilweevils/alice_articulations/gringo --repair=HST -r gringo
