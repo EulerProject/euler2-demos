@@ -1,0 +1,50 @@
+# @begin euler_workflow
+# @in tap @desc tuple (taxonomies, articulations, taxonomic_constraints). taxonomic_constraints 0-2 of { disable_coverage, disable_sibling_disjointness }
+# @param encoding_method @desc of { mnpw, mncb, mnve, vrpw, vrve }. Default: mnpw 
+# @param reasoner @desc of {dlv, gringo}. Default: dlv 
+# @param repair_method @desc of {hst, topdown}
+# @out wellformed_tap
+# @out malformed_tap
+# @out tap_graph
+# @out possible_world(s)
+# @out inconsistent_tap
+# @out possible_world(s)_graph(s)
+# @out inconsistency_graph
+# @out suggested_articulation_modifications
+
+    # @begin validate
+    # @in tap
+    # @out wellformed_tap
+    # @out malformed_tap
+    # @end validate
+
+    # @begin try_align
+    # @in wellformed_tap
+    # @param encoding_method
+    # @param reasoner
+    # @out possible_world(s)
+    # @out inconsistent_tap
+    # @end try_align
+
+    # @begin visualize_possible_world(s)
+    # @in possible_world(s)
+    # @out possible_world(s)_graph(s)
+    # @end visualize_possible_world(s)
+    
+    # @begin repair_articulations
+    # @param repair_method
+    # @in inconsistent_tap
+    # @out suggested_articulation_modifications
+    # @end repair_articulations
+    
+    # @begin visualize_inconsistency
+    # @in inconsistent_tap
+    # @out inconsistency_graph
+    # @end visualize_inconsistency
+    
+    # @begin visualize_tap
+    # @in wellformed_tap
+    # @out tap_graph
+    # @end visualize_tap
+    
+# @end euler_workflow
