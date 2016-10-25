@@ -1,0 +1,108 @@
+
+/* Start of top-level graph */
+digraph Workflow {
+rankdir=TB
+
+/* Title for graph */
+fontname=Helvetica; fontsize=18; labelloc=t
+label=euler_workflow
+
+/* Start of double cluster for drawing box around nodes in workflow */
+subgraph cluster_workflow_box_outer { label=""; color=black; penwidth=2
+subgraph cluster_workflow_box_inner { label=""; penwidth=0
+
+/* Style for nodes representing atomic programs in workflow */
+node[shape=box style=filled fillcolor="#CCFFCC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing atomic programs in workflow */
+validate
+try_align
+"visualize_possible_world(s)"
+repair_articulations
+visualize_inconsistency
+visualize_tap
+
+/* Style for nodes representing non-parameter data channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FFFFCC" peripheries=1 fontname=Helvetica]
+
+/* Nodes for non-parameter data channels in workflow */
+wellformed_tap
+malformed_tap
+tap_graph
+"possible_world(s)"
+inconsistent_tap
+"possible_world(s)_graph(s)"
+inconsistency_graph
+suggested_articulation_modifications
+tap
+
+/* Style for nodes representing parameter channels in workflow */
+node[shape=box style="rounded,filled" fillcolor="#FCFCFC" peripheries=1 fontname=Helvetica]
+
+/* Nodes representing parameter channels in workflow */
+encoding_method
+reasoner
+repair_method
+
+/* Edges representing connections between programs and channels */
+validate -> wellformed_tap
+validate -> malformed_tap
+tap -> validate
+try_align -> "possible_world(s)"
+try_align -> inconsistent_tap
+wellformed_tap -> try_align
+encoding_method -> try_align
+reasoner -> try_align
+"visualize_possible_world(s)" -> "possible_world(s)_graph(s)"
+"possible_world(s)" -> "visualize_possible_world(s)"
+repair_articulations -> suggested_articulation_modifications
+repair_method -> repair_articulations
+inconsistent_tap -> repair_articulations
+visualize_inconsistency -> inconsistency_graph
+inconsistent_tap -> visualize_inconsistency
+visualize_tap -> tap_graph
+wellformed_tap -> visualize_tap
+
+/* End of double cluster for drawing box around nodes in workflow */
+}}
+
+/* Style for nodes representing workflow input ports */
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+
+/* Nodes representing workflow input ports */
+tap_input_port [label=""]
+encoding_method_input_port [label=""]
+reasoner_input_port [label=""]
+repair_method_input_port [label=""]
+
+/* Style for nodes representing workflow output ports */
+node[shape=circle style="rounded,filled" fillcolor="#FFFFFF" peripheries=1 fontname=Helvetica width=0.2]
+
+/* Nodes representing workflow output ports */
+wellformed_tap_output_port [label=""]
+malformed_tap_output_port [label=""]
+tap_graph_output_port [label=""]
+"possible_world(s)_output_port" [label=""]
+inconsistent_tap_output_port [label=""]
+"possible_world(s)_graph(s)_output_port" [label=""]
+inconsistency_graph_output_port [label=""]
+suggested_articulation_modifications_output_port [label=""]
+
+/* Edges from input ports to channels */
+tap_input_port -> tap
+encoding_method_input_port -> encoding_method
+reasoner_input_port -> reasoner
+repair_method_input_port -> repair_method
+
+/* Edges from channels to output ports */
+wellformed_tap -> wellformed_tap_output_port
+malformed_tap -> malformed_tap_output_port
+tap_graph -> tap_graph_output_port
+"possible_world(s)" -> "possible_world(s)_output_port"
+inconsistent_tap -> inconsistent_tap_output_port
+"possible_world(s)_graph(s)" -> "possible_world(s)_graph(s)_output_port"
+inconsistency_graph -> inconsistency_graph_output_port
+suggested_articulation_modifications -> suggested_articulation_modifications_output_port
+
+/* End of top-level graph */
+}
