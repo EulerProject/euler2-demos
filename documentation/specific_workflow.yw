@@ -1,0 +1,83 @@
+# @begin euler_workflow
+# @in tap @desc tuple (taxonomies, articulations, taxonomic_constraints). taxonomic_constraints 0-2 of { disable_coverage, disable_sibling_disjointness }
+# @param encoding_method @desc of { mnpw, mncb, mnve, vrpw, vrve }. Default: mnpw 
+# @param reasoner @desc of {dlv, gringo}. Default: dlv 
+# @param repair_method @desc of {hst, topdown}
+# @out wellformed_tap
+# @out malformed_tap
+# @out tap_graph
+# @out possible_world(s)
+# @out inconsistent_tap
+# @out possible_world(s)_graph(s)
+# @out inconsistency_graph
+# @out most_informative_relations
+# @out suggested_articulation_modifications
+
+    # @begin validate
+    # @in tap
+    # @out wellformed_tap
+    # @out malformed_tap
+    # @end validate
+
+    # @begin try_align
+    # @in wellformed_tap
+    # @param reasoner
+    # @out rcc_tap
+    # @out asp_tap
+    # @end try_align
+    
+    # @begin parse_rcc_tap
+    # @in rcc_tap
+    # @out rcc_tap_parsed
+    # @end parse_rcc_tap
+    
+    # @begin try_align_rcc
+    # @in rcc_tap_parsed
+    # @out inconsistent_tap
+    # @out most_informative_relations
+    # @end try_align_rcc
+    
+    # @begin create_possible_world(s)
+    # @in most_informative_relations
+    # @out possible_world(s)
+    # @end create_possible_world(s)
+    
+    # @begin encode_asp_tap
+    # @in asp_tap
+    # @param encoding_method
+    # @out asp_tap_encoded
+    # @end encode_asp_tap
+    
+    # @begin try_align_asp
+    # @in asp_tap_encoded
+    # @out inconsistent_tap
+    # @out possible_world(s)
+    # @end try_align_as
+    
+    # @begin create_most_informative_relations(s)
+    # @in possible_world(s)
+    # @out most_informative_relations
+    # @end create_most_informative_relations(s)
+
+    # @begin visualize_possible_world(s)
+    # @in possible_world(s)
+    # @out possible_world(s)_graph(s)
+    # @end visualize_possible_world(s)
+    
+    # @begin repair_articulations
+    # @param repair_method
+    # @in inconsistent_tap
+    # @out suggested_articulation_modifications
+    # @end repair_articulations
+    
+    # @begin visualize_inconsistency
+    # @in inconsistent_tap
+    # @out inconsistency_graph
+    # @end visualize_inconsistency
+    
+    # @begin visualize_tap
+    # @in wellformed_tap
+    # @out tap_graph
+    # @end visualize_tap
+    
+# @end euler_workflow
