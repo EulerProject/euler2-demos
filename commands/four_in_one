@@ -1,6 +1,6 @@
-align_art_rem:
+align_four_in_one:
  command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} --fourinone -r {reasoner}
  doc: 
-show_ambiguity_lattice:
+show_four_in_one:
  command: euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} fourinone --svg
  doc: 
