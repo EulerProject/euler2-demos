@@ -1,0 +1,6 @@
+align_art_rem:
+ command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} --artRem -r {reasoner}
+ doc: 
+show_ambiguity_lattice:
+ command: euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} ambLat --svg
+ doc: 
