@@ -1,0 +1,7 @@
+taxonomy 1 Taxonomy1
+(A B F)
+(F G H)
+
+taxonomy 2 Taxonomy2
+(A B F)
+(F G H)
