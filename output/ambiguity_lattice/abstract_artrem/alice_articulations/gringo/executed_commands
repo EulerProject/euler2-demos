@@ -1,0 +1,2 @@
+euler2 align ./examples/abstract_artrem/taxonomies.txt ./examples/abstract_artrem/alice_articulations/articulations.txt -o ./output/ambiguity_lattice/abstract_artrem/alice_articulations/gringo --artRem -r gringo
+euler2 show -o ./output/ambiguity_lattice/abstract_artrem/alice_articulations/gringo ambLat --svg

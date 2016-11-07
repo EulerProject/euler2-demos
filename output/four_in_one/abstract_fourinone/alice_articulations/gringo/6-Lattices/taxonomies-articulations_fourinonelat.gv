@@ -1,0 +1,164 @@
+digraph {
+
+rankdir = BT
+
+None [shape=box style="filled" fillcolor="#FFFFFF"];
+"0" [shape=box style="filled" fillcolor="#FFFFFF"];
+"1" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,1" [shape=box style="filled" fillcolor="#FFFFFF"];
+"2" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,2" [shape=box style="filled" fillcolor="#FFFFFF"];
+"1,2" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,1,2" [shape=diamond style="filled" fillcolor="#00FFCC"];
+"3" [shape=octagon style="filled" fillcolor="#00FF00"];
+"0,3" [shape=box style="filled" fillcolor="#FFFFFF"];
+"1,3" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,1,3" [shape=box style="filled" fillcolor="#FFFFFF"];
+"2,3" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,2,3" [shape=box style="filled" fillcolor="#FFFFFF"];
+"1,2,3" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,1,2,3" [shape=box style="filled" fillcolor="#00FF00"];
+"4" [shape=octagon style="filled" fillcolor="#00FF00"];
+"0,4" [shape=box style="filled" fillcolor="#FFFFFF"];
+"1,4" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,1,4" [shape=octagon style="filled" fillcolor="#00FF00"];
+"2,4" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,2,4" [shape=box style="filled" fillcolor="#FFFFFF"];
+"1,2,4" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,1,2,4" [shape=box style="filled" fillcolor="#00FF00"];
+"3,4" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,3,4" [shape=octagon style="filled" fillcolor="#00FF00"];
+"1,3,4" [shape=box style="filled" fillcolor="#00FF00"];
+"0,1,3,4" [shape=box style="filled" fillcolor="#FF0000"];
+"2,3,4" [shape=box style="filled" fillcolor="#FF0000"];
+"0,2,3,4" [shape=box style="filled" fillcolor="#FFFFFF"];
+"1,2,3,4" [shape=box style="filled" fillcolor="#FFFFFF"];
+"0,1,2,3,4" [shape=box style="filled" fillcolor="#FFFFFF"];
+None -> "0" [arrowhead=none]
+None -> "1" [arrowhead=none]
+None -> "2" [arrowhead=none]
+None -> "3" [arrowhead=none]
+None -> "4" [arrowhead=none]
+"0" -> "0,1" [arrowhead=none]
+"0" -> "0,2" [arrowhead=none]
+"0" -> "0,3" [arrowhead=none]
+"0" -> "0,4" [arrowhead=none]
+"1" -> "0,1" [arrowhead=none]
+"1" -> "1,2" [arrowhead=none]
+"1" -> "1,3" [arrowhead=none]
+"1" -> "1,4" [arrowhead=none]
+"0,1" -> "0,1,2" [arrowhead=none]
+"0,1" -> "0,1,3" [arrowhead=none]
+"0,1" -> "0,1,4" [arrowhead=none]
+"2" -> "0,2" [arrowhead=none]
+"2" -> "1,2" [arrowhead=none]
+"2" -> "2,3" [arrowhead=none]
+"2" -> "2,4" [arrowhead=none]
+"0,2" -> "0,1,2" [arrowhead=none]
+"0,2" -> "0,2,3" [arrowhead=none]
+"0,2" -> "0,2,4" [arrowhead=none]
+"1,2" -> "0,1,2" [arrowhead=none]
+"1,2" -> "1,2,3" [arrowhead=none]
+"1,2" -> "1,2,4" [arrowhead=none]
+"0,1,2" -> "0,1,2,3" [arrowhead=none]
+"0,1,2" -> "0,1,2,4" [arrowhead=none]
+"3" -> "0,3" [arrowhead=none]
+"3" -> "1,3" [arrowhead=none]
+"3" -> "2,3" [arrowhead=none]
+"3" -> "3,4" [arrowhead=none]
+"0,3" -> "0,1,3" [arrowhead=none]
+"0,3" -> "0,2,3" [arrowhead=none]
+"0,3" -> "0,3,4" [arrowhead=none]
+"1,3" -> "0,1,3" [arrowhead=none]
+"1,3" -> "1,2,3" [arrowhead=none]
+"1,3" -> "1,3,4" [arrowhead=none]
+"0,1,3" -> "0,1,2,3" [arrowhead=none]
+"0,1,3" -> "0,1,3,4" [arrowhead=none]
+"2,3" -> "0,2,3" [arrowhead=none]
+"2,3" -> "1,2,3" [arrowhead=none]
+"2,3" -> "2,3,4" [arrowhead=none]
+"0,2,3" -> "0,1,2,3" [arrowhead=none]
+"0,2,3" -> "0,2,3,4" [arrowhead=none]
+"1,2,3" -> "0,1,2,3" [arrowhead=none]
+"1,2,3" -> "1,2,3,4" [arrowhead=none]
+"0,1,2,3" -> "0,1,2,3,4" [arrowhead=none]
+"4" -> "0,4" [arrowhead=none]
+"4" -> "1,4" [arrowhead=none]
+"4" -> "2,4" [arrowhead=none]
+"4" -> "3,4" [arrowhead=none]
+"0,4" -> "0,1,4" [arrowhead=none]
+"0,4" -> "0,2,4" [arrowhead=none]
+"0,4" -> "0,3,4" [arrowhead=none]
+"1,4" -> "0,1,4" [arrowhead=none]
+"1,4" -> "1,2,4" [arrowhead=none]
+"1,4" -> "1,3,4" [arrowhead=none]
+"0,1,4" -> "0,1,2,4" [arrowhead=none]
+"0,1,4" -> "0,1,3,4" [arrowhead=none]
+"2,4" -> "0,2,4" [arrowhead=none]
+"2,4" -> "1,2,4" [arrowhead=none]
+"2,4" -> "2,3,4" [arrowhead=none]
+"0,2,4" -> "0,1,2,4" [arrowhead=none]
+"0,2,4" -> "0,2,3,4" [arrowhead=none]
+"1,2,4" -> "0,1,2,4" [arrowhead=none]
+"1,2,4" -> "1,2,3,4" [arrowhead=none]
+"0,1,2,4" -> "0,1,2,3,4" [arrowhead=none]
+"3,4" -> "0,3,4" [arrowhead=none]
+"3,4" -> "1,3,4" [arrowhead=none]
+"3,4" -> "2,3,4" [arrowhead=none]
+"0,3,4" -> "0,1,3,4" [arrowhead=none]
+"0,3,4" -> "0,2,3,4" [arrowhead=none]
+"1,3,4" -> "0,1,3,4" [arrowhead=none]
+"1,3,4" -> "1,2,3,4" [arrowhead=none]
+"0,1,3,4" -> "0,1,2,3,4" [arrowhead=none]
+"2,3,4" -> "0,2,3,4" [arrowhead=none]
+"2,3,4" -> "1,2,3,4" [arrowhead=none]
+"0,2,3,4" -> "0,1,2,3,4" [arrowhead=none]
+"1,2,3,4" -> "0,1,2,3,4" [arrowhead=none]
+node[shape=box] 
+{rank=top Legend [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> 
+ <TD>"1"</TD> 
+ <TD>1.B equals 2.B</TD> 
+ </TR> 
+<TR> 
+ <TD>"4"</TD> 
+ <TD>1.H equals 2.H</TD> 
+ </TR> 
+<TR> 
+ <TD>"0"</TD> 
+ <TD>1.A is_included_in 2.A</TD> 
+ </TR> 
+<TR> 
+ <TD>"2"</TD> 
+ <TD>1.F is_included_in 2.F</TD> 
+ </TR> 
+<TR> 
+ <TD>"3"</TD> 
+ <TD>1.G equals 2.G</TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+Legend -> "None" [style=invis]
+node[shape=box] 
+{rank=top Intro [fillcolor= white margin=0 label=< 
+ <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4"> 
+<TR> 
+ <TD> Minimal Inconsistent Subsets (MIS) </TD> 
+ <TD> Red box </TD> 
+ </TR> 
+<TR> 
+ <TD> Maximal Consistent Subsets </TD> 
+ <TD> Green box </TD> 
+ </TR> 
+<TR> 
+ <TD> Minimal Unique Subsets </TD> 
+ <TD> Green octagon</TD> 
+ </TR> 
+<TR> 
+ <TD> Maximal Ambiguous Subsets </TD> 
+ <TD> Cyan diamond </TD> 
+ </TR> 
+</TABLE> 
+ >] } 
+}
