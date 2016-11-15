@@ -6,20 +6,22 @@
 # @out wellformed_tap
 # @out malformed_tap
 # @out tap_graph
-# @out possible_world(s)
+# @out possible_worlds
 # @out inconsistent_tap
-# @out possible_world(s)_graph(s)
+# @out possible_worlds_graphs
 # @out inconsistency_graph
 # @out most_informative_relations
 # @out suggested_articulation_modifications
 
     # @begin validate
+    # @desc euler2 check {tap}
     # @in tap
     # @out wellformed_tap
     # @out malformed_tap
     # @end validate
 
     # @begin try_align
+    # @desc euler2 align {tap} -r {reasoner} -e {encoding_method}
     # @in wellformed_tap
     # @param reasoner
     # @out rcc_tap
@@ -37,10 +39,10 @@
     # @out most_informative_relations
     # @end try_align_rcc
     
-    # @begin create_possible_world(s)
+    # @begin create_possible_worlds
     # @in most_informative_relations
-    # @out possible_world(s)
-    # @end create_possible_world(s)
+    # @out possible_worlds
+    # @end create_possible_worlds
     
     # @begin encode_asp_tap
     # @in asp_tap
@@ -51,31 +53,35 @@
     # @begin try_align_asp
     # @in asp_tap_encoded
     # @out inconsistent_tap
-    # @out possible_world(s)
+    # @out possible_worlds
     # @end try_align_as
     
-    # @begin create_most_informative_relations(s)
-    # @in possible_world(s)
+    # @begin create_most_informative_relations
+    # @in possible_worlds
     # @out most_informative_relations
-    # @end create_most_informative_relations(s)
+    # @end create_most_informative_relations
 
-    # @begin visualize_possible_world(s)
-    # @in possible_world(s)
-    # @out possible_world(s)_graph(s)
-    # @end visualize_possible_world(s)
+    # @begin visualize_possible_worlds
+    # @desc euler2 show pw
+    # @in possible_worlds
+    # @out possible_worlds_graphs
+    # @end visualize_possible_worlds
     
     # @begin repair_articulations
+    # @desc euler2 align --repair={repair_method} -r {reasoner}
     # @param repair_method
     # @in inconsistent_tap
     # @out suggested_articulation_modifications
     # @end repair_articulations
     
     # @begin visualize_inconsistency
+    # @desc euler2 show inconLat
     # @in inconsistent_tap
     # @out inconsistency_graph
     # @end visualize_inconsistency
     
     # @begin visualize_tap
+    # @desc euler2 show iv {tap}
     # @in wellformed_tap
     # @out tap_graph
     # @end visualize_tap
