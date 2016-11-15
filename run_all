@@ -6,54 +6,67 @@ import sys
 import click
 
 all_reasoners = [ 'dlv', 'gringo' ]
+all_encodings = ['mnpw', 'mncb', 'mnve', 'vrpw', 'vrve']
 
-def run_command_reasoner_example_articulation(command, reasoner, example, articulation, target):
-   cmd = './run --commands={commands} --example={example} --articulations={articulations} --target={target} --reasoner={reasoner}'.format(
-      commands = command, example = example, articulations = articulation, target = target, reasoner = reasoner)
+def run_command_encoding_reasoner_example_articulation(command, reasoner, example, articulation, target, encoding):
+   cmd = './run --commands={commands} --example={example} --articulations={articulations} --target={target} --reasoner={reasoner} --encoding={encoding}'.format(
+      commands = command, example = example, articulations = articulation, target = target, reasoner = reasoner, encoding = encoding)
    #print 'run_all: %s' % cmd
    subprocess.call(cmd, shell=True)
 
-def run_command_reasoner_example(command, reasoner, example, articulations, target):
+def run_command_encoding_reasoner_example(command, reasoner, example, articulations, target, encoding):
    if '{articulations}' in open('./commands/' + command).read():
       if not articulations:
          for articulation in os.listdir('./examples/' + example):
             if os.path.isdir('./examples/' + example + '/' + articulation):
-               run_command_reasoner_example_articulation(command, reasoner, example, articulation, target)
+               run_command_encoding_reasoner_example_articulation(command, reasoner, example, articulation, target, encoding)
       else:
          for articulation in articulations:
-            run_command_reasoner_example_articulation(command, reasoner, example, articulation, target)
+            run_command_encoding_reasoner_example_articulation(command, reasoner, example, articulation, target, encoding)
    else:
-      run_command_reasoner_example_articulation(command, reasoner, example, '', target)
+      run_command_encoding_reasoner_example_articulation(command, reasoner, example, '', target, encoding)
 
-def run_command_reasoner(command, reasoner, examples, articulations, target):
+def run_command_encoding_reasoner(command, reasoner, examples, articulations, target, encoding):
    if '{example}' in open('./commands/' + command).read():
       if not examples:
          for example in os.listdir('./examples/'):
-            run_command_reasoner_example(command, reasoner, example, articulations, target)
+            run_command_encoding_reasoner_example(command, reasoner, example, articulations, target, encoding)
       else:
          for example in examples:
-            run_command_reasoner_example(command, reasoner, example, articulations, target)
+            run_command_encoding_reasoner_example(command, reasoner, example, articulations, target, encoding)
    else:
-      run_command_reasoner_example(command, reasoner, '', articulations, target)
+      run_command_encoding_reasoner_example(command, reasoner, '', articulations, target, encoding)
 
-def run_command(command, reasoners, examples, articulations, target):
+def run_command_encoding(command, reasoners, examples, articulations, target, encoding):
    if '{reasoner}' in open('./commands/' + command).read():
       if not reasoners:
          for reasoner in all_reasoners:
-            run_command_reasoner(command, reasoner, examples, articulations, target)
+            run_command_encoding_reasoner(command, reasoner, examples, articulations, target, encoding)
       else:
          for reasoner in reasoners:
-            run_command_reasoner(command, reasoner, examples, articulations, target)
+            run_command_encoding_reasoner(command, reasoner, examples, articulations, target, encoding)
    else:
-      run_command_reasoner(command, '', examples, articulations, target)
+      run_command_encoding_reasoner(command, '', examples, articulations, target, encoding)
+
+def run_command(command, reasoners, examples, articulations, target, encodings):
+   if '{encoding}' in open('./commands/' + command).read():
+      if not encodings:
+         for encoding in all_encodings:
+            run_command_encoding(command, reasoners, examples, articulations, target, encoding)
+      else:
+         for encoding in encodings:
+            run_command_encoding(command, reasoners, examples, articulations, target, encoding)
+   else:
+      run_command_encoding(command, reasoners, examples, articulations, target, '')
 
 @click.command()
 @click.option('--commands', default=None, help='Provide a comma separated list from the available commands files (./commands/{commands})')
 @click.option('--examples', default=None, help='Provide a comma separated list from the available examples (./examples/{example})')
 @click.option('--articulations', default=None, help='Provide a comma separated list from the available example articulations (./examples/{example}/{articulations}')
-@click.option('--target', default='all', help='Choose between \'all\', a list (\'command1,command2,...\') or a sequence (\'command1-command3\') of command labels or \'clean\'. Default: all')
 @click.option('--reasoners', default=','.join(all_reasoners), help='Provide a comma separated list from the available reasoners:  \'dlv\' and \'gringo\'')
-def run_all(commands, examples, articulations, target, reasoners):
+@click.option('--encodings', default=','.join(all_encodings), help='Provide a comma separated list from the available encodings: \'mnpw\', \'mncb\', \'mnve\', \'vrpw\', \'vrve\'')
+@click.option('--target', default='all', help='Choose between \'all\', a list (\'command1,command2,...\') or a sequence (\'command1-command3\') of command labels or \'clean\'. Default: all')
+def run_all(commands, examples, articulations, target, reasoners, encodings):
    if commands is None:
       commands = []
    else:
@@ -70,17 +83,22 @@ def run_all(commands, examples, articulations, target, reasoners):
       reasoners = []
    else:
       reasoners = reasoners.split(',')
+   if encodings is None:
+      encodings = []
+   else:
+      encodings = encodings.split(',')
    #print commands
    #print examples
    #print articulations
    #print target
    #print reasoners
+   #print encodings
    if not commands:
       for command in os.listdir('./commands/'):
-         run_command(command, reasoners, examples, articulations, target)
+         run_command(command, reasoners, examples, articulations, target, encodings)
    else:
       for command in commands:
-         run_command(command, reasoners, examples, articulations, target)
+         run_command(command, reasoners, examples, articulations, target, encodings)
 
 if __name__ == '__main__':
     run_all()

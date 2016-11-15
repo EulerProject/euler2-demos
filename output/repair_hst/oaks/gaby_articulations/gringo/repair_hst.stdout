@@ -1,8 +1,0 @@
-******* You are running example taxonomies-articulations *******
-************************************
-Input is inconsistent
-
-You can use "--repair=WAY" to do the repairing, see details in "euler2 -h"
-************************************
-Min inconsistent subset  0 : [ 9 : FloraChina.ChineseOakSpecies2 equals FloraMexico.MexicanOakSpecies1 , 8 : FloraChina.ChineseOakSpecies1 is_included_in FloraMexico.MexicanOakSpecies1 ]
-************************************

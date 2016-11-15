@@ -56,23 +56,25 @@ class Command:
 def get_root():
     return os.path.abspath(os.path.dirname(__file__))
 
-def get_output(commands, example, articulations, reasoner):
+def get_output(commands, example, articulations, reasoner, encoding):
     if example is None:
        example = ''
     if articulations is None:
        articulations = ''
     if reasoner is None:
        reasoner = ''
-    return get_root() + '/output/{commands}/{example}/{articulations}/{reasoner}'.format(commands = commands, example = example, articulations = articulations, reasoner = reasoner)
+    if encoding is None:
+       encoding = ''
+    return get_root() + '/output/{commands}/{example}/{articulations}/{reasoner}/{encoding}'.format(commands = commands, example = example, articulations = articulations, reasoner = reasoner, encoding = encoding)
 
 def get_commands_file_path(commands):
     return get_root() + '/commands/{commands}'.format(commands = commands)
 
-def execute(commands, example, articulations, reasoner, label, command, doc):
+def execute(commands, example, articulations, reasoner, encoding, label, command, doc):
     #print 'start @ ' + str(datetime.now())
     print 'run {label}: {command}'.format(label=label, command=command)
     print 'for more see: {doc}'.format(doc=doc)
-    output = get_output(commands, example, articulations, reasoner)
+    output = get_output(commands, example, articulations, reasoner, encoding)
     with open(os.path.join(output, '%s.stdout' % label), 'w+') as out:
         with open(os.path.join(output, '%s.stderr' % label), 'w+') as err:
             with open(os.path.join(output, '%s.returncode' % label), 'w+') as rc:
@@ -86,8 +88,8 @@ def execute(commands, example, articulations, reasoner, label, command, doc):
     #print 'complete @ ' + str(datetime.now())
     
             
-def run_clean(commands, example, articulations, reasoner):
-    output = get_output(commands, example, articulations, reasoner)
+def run_clean(commands, example, articulations, reasoner, encoding):
+    output = get_output(commands, example, articulations, reasoner, encoding)
     for f in os.listdir(output):
 	path = output + '/' + f
         if os.path.isfile(path):
@@ -131,13 +133,14 @@ def get_commands_list(doc, commands):
 @click.option('--commands', default='', help='Choose one of the available commands files (./commands/{commands})')
 @click.option('--example', default='', help='Choose one of the available examples (./examples/{example})')
 @click.option('--articulations', default='', help='Choose one of the available example articulations (./examples/{example}/{articulations}')
-@click.option('--target', default='all', help='Choose between \'all\', a list (\'command1,command2,...\') or a sequence (\'command1-command3\') of command labels or \'clean\'. You can find the command labels in the selected commands file. Default: all')
 @click.option('--reasoner', default='dlv', help='Choose between \'dlv\' and \'gringo\'')
-def run(commands, example, articulations, target, reasoner):
+@click.option('--encoding', default='mnpw', help='Choose between \'mnpw\', \'mncb\', \'mnve\', \'vrpw\', \'vrve\'')
+@click.option('--target', default='all', help='Choose between \'all\', a list (\'command1,command2,...\') or a sequence (\'command1-command3\') of command labels or \'clean\'. You can find the command labels in the selected commands file. Default: all')
+def run(commands, example, articulations, target, reasoner, encoding):
     root = get_root()
-    output = get_output(commands, example, articulations, reasoner)
+    output = get_output(commands, example, articulations, reasoner, encoding)
     commands_file_path = get_commands_file_path(commands)
-    print '===> Run demo {commands} {example} {articulations} {target} {reasoner}'.format(commands = commands, example = example, articulations = articulations, target = target, reasoner = reasoner)
+    print '===> Run demo {commands} {example} {articulations} {target} {reasoner} {encoding}'.format(commands = commands, example = example, articulations = articulations, target = target, reasoner = reasoner, encoding = encoding)
     if not os.path.exists(output):
         os.makedirs(output)
     with open(commands_file_path, 'r') as commands_file:
@@ -147,7 +150,7 @@ def run(commands, example, articulations, target, reasoner):
             if target == 'all':
                 cmds = get_all_commands(doc)
             elif target == 'clean':
-                run_clean(commands, example, articulations, reasoner)
+                run_clean(commands, example, articulations, reasoner, encoding)
             elif ',' in target:
                 cmds = get_commands_list(doc, target.split(','))
             elif '-' in target:
@@ -168,13 +171,15 @@ def run(commands, example, articulations, target, reasoner):
                     show_command = show_command.replace('{articulations}', articulations)
                     value = value.replace('{reasoner}', reasoner)
                     show_command = show_command.replace('{reasoner}', reasoner)
+		    value = value.replace('{encoding}', encoding)
+                    show_command = show_command.replace('{encoding}', encoding)
                     cmds_file.write(show_command + '\n')
-		    execute(commands, example, articulations, reasoner, cmd.label, value, cmd.doc)
-    clean_outputs(commands, example, articulations, reasoner)  
+		    execute(commands, example, articulations, reasoner, encoding, cmd.label, value, cmd.doc)
+    clean_outputs(commands, example, articulations, reasoner, encoding)  
 
-def clean_outputs(commands, example, articulations, reasoner):
+def clean_outputs(commands, example, articulations, reasoner, encoding):
     root = get_root()
-    output = get_output(commands, example, articulations, reasoner)
+    output = get_output(commands, example, articulations, reasoner, encoding)
     report = root + '/report.csv'
     lastrun_timstamp = output + '/lastrun.timestamp'
     logs = output + '/logs'

@@ -1,1 +1,0 @@
-euler2 align ./examples/birds/taxonomies.txt ./examples/birds/alice_articulations/articulations.txt -o ./output/align/birds/alice_articulations/dlv -r dlv

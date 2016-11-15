@@ -1,3 +1,3 @@
 repair_topdown:
- command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} --repair=topdown -r {reasoner}
+ command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner}/{encoding} --repair=topdown -r {reasoner} -e {encoding}
  doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#inconsistent-example-coverage

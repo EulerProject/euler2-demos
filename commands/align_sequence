@@ -1,15 +1,15 @@
 align_alice:
- command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/alice_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/alice_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner}/{encoding} -r {reasoner} -e {encoding}
  doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 align_gaby:
- command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/gaby_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/gaby_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner}/{encoding} -r {reasoner} -e {encoding}
  doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 align_bob:
- command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/bob_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/bob_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner}/{encoding} -r {reasoner} -e {encoding}
  doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 align_carol:
- command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/carol_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/carol_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner}/{encoding} -r {reasoner} -e {encoding}
  doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands
 align_dan:
- command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/dan_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner} -r {reasoner}
+ command: euler2 align {.}/examples/oaks/taxonomies.txt {.}/examples/oaks/dan_articulations/articulations.txt -o {.}/output/{commands}/{example}/{reasoner}/{encoding} -r {reasoner} -e {encoding}
  doc: https://github.com/EulerProject/EulerX/wiki/Euler-Reasoning-Tool#general-commands

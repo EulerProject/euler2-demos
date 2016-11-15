@@ -1,2 +1,0 @@
-euler2 align ./examples/abstract_fourinone/taxonomies.txt ./examples/abstract_fourinone/alice_articulations/articulations.txt -o ./output/four_in_one/abstract_fourinone/alice_articulations/gringo --fourinone -r gringo
-euler2 show -o ./output/four_in_one/abstract_fourinone/alice_articulations/gringo fourinone --svg

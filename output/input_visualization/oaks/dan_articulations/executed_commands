@@ -1,1 +1,0 @@
-euler2 show iv ./examples/oaks/taxonomies.txt ./examples/oaks/dan_articulations/articulations.txt -o ./output/input_visualization/oaks/dan_articulations --svg

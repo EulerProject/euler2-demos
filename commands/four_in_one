@@ -1,6 +1,6 @@
 align_four_in_one:
- command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner} --fourinone -r {reasoner}
+ command: euler2 align {.}/examples/{example}/taxonomies.txt {.}/examples/{example}/{articulations}/articulations.txt -o {.}/output/{commands}/{example}/{articulations}/{reasoner}/{encoding} --fourinone -r {reasoner} -e {encoding}
  doc: 
 show_four_in_one:
- command: euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner} fourinone --svg
+ command: euler2 show -o {.}/output/{commands}/{example}/{articulations}/{reasoner}/{encoding} fourinone --svg
  doc: 

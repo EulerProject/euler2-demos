@@ -1,7 +1,0 @@
-******* You are running example taxonomies-articulations *******
-You have ...
-
-MIS (red box): ['1.H equals 2.H', '1.F is_included_in 2.F', '1.G equals 2.G'] ['1.B equals 2.B', '1.H equals 2.H', '1.A is_included_in 2.A', '1.G equals 2.G'] 
-MCS (green box): ['1.B equals 2.B', '1.A is_included_in 2.A', '1.F is_included_in 2.F', '1.G equals 2.G'] ['1.B equals 2.B', '1.H equals 2.H', '1.A is_included_in 2.A', '1.F is_included_in 2.F'] ['1.H equals 2.H', '1.A is_included_in 2.A', '1.G equals 2.G'] ['1.B equals 2.B', '1.H equals 2.H', '1.G equals 2.G'] 
-MUS: (green octagon) ['1.H equals 2.H', '1.A is_included_in 2.A', '1.G equals 2.G'] ['1.B equals 2.B', '1.H equals 2.H', '1.A is_included_in 2.A'] ['1.H equals 2.H'] ['1.G equals 2.G'] 
-MAA: (cyan diamond) ['1.B equals 2.B', '1.A is_included_in 2.A', '1.F is_included_in 2.F']

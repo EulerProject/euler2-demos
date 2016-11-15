@@ -8,11 +8,12 @@ from subprocess import call, Popen, PIPE
 all_reasoners = [ 'dlv', 'gringo' ]
 
 class Run:
-    def __init__(self, command, example, articulation, reasoner):
+    def __init__(self, command, example, articulation, reasoner, encoding):
         self.command = command
         self.example = example
         self.articulation = articulation
         self.reasoner = reasoner
+        self.encoding = encoding
 
     def __hash__(self):
         return hash(self.__str__());   
@@ -21,10 +22,10 @@ class Run:
         return self.command == other.command and self.example == other.example and self.articulation == other.articulation and self.reasoner == other.reasoner
 
     def __str__(self):
-        return "{command} {example} {articulation} {reasoner}".format(command = self.command, example = self.example, articulation = self.articulation, reasoner = self.reasoner)
+        return "{command} {example} {articulation} {reasoner} {encoding}".format(command = self.command, example = self.example, articulation = self.articulation, reasoner = self.reasoner, encoding = self.encoding)
 
     def get_output(self):
-       return get_root() + '/output/{command}/{example}/{articulation}/{reasoner}'.format(command = self.command, example = self.example, articulation = self.articulation, reasoner = self.reasoner)
+       return get_root() + '/output/{command}/{example}/{articulation}/{reasoner}/{encoding}'.format(command = self.command, example = self.example, articulation = self.articulation, reasoner = self.reasoner, encoding = self.encoding)
 
 def get_commands(commands):
    if commands is None:
@@ -37,6 +38,12 @@ def get_reasoners(reasoners):
       return all_reasoners
    else:
       return reasoners.split(',')
+
+def get_encodings(encodings):
+   if encodings is None:
+      return all_encodings
+   else:
+      return encodings.split(',')
 
 def get_root():
     return os.path.abspath(os.path.dirname(__file__))
@@ -62,8 +69,9 @@ def do_compare_gold_standard(run):
 @click.option('--examples', default=None, help='Provide a comma separated list from the available examples (./examples/{example})')
 @click.option('--articulations', default=None, help='Provide a comma separated list from the available example articulations (./examples/{example}/{articulations}')
 @click.option('--reasoners', default=','.join(all_reasoners), help='Provide a comma separated list from the available reasoners:  \'dlv\' and \'gringo\'')
+@click.option('--encodings', default=','.join(all_encodings), help='Provide a comma separated list from the available encodings: \'mnpw\', \'mncb\', \'mnve\', \'vrpw\', \'vrve\'')
 @click.option('--compare_gold_standard', is_flag=True, help='Compare output of demo to corresponding output at repository HEAD')
-def compare(commands, examples, articulations, reasoners, compare_gold_standard):
+def compare(commands, examples, articulations, reasoners, encodings, compare_gold_standard):
    if examples is None:
       return
    examples = examples.split(',')
@@ -72,17 +80,20 @@ def compare(commands, examples, articulations, reasoners, compare_gold_standard)
    articulations = articulations.split(',')
    commands = get_commands(commands)
    reasoners = get_reasoners(reasoners)
+   encodings = get_encodings(encodings)
    #print commands
    #print examples
    #print articulations
    #print reasoners
+   #print encodings
 
    runs = set()
    for command in commands:
      for example in examples:
         for articulation in articulations:
            for reasoner in reasoners:
-              runs.add(Run(command, example, articulation, reasoner))
+              for encoding in encodings:
+                 runs.add(Run(command, example, articulation, reasoner, encoding))
    if len(runs) == 1:
       compare_gold_standard = True
    if compare_gold_standard:
